@@ -1,0 +1,62 @@
+/**
+ * DAOVOS Visual Operating System — Spacing Tokens
+ * 8px Base Unit Matrix (X = 8px)
+ */
+
+:root {
+  /* ==========================================================================
+     Base Unit & Raw Scale
+     ========================================================================== */
+  --space-base: 8px;
+
+  --space-0: 0px;
+  --space-1: 4px;    /* 0.5x */
+  --space-2: 8px;    /* 1.0x - Base Unit */
+  --space-3: 12px;   /* 1.5x */
+  --space-4: 16px;   /* 2.0x */
+  --space-6: 24px;   /* 3.0x */
+  --space-8: 32px;   /* 4.0x */
+  --space-12: 48px;  /* 6.0x */
+  --space-16: 64px;  /* 8.0x */
+  --space-20: 80px;  /* 10.0x */
+  --space-24: 96px;  /* 12.0x */
+  --space-32: 128px; /* 16.0x */
+  --space-40: 160px; /* 20.0x */
+  --space-48: 192px; /* 24.0x */
+
+  /* ==========================================================================
+     Semantic Section & Layout Spacing
+     ========================================================================== */
+  --space-section-xs: var(--space-8);   /* 32px */
+  --space-section-sm: var(--space-12);  /* 48px */
+  --space-section-md: var(--space-20);  /* 80px */
+  --space-section-lg: var(--space-32);  /* 128px */
+  --space-section-xl: var(--space-48);  /* 192px */
+
+  /* ==========================================================================
+     Semantic Component Inset / Stack Spacing
+     ========================================================================== */
+  --space-inset-xs: var(--space-1) var(--space-2);  /* 4px 8px */
+  --space-inset-sm: var(--space-2) var(--space-3);  /* 8px 12px */
+  --space-inset-md: var(--space-3) var(--space-4);  /* 12px 16px */
+  --space-inset-lg: var(--space-4) var(--space-6);  /* 16px 24px */
+  --space-inset-xl: var(--space-6) var(--space-8);  /* 24px 32px */
+
+  --space-stack-xs: var(--space-1);
+  --space-stack-sm: var(--space-2);
+  --space-stack-md: var(--space-4);
+  --space-stack-lg: var(--space-6);
+  --space-stack-xl: var(--space-8);
+
+  /* ==========================================================================
+     Grid External Margins & Gutters
+     ========================================================================== */
+  --grid-margin-desktop: 5%;
+  --grid-gutter-desktop: 24px;
+
+  --grid-margin-tablet: 5%;
+  --grid-gutter-tablet: 24px;
+
+  --grid-margin-mobile: 4%;
+  --grid-gutter-mobile: 16px;
+}

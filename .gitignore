@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build
+dist/
+build/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+*.local
+.idea/
+.vscode/
+
+.vercel
+.env*

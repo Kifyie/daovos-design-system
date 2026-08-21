@@ -1,0 +1,68 @@
+/**
+ * DAOVOS Visual Operating System — Motion & Easing Tokens
+ */
+
+:root {
+  /* ==========================================================================
+     Duration Classes
+     ========================================================================== */
+  --motion-duration-micro: 160ms;       /* 120–240ms: Hover, focus, toggle micro-interactions */
+  --motion-duration-interface: 360ms;   /* 300–600ms: Drawers, inputs, tab transitions */
+  --motion-duration-editorial: 760ms;   /* 600–1000ms: Text reveals, line draws, frame shifts */
+  --motion-duration-cinematic: 1200ms;  /* 900–1600ms: Major chapter switches, symbol assembly */
+
+  /* ==========================================================================
+     Dedicated DAOVOS Easing Curves
+     ========================================================================== */
+  /* Precision: Rapid acceleration, sharp deceleration into mechanical lock */
+  --motion-ease-precision: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Mechanical: Machine-like movement with crisp boundary stop */
+  --motion-ease-mechanical: cubic-bezier(0.25, 0, 0, 1);
+
+  /* Settle: Heavy architectural damping and structural weight */
+  --motion-ease-settle: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Sharp: Immediate high-velocity transition */
+  --motion-ease-sharp: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Default Transition Tokens */
+  --transition-fast: var(--motion-duration-micro) var(--motion-ease-precision);
+  --transition-normal: var(--motion-duration-interface) var(--motion-ease-precision);
+  --transition-slow: var(--motion-duration-editorial) var(--motion-ease-precision);
+}
+
+/* ==========================================================================
+   Reduced-Motion Accessibility Mode
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  :root,
+  *,
+  *::before,
+  *::after {
+    --motion-duration-micro: 0ms !important;
+    --motion-duration-interface: 0ms !important;
+    --motion-duration-editorial: 0ms !important;
+    --motion-duration-cinematic: 0ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Manual reduced motion toggle class */
+.reduced-motion,
+[data-reduced-motion="true"] {
+  --motion-duration-micro: 0ms !important;
+  --motion-duration-interface: 0ms !important;
+  --motion-duration-editorial: 0ms !important;
+  --motion-duration-cinematic: 0ms !important;
+}
+.reduced-motion *,
+[data-reduced-motion="true"] * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}

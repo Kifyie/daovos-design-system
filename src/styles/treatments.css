@@ -1,0 +1,119 @@
+/**
+ * DAOVOS Visual Operating System — Architectural Imagery Treatment Modes
+ * Modes: RAW, MONOCHROME, MUTED, MATERIAL, HALFTONE/GRAPHIC
+ */
+
+/* ==========================================================================
+   Base Media Container
+   ========================================================================== */
+.daovos-media-frame {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-bg-surface-sunken);
+  border-radius: var(--radius-structural);
+  display: block;
+}
+
+.daovos-media-frame img,
+.daovos-media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter var(--motion-duration-interface) var(--motion-ease-precision),
+              transform var(--motion-duration-editorial) var(--motion-ease-precision);
+}
+
+/* ==========================================================================
+   Treatment 1: RAW
+   Natural architectural clarity, subtle desaturation, enhanced micro-contrast
+   ========================================================================== */
+.treatment-raw img,
+.treatment-raw video {
+  filter: contrast(1.08) brightness(0.96) saturate(0.85);
+}
+
+/* ==========================================================================
+   Treatment 2: MONOCHROME
+   Deep black point, crisp architectural silver midtones, pure contrast
+   ========================================================================== */
+.treatment-monochrome img,
+.treatment-monochrome video {
+  filter: grayscale(100%) contrast(1.22) brightness(0.92);
+}
+
+/* ==========================================================================
+   Treatment 3: MUTED
+   Warm Stone & Soft Concrete tinting, restrained dynamic range
+   ========================================================================== */
+.treatment-muted {
+  position: relative;
+}
+
+.treatment-muted img,
+.treatment-muted video {
+  filter: grayscale(70%) sepia(18%) contrast(0.95) brightness(0.94);
+}
+
+.treatment-muted::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--daovos-color-warm-stone);
+  opacity: 0.12;
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Treatment 4: MATERIAL
+   Tactile micro-grain, heightened structural shadows, industrial sharpness
+   ========================================================================== */
+.treatment-material {
+  position: relative;
+}
+
+.treatment-material img,
+.treatment-material video {
+  filter: grayscale(40%) contrast(1.3) brightness(0.88);
+}
+
+.treatment-material::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(17, 17, 18, 0.25) 1px, transparent 1px);
+  background-size: 4px 4px;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Treatment 5: HALFTONE / GRAPHIC
+   Architectural dot matrix / precision graphic screening
+   ========================================================================== */
+.treatment-halftone {
+  position: relative;
+}
+
+.treatment-halftone img,
+.treatment-halftone video {
+  filter: grayscale(100%) contrast(1.8) brightness(0.9);
+}
+
+.treatment-halftone::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--daovos-color-near-black) 1.2px, transparent 1.2px);
+  background-size: 5px 5px;
+  opacity: 0.45;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Hover Subtle Frame Expansion / Focus */
+.daovos-media-frame:hover img {
+  transform: scale(1.02);
+}

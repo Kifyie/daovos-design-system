@@ -1,0 +1,24 @@
+/**
+ * DAOVOS Visual Operating System — Geometry & Corner Radii
+ */
+
+:root {
+  /* ==========================================================================
+     Restrained Corner Radii Hierarchy
+     ========================================================================== */
+  --radius-none: 0px;        /* Structural grids, containers, dividers, editorial panels */
+  --radius-subtle: 2px;      /* Technical tags, status badges, micro markers */
+  --radius-sm: 4px;          /* Code blocks, metadata chips, small badges */
+  --radius-md: 6px;          /* Standard interactive inputs, selectors, check controls */
+  --radius-interactive: 8px; /* Primary buttons, action triggers */
+  --radius-lg: 12px;         /* Max justified radius — never oversized */
+
+  /* Semantic Mappings */
+  --radius-structural: var(--radius-none);
+  --radius-technical: var(--radius-sm);
+  --radius-control: var(--radius-md);
+}
+
+.radius-structural { border-radius: var(--radius-structural); }
+.radius-technical  { border-radius: var(--radius-technical); }
+.radius-control    { border-radius: var(--radius-control); }

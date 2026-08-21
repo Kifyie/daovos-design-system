@@ -1,0 +1,87 @@
+/**
+ * DAOVOS Visual Operating System — Materiality & Micro-Textures
+ * Paper, Concrete, Metal, Grain, Micro-Grid
+ */
+
+/* ==========================================================================
+   Micro Grain (Imperceptible noise for interface surfaces)
+   ========================================================================== */
+.texture-grain {
+  position: relative;
+}
+
+.texture-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Paper Texture
+   ========================================================================== */
+.texture-paper {
+  position: relative;
+  background-color: var(--daovos-color-bone-white);
+}
+
+.texture-paper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperNoise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' result='noise'/%3E%3CfeDiffuseLighting in='noise' lighting-color='%23fff' surfaceScale='1'%3E%3CfeDistantLight azimuth='45' elevation='60'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperNoise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Concrete Texture
+   ========================================================================== */
+.texture-concrete {
+  position: relative;
+  background-color: var(--daovos-color-soft-concrete);
+}
+
+.texture-concrete::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='concreteNoise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.45' numOctaves='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.4  0 0 0 0 0.4  0 0 0 0 0.4  0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23concreteNoise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Brushed Metal Texture
+   ========================================================================== */
+.texture-metal {
+  position: relative;
+  background-color: var(--daovos-color-slate);
+}
+
+.texture-metal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.015) 0px,
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Architectural Micro-Grid (24px coordinate lattice)
+   ========================================================================== */
+.texture-micro-grid {
+  position: relative;
+  background-image: linear-gradient(to right, var(--color-line-grid) 1px, transparent 1px),
+                    linear-gradient(to bottom, var(--color-line-grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

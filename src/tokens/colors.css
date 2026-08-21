@@ -1,0 +1,89 @@
+/**
+ * DAOVOS Visual Operating System — Color Tokens
+ * Canonical Brand Palette & Semantic Root Mappings
+ */
+
+:root {
+  /* ==========================================================================
+     Canonical Brand Palette
+     ========================================================================== */
+  --daovos-color-bone-white: #F4EEE8;
+  --daovos-color-near-black: #111112;
+  --daovos-color-warm-stone: #ABA6A1;
+  --daovos-color-graphite: #5A5958;
+  --daovos-color-soft-concrete: #C1BBB6;
+  --daovos-color-pure-white: #FFFFFF;
+
+  /* ==========================================================================
+     Interface Neutrals
+     ========================================================================== */
+  --daovos-color-jet-black: #0A0A0A;
+  --daovos-color-charcoal: #171717;
+  --daovos-color-slate: #2B2B2E;
+  --daovos-color-steel: #6B6B6F;
+
+  /* ==========================================================================
+     Semantic Tokens — Default (Bone White Mode)
+     ========================================================================== */
+  --color-bg-primary: var(--daovos-color-bone-white);
+  --color-bg-surface: #EDE6DF;
+  --color-bg-surface-raised: #E5DFD8;
+  --color-bg-surface-sunken: #E0DAD3;
+  --color-bg-inverse: var(--daovos-color-near-black);
+
+  --color-text-primary: var(--daovos-color-near-black);
+  --color-text-secondary: var(--daovos-color-graphite);
+  --color-text-muted: var(--daovos-color-warm-stone);
+  --color-text-tertiary: #8C8782;
+  --color-text-inverse: var(--daovos-color-bone-white);
+
+  --color-border-subtle: rgba(17, 17, 18, 0.12);
+  --color-border-medium: rgba(17, 17, 18, 0.24);
+  --color-border-strong: var(--daovos-color-near-black);
+  --color-border-inverse: rgba(244, 238, 232, 0.2);
+
+  --color-line-grid: rgba(17, 17, 18, 0.07);
+  --color-line-registration: rgba(17, 17, 18, 0.35);
+
+  --color-control-bg: #EDE6DF;
+  --color-control-hover: #E2DBD4;
+  --color-control-active: #D6D0C9;
+  --color-focus-ring: var(--daovos-color-near-black);
+
+  --color-selection-bg: var(--daovos-color-near-black);
+  --color-selection-text: var(--daovos-color-bone-white);
+}
+
+/* ==========================================================================
+   Dark Mode / Inverse Mode (Near Black Environment)
+   ========================================================================== */
+[data-theme="near-black"],
+.theme-dark {
+  --color-bg-primary: var(--daovos-color-near-black);
+  --color-bg-surface: var(--daovos-color-charcoal);
+  --color-bg-surface-raised: var(--daovos-color-slate);
+  --color-bg-surface-sunken: var(--daovos-color-jet-black);
+  --color-bg-inverse: var(--daovos-color-bone-white);
+
+  --color-text-primary: var(--daovos-color-bone-white);
+  --color-text-secondary: var(--daovos-color-soft-concrete);
+  --color-text-muted: var(--daovos-color-warm-stone);
+  --color-text-tertiary: var(--daovos-color-steel);
+  --color-text-inverse: var(--daovos-color-near-black);
+
+  --color-border-subtle: rgba(244, 238, 232, 0.12);
+  --color-border-medium: rgba(244, 238, 232, 0.24);
+  --color-border-strong: var(--daovos-color-bone-white);
+  --color-border-inverse: rgba(17, 17, 18, 0.2);
+
+  --color-line-grid: rgba(244, 238, 232, 0.06);
+  --color-line-registration: rgba(244, 238, 232, 0.35);
+
+  --color-control-bg: var(--daovos-color-charcoal);
+  --color-control-hover: var(--daovos-color-slate);
+  --color-control-active: #38383D;
+  --color-focus-ring: var(--daovos-color-bone-white);
+
+  --color-selection-bg: var(--daovos-color-bone-white);
+  --color-selection-text: var(--daovos-color-near-black);
+}
