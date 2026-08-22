@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { DaovosHero } from './components/hero';
 import {
   DaovosSymbol,
   DaovosWordmark,
@@ -63,11 +64,14 @@ import { gridTokens } from './tokens/grid';
 import { geometryTokens } from './tokens/geometry';
 import { motionTokens } from './tokens/motion';
 
-import { Copy, Check, Eye, Sun, Moon, MoveRight, Layers, Sliders, Play, Code } from 'lucide-react';
+import { Copy, Check, Eye, Sun, Moon, MoveRight, Layers, Sliders, Play, Code, Compass, ArrowLeft } from 'lucide-react';
 
 export default function App() {
+  // Mode: 'website' (Default Hero Section) | 'specimen' (Design System Workbench)
+  const [viewMode, setViewMode] = useState('website');
+
   // Global System State
-  const [theme, setTheme] = useState('bone-white'); // 'bone-white' | 'near-black'
+  const [theme, setTheme] = useState('near-black'); // Default to Near Black for the architectural hero
   const [gridOverlay, setGridOverlay] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [activeChapter, setActiveChapter] = useState('brand');
@@ -127,6 +131,16 @@ export default function App() {
     { id: 'export', number: '12', title: 'Tokens & Export' }
   ];
 
+  // Primary Website Hero View
+  if (viewMode === 'website') {
+    return (
+      <main className="daovos-website-root" style={{ minHeight: '100vh', backgroundColor: '#0a0a0c' }}>
+        <DaovosHero onSpecimenClick={() => setViewMode('specimen')} />
+      </main>
+    );
+  }
+
+  // Design System Specimen View
   return (
     <div className="daovos-vos-app" style={{ minHeight: '100vh', paddingBottom: 'var(--space-32)' }}>
       {/* Grid Overlay */}
@@ -145,12 +159,26 @@ export default function App() {
         }}
       >
         <div className="flex-row justify-between items-center" style={{ maxWidth: 'var(--grid-max-width)', margin: '0 auto' }}>
-          {/* Logo & System Lockup */}
+          {/* Logo & Back to Hero */}
           <div className="flex-row items-center gap-4">
-            <DaovosLockup symbolSize={28} wordmarkWidth={110} />
+            <button
+              onClick={() => setViewMode('website')}
+              className="type-micro mono flex-row items-center gap-1 radius-subtle"
+              style={{
+                padding: '6px 10px',
+                backgroundColor: 'var(--color-bg-inverse)',
+                color: 'var(--color-text-inverse)',
+                border: '1px solid var(--color-border-strong)',
+                cursor: 'pointer'
+              }}
+            >
+              <ArrowLeft size={12} />
+              <span>RETURN TO HERO</span>
+            </button>
             <div className="line-divider-vertical" style={{ height: '20px' }} />
+            <DaovosLockup symbolSize={26} wordmarkWidth={105} />
             <div className="flex-row items-center gap-2">
-              <span className="type-micro mono text-muted">VISUAL OPERATING SYSTEM</span>
+              <span className="type-micro mono text-muted">DESIGN SYSTEM</span>
               <Label size="micro" variant="solid" indicator="live">v1.0.0 SPECIMEN</Label>
             </div>
           </div>
@@ -260,14 +288,11 @@ export default function App() {
           ))}
         </div>
 
-        {/* ==========================================================================
-           CHAPTER 01: BRAND & GEOMETRIC FOUNDATION
-           ========================================================================== */}
+        {/* CHAPTER 01: BRAND & GEOMETRIC FOUNDATION */}
         <section id="chapter-brand" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="01" title="BRAND CHARACTER & GEOMETRIC FOUNDATION" tag="CANONICAL VECTORS" />
 
           <div style={{ marginTop: 'var(--space-6)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-6)' }}>
-            {/* Brand Manifesto */}
             <div className="surface-raised flex-col gap-4" style={{ padding: 'var(--space-6)' }}>
               <span className="type-micro text-muted">BRAND SYNTHESIS & QUALITIES</span>
               <p className="type-body-l text-primary font-medium" style={{ lineHeight: 1.4 }}>
@@ -282,7 +307,6 @@ export default function App() {
               </div>
             </div>
 
-            {/* Authoritative Vector Artwork */}
             <div className="surface-raised flex-col justify-between" style={{ padding: 'var(--space-6)' }}>
               <span className="type-micro text-muted">AUTHORITATIVE BRAND ARTWORK</span>
               <div className="flex-row items-center justify-between" style={{ padding: 'var(--space-4) 0' }}>
@@ -305,19 +329,15 @@ export default function App() {
             </div>
           </div>
 
-          {/* Interactive 6-Module Motion Laboratory */}
           <div style={{ marginTop: 'var(--space-6)' }}>
             <Symbol6ModuleExplorer />
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 02: CANONICAL COLOR SYSTEM
-           ========================================================================== */}
+        {/* CHAPTER 02: CANONICAL COLOR SYSTEM */}
         <section id="chapter-colors" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="02" title="COLOR SYSTEM & MATERIAL CONTRAST" tag="CANONICAL PALETTE" />
 
-          {/* Canonical Palette Swatches */}
           <div style={{ marginTop: 'var(--space-6)' }}>
             <span className="type-micro text-muted">CANONICAL BRAND PALETTE</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 'var(--space-3)', marginTop: 'var(--space-2)' }}>
@@ -329,8 +349,7 @@ export default function App() {
                   style={{
                     padding: '12px',
                     border: '1px solid var(--color-border-subtle)',
-                    cursor: 'pointer',
-                    transition: 'transform var(--motion-duration-micro) var(--motion-ease-precision)'
+                    cursor: 'pointer'
                   }}
                   title={`Click to copy ${col.hex}`}
                 >
@@ -353,7 +372,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* Interface Neutrals Swatches */}
           <div style={{ marginTop: 'var(--space-6)' }}>
             <span className="type-micro text-muted">INTERFACE NEUTRALS</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 'var(--space-3)', marginTop: 'var(--space-2)' }}>
@@ -388,7 +406,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* Notification for Copied Swatch */}
           {copiedToken && (
             <div
               className="surface-inverse radius-technical flex-row items-center gap-2"
@@ -407,13 +424,10 @@ export default function App() {
           )}
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 03: RESPONSIVE TYPOGRAPHY
-           ========================================================================== */}
+        {/* CHAPTER 03: RESPONSIVE TYPOGRAPHY */}
         <section id="chapter-typography" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="03" title="TYPOGRAPHY SPECIMEN & SCALE LADDER" tag="FLUID CLAMP MATRIX" />
 
-          {/* Live Text Input Tester */}
           <div className="surface-sunken flex-row items-center gap-3" style={{ padding: '12px 16px', margin: 'var(--space-6) 0', border: '1px solid var(--color-border-subtle)' }}>
             <span className="type-micro text-muted mono">TEST INPUT:</span>
             <input
@@ -433,7 +447,6 @@ export default function App() {
             />
           </div>
 
-          {/* Type Scale Ladder */}
           <div className="flex-col gap-4">
             {Object.entries(typographyTokens).map(([key, t]) => (
               <div
@@ -453,7 +466,6 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Sample Rendering */}
                 <div className={`type-${key.replace(/([A-Z])/g, '-$1').toLowerCase()} text-primary`} style={{ textWrap: 'balance', margin: '4px 0' }}>
                   {testText}
                 </div>
@@ -463,14 +475,11 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 04: SPACING SYSTEM & 8PX VERTICAL RHYTHM
-           ========================================================================== */}
+        {/* CHAPTER 04: SPACING SYSTEM */}
         <section id="chapter-spacing" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="04" title="SPACING SYSTEM & 8PX VERTICAL RHYTHM" tag="X = 8PX" />
 
           <div style={{ marginTop: 'var(--space-6)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-6)' }}>
-            {/* Spacing Ruler Chart */}
             <div className="surface-raised flex-col gap-2" style={{ padding: 'var(--space-6)' }}>
               <span className="type-micro text-muted">8PX BASELINE SCALE (X = 8PX)</span>
               <div className="flex-col gap-2" style={{ marginTop: '8px' }}>
@@ -494,7 +503,6 @@ export default function App() {
               </div>
             </div>
 
-            {/* Semantic Section Rules */}
             <div className="surface-raised flex-col justify-between" style={{ padding: 'var(--space-6)' }}>
               <div>
                 <span className="type-micro text-muted">SEMANTIC SECTION SPACING</span>
@@ -518,13 +526,10 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 05: RESPONSIVE GRID & ASYMMETRY
-           ========================================================================== */}
+        {/* CHAPTER 05: RESPONSIVE GRID */}
         <section id="chapter-grid" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="05" title="RESPONSIVE GRID & DISCIPLINED ASYMMETRY" tag="12 / 8 / 4 COLUMNS" />
 
-          {/* Asymmetric Formula Selector */}
           <div className="flex-row items-center gap-2" style={{ margin: 'var(--space-6) 0' }}>
             <span className="type-micro text-muted mono">ASYMMETRIC FORMULAS:</span>
             {gridTokens.asymmetricFormulas.map((f) => (
@@ -544,7 +549,6 @@ export default function App() {
             ))}
           </div>
 
-          {/* Live Asymmetric Layout Preview */}
           <div className="surface-raised" style={{ padding: 'var(--space-6)', border: '1px solid var(--color-border-subtle)' }}>
             <Grid asymmetric={activeGridAsym}>
               <div className="surface-sunken flex-col justify-between" style={{ padding: 'var(--space-6)', minHeight: '220px', border: '1px solid var(--color-border-subtle)' }}>
@@ -571,14 +575,11 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 06: STRUCTURAL LINES & GEOMETRY
-           ========================================================================== */}
+        {/* CHAPTER 06: STRUCTURAL LINES */}
         <section id="chapter-lines" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="06" title="STRUCTURAL LINES & REGISTRATION MARKS" tag="1PX ARCHITECTURAL HAIRLINES" />
 
           <div style={{ marginTop: 'var(--space-6)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-6)' }}>
-            {/* Divider Variations */}
             <div className="surface-raised flex-col gap-4" style={{ padding: 'var(--space-6)' }}>
               <span className="type-micro text-muted">DIVIDER & HAIRLINE TAXONOMY</span>
 
@@ -603,7 +604,6 @@ export default function App() {
               </div>
             </div>
 
-            {/* Geometry Radii Matrix */}
             <div className="surface-raised flex-col justify-between" style={{ padding: 'var(--space-6)' }}>
               <div>
                 <span className="type-micro text-muted">RESTRAINED GEOMETRY & RADII</span>
@@ -623,13 +623,10 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 07: IMAGERY & MATERIALITY STUDIO
-           ========================================================================== */}
+        {/* CHAPTER 07: IMAGERY & MATERIALS */}
         <section id="chapter-imagery" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="07" title="IMAGERY LANGUAGE & MATERIALITY STUDIO" tag="NORMALIZED SHADERS" />
 
-          {/* Treatment Mode Switcher */}
           <div className="flex-row items-center gap-2" style={{ margin: 'var(--space-6) 0' }}>
             <span className="type-micro text-muted mono">IMAGE TREATMENT MODES:</span>
             {['raw', 'monochrome', 'muted', 'material', 'halftone'].map((t) => (
@@ -649,7 +646,6 @@ export default function App() {
             ))}
           </div>
 
-          {/* Image Treatment Grid */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--space-6)' }}>
             <Media
               src="/images/specimens/hero.jpeg"
@@ -674,7 +670,6 @@ export default function App() {
             />
           </div>
 
-          {/* Procedural Material Textures */}
           <div style={{ marginTop: 'var(--space-8)' }}>
             <span className="type-micro text-muted">PROCEDURAL MATERIAL TEXTURES</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 'var(--space-4)', marginTop: 'var(--space-3)' }}>
@@ -698,13 +693,10 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 08: GEOMETRIC ICONOGRAPHY
-           ========================================================================== */}
+        {/* CHAPTER 08: ICONOGRAPHY */}
         <section id="chapter-icons" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="08" title="UNIFIED GEOMETRIC ICONOGRAPHY" tag="24X24 LINE ICONS" />
 
-          {/* Icon Controls */}
           <div className="surface-raised flex-row justify-between items-center gap-4" style={{ padding: '12px 16px', margin: 'var(--space-6) 0', border: '1px solid var(--color-border-subtle)' }}>
             <div className="flex-row items-center gap-3">
               <span className="type-micro text-muted mono">SEARCH:</span>
@@ -749,7 +741,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* Icon Grid */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 'var(--space-3)' }}>
             {iconLibrary
               .filter((i) => i.name.toLowerCase().includes(iconSearch.toLowerCase()) || i.category.toLowerCase().includes(iconSearch.toLowerCase()))
@@ -777,13 +768,10 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 09: SYSTEM PRIMITIVES & CONTROLS
-           ========================================================================== */}
+        {/* CHAPTER 09: PRIMITIVES & CONTROLS */}
         <section id="chapter-primitives" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="09" title="SYSTEM PRIMITIVES & INTERACTIVE CONTROLS" tag="INTERACTION MATRIX" />
 
-          {/* Buttons Matrix */}
           <div style={{ marginTop: 'var(--space-6)' }}>
             <span className="type-micro text-muted">BUTTON TAXONOMY & HOVER KINETICS</span>
             <div className="surface-raised flex-row items-center gap-4" style={{ padding: 'var(--space-6)', marginTop: 'var(--space-2)', flexWrap: 'wrap' }}>
@@ -795,7 +783,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* Form Controls Matrix */}
           <div style={{ marginTop: 'var(--space-6)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-6)' }}>
             <div className="surface-raised flex-col gap-4" style={{ padding: 'var(--space-6)' }}>
               <span className="type-micro text-muted">INPUTS & SELECTORS</span>
@@ -859,13 +846,10 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 10: EDITORIAL MODULES
-           ========================================================================== */}
+        {/* CHAPTER 10: EDITORIAL MODULES */}
         <section id="chapter-editorial" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="10" title="EDITORIAL COMPOSITION MODULES" tag="METADATA & LEDGERS" />
 
-          {/* Display Heading Preview */}
           <div className="surface-raised" style={{ padding: 'var(--space-6)', marginTop: 'var(--space-6)' }}>
             <DisplayHeading
               index="CHAPTER // 10"
@@ -875,7 +859,6 @@ export default function App() {
             />
           </div>
 
-          {/* Technical Metadata Ledger */}
           <div style={{ marginTop: 'var(--space-6)' }}>
             <MetadataTable
               title="PROJECT TELEMETRY SPECIFICATION"
@@ -894,7 +877,6 @@ export default function App() {
             />
           </div>
 
-          {/* Technical Leaderboard Ticker */}
           <div style={{ marginTop: 'var(--space-6)' }}>
             <TechnicalLeaderboard
               metrics={[
@@ -907,18 +889,14 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 11: MOTION LABORATORY
-           ========================================================================== */}
+        {/* CHAPTER 11: MOTION LABORATORY */}
         <section id="chapter-motion" style={{ marginBottom: 'var(--space-24)' }}>
           <SectionIndex number="11" title="KINETIC & MOTION LABORATORY" tag="BEZIER EASINGS & REVEALS" />
 
-          {/* Easing Curves Visualizer */}
           <div style={{ marginTop: 'var(--space-6)' }}>
             <EasingCurvesVisualizer />
           </div>
 
-          {/* Text Mask & Line Reveal Demonstration */}
           <div className="surface-raised" style={{ padding: 'var(--space-6)', marginTop: 'var(--space-6)' }}>
             <div className="flex-row justify-between items-center" style={{ marginBottom: 'var(--space-4)' }}>
               <span className="type-micro text-muted">ARCHITECTURAL TEXT MASK REVEAL (NO GENERIC FADE-UP)</span>
@@ -949,19 +927,15 @@ export default function App() {
             </div>
           </div>
 
-          {/* Page Transition Simulator */}
           <div style={{ marginTop: 'var(--space-6)' }}>
             <PageTransitionDemo />
           </div>
         </section>
 
-        {/* ==========================================================================
-           CHAPTER 12: CODE & TOKEN EXPORT
-           ========================================================================== */}
+        {/* CHAPTER 12: CODE & TOKEN EXPORT */}
         <section id="chapter-export" style={{ marginBottom: 'var(--space-12)' }}>
           <SectionIndex number="12" title="DESIGN TOKENS & SYSTEM CODE EXPORT" tag="READY FOR CONSUMPTION" />
 
-          {/* Export Format Selector */}
           <div className="flex-row items-center gap-2" style={{ margin: 'var(--space-6) 0' }}>
             <span className="type-micro text-muted mono">EXPORT FORMAT:</span>
             {['css', 'json', 'tailwind'].map((fmt) => (
@@ -981,7 +955,6 @@ export default function App() {
             ))}
           </div>
 
-          {/* Code Viewer */}
           <div className="surface-sunken radius-structural" style={{ border: '1px solid var(--color-border-subtle)', overflow: 'hidden' }}>
             <div className="flex-row justify-between items-center" style={{ padding: '12px 16px', borderBottom: '1px solid var(--color-border-subtle)', backgroundColor: 'var(--color-bg-surface-raised)' }}>
               <span className="type-micro mono text-primary">
