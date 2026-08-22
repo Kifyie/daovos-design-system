@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 /**
  * DAOVOS Hero Top Navigation Bar
- * Matches the reference layout: Left Brand, Centered Navigation, Right Action Button.
+ * Matches the reference layout across full-bleed width.
  */
 export const HeroNavbar = ({ onSpecimenClick }) => {
   return (
@@ -12,9 +12,10 @@ export const HeroNavbar = ({ onSpecimenClick }) => {
       className="hero-navbar flex-row justify-between items-center"
       style={{
         width: '100%',
-        padding: '24px 36px',
+        padding: '28px clamp(24px, 5vw, 64px)',
         position: 'relative',
-        zIndex: 50
+        zIndex: 50,
+        boxSizing: 'border-box'
       }}
     >
       {/* Left: Brand Lockup */}

@@ -7,131 +7,103 @@ import { HeroBottomLeft } from './HeroBottomLeft';
 import { HeroFeatureCard } from './HeroFeatureCard';
 
 /**
- * DAOVOS Master Hero Section
- * Fully synthesized from the DAOVOS Visual Operating System
- * and faithfully referencing the composition from the uploaded design.
+ * DAOVOS Master Full-Page Hero Section
+ * Fully synthesized from the DAOVOS Visual Operating System,
+ * matching the reference composition across 100% viewport width and height.
  */
 export const DaovosHero = ({ onSpecimenClick }) => {
   return (
     <section
-      className="daovos-hero-section"
+      className="daovos-hero-section texture-grain"
       style={{
+        width: '100vw',
         minHeight: '100vh',
-        backgroundColor: '#0a0a0c',
+        height: '100vh',
+        backgroundColor: '#0c0c0f',
+        color: 'var(--daovos-color-bone-white)',
         display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 'clamp(16px, 3vw, 40px)',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
         position: 'relative',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        boxSizing: 'border-box'
       }}
     >
-      {/* Deep Ambient Background Glow */}
+      {/* 1. Deep Ambient Radial Atmosphere & Vignette */}
       <div
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(circle at 50% 50%, rgba(130, 60, 220, 0.08) 0%, rgba(10, 10, 12, 0.95) 70%)',
-          pointerEvents: 'none'
+          background: 'radial-gradient(ellipse at 50% 50%, rgba(142, 68, 240, 0.09) 0%, rgba(12, 12, 15, 0.96) 75%)',
+          pointerEvents: 'none',
+          zIndex: 1
         }}
       />
 
-      {/* Main Architectural Showcase Card Frame (Matching Reference) */}
+      {/* 2. Top Navigation Bar (Full Bleed) */}
+      <HeroNavbar onSpecimenClick={onSpecimenClick} />
+
+      {/* 3. Middle Visual Core (Backdrop Typography + 3D Extruded Logo + Accent Overlays) */}
       <div
-        className="hero-stage-card texture-grain"
+        className="hero-visual-core"
         style={{
-          width: '100%',
-          maxWidth: '1380px',
-          minHeight: '820px',
-          height: '88vh',
-          backgroundColor: '#121215',
-          borderRadius: '32px',
-          border: '1px solid rgba(244, 238, 232, 0.08)',
-          boxShadow: '0 30px 80px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.08)',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
+          flex: 1,
           position: 'relative',
-          overflow: 'hidden',
-          padding: '0 0 clamp(24px, 4vw, 44px) 0'
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '100%',
+          overflow: 'visible'
         }}
       >
-        {/* Subtle Ambient Vignette & Internal Lighting */}
+        {/* Layer A: Monumental Backdrop Text */}
+        <HeroBackdropText text="DAOVOS" />
+
+        {/* Layer B: Centerpiece 3D Extruded Logo (WebGL Three.js) */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'radial-gradient(ellipse at 50% 45%, rgba(158, 71, 255, 0.06) 0%, rgba(18, 18, 21, 0.85) 75%)',
-            pointerEvents: 'none',
-            zIndex: 1
-          }}
-        />
-
-        {/* 1. Top Navigation Bar */}
-        <HeroNavbar onSpecimenClick={onSpecimenClick} />
-
-        {/* 2. Middle Visual Core (Backdrop Typography + 3D Extruded Logo + Accent Overlays) */}
-        <div
-          className="hero-visual-core"
-          style={{
-            flex: 1,
-            position: 'relative',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: '100%',
-            overflow: 'visible'
+            zIndex: 10
           }}
         >
-          {/* Layer A: Monumental Backdrop Text */}
-          <HeroBackdropText text="DAOVOS" />
-
-          {/* Layer B: Centerpiece 3D Extruded Logo (WebGL Three.js) */}
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              zIndex: 10
-            }}
-          >
-            <Logo3DCanvas style={{ width: '100%', height: '100%', maxHeight: '560px' }} />
-          </div>
-
-          {/* Layer C: Expressive Calligraphic Accent Layer (Overlapping 3D Centerpiece) */}
-          <HeroAccentOverlay
-            leftText="MODERN"
-            rightText="ARMOR"
-            subText="Created for scale."
-          />
+          <Logo3DCanvas style={{ width: '100%', height: '100%', maxHeight: '640px' }} />
         </div>
 
-        {/* 3. Bottom Row: Specifications Narrative + Floating Feature Card */}
-        <div
-          className="hero-bottom-row flex-row justify-between items-end"
-          style={{
-            padding: '0 clamp(24px, 4vw, 48px)',
-            position: 'relative',
-            zIndex: 30,
-            width: '100%',
-            boxSizing: 'border-box'
-          }}
-        >
-          {/* Bottom-Left Narrative */}
-          <HeroBottomLeft
-            title="LIMITED ALLOCATION"
-            description="Own the next-generation digital system engineered for architectural precision, modular reliability and monumental scale."
-          />
+        {/* Layer C: Expressive Calligraphic Accent Layer (Overlapping 3D Centerpiece) */}
+        <HeroAccentOverlay
+          leftText="MODERN"
+          rightText="ARMOR"
+          subText="Created for scale."
+        />
+      </div>
 
-          {/* Bottom-Right Elevated Card */}
-          <HeroFeatureCard
-            title="THIS MONTH'S EXCLUSIVE"
-            description="Pre-order now and unlock exclusive private architectural frameworks for enterprise scale."
-            actionText="See more info"
-          />
-        </div>
+      {/* 4. Bottom Row: Specifications Narrative + Floating Feature Card */}
+      <div
+        className="hero-bottom-row flex-row justify-between items-end"
+        style={{
+          padding: '0 clamp(24px, 5vw, 64px) clamp(24px, 4vh, 48px)',
+          position: 'relative',
+          zIndex: 30,
+          width: '100%',
+          boxSizing: 'border-box'
+        }}
+      >
+        {/* Bottom-Left Narrative */}
+        <HeroBottomLeft
+          title="LIMITED ALLOCATION"
+          description="Own the next-generation digital system engineered for architectural precision, modular reliability and monumental scale."
+        />
+
+        {/* Bottom-Right Elevated Card */}
+        <HeroFeatureCard
+          title="THIS MONTH'S EXCLUSIVE"
+          description="Pre-order now and unlock exclusive private architectural frameworks for enterprise scale."
+          actionText="See more info"
+        />
       </div>
     </section>
   );

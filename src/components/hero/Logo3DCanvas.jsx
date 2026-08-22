@@ -5,10 +5,10 @@ import * as THREE from 'three';
  * DAOVOS 3D Extruded Logo Engine
  * High-precision WebGL extruded 6-module emblem using Three.js.
  * Features:
- * - Direct mathematical extrusion of the 6 canonical rectangular modules
+ * - Mathematical extrusion of the 6 canonical rectangular modules
  * - Chamfered architectural bevels
- * - Dark Titanium / Obsidian PBR material with metallic sheen
- * - Studio key/fill/rim lighting setup
+ * - Brushed Titanium & Obsidian metallic PBR material
+ * - Multi-point studio lighting with high-contrast specular reflections
  * - Mouse parallax tilt & smooth harmonic levitation
  */
 export const Logo3DCanvas = ({ className = '', style = {} }) => {
@@ -18,22 +18,26 @@ export const Logo3DCanvas = ({ className = '', style = {} }) => {
     const container = containerRef.current;
     if (!container) return;
 
-    const width = container.clientWidth || 600;
-    const height = container.clientHeight || 600;
+    const width = container.clientWidth || window.innerWidth;
+    const height = container.clientHeight || window.innerHeight;
 
     // Scene setup
     const scene = new THREE.Scene();
 
     // Camera setup
-    const camera = new THREE.PerspectiveCamera(38, width / height, 0.1, 1000);
-    camera.position.set(0, 0, 480);
+    const camera = new THREE.PerspectiveCamera(34, width / height, 0.1, 1000);
+    camera.position.set(0, 0, 490);
 
     // Renderer setup
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      alpha: true,
+      powerPreference: 'high-performance'
+    });
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.3;
+    renderer.toneMappingExposure = 1.45;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     container.appendChild(renderer.domElement);
@@ -54,24 +58,24 @@ export const Logo3DCanvas = ({ className = '', style = {} }) => {
 
     const extrudeSettings = {
       steps: 1,
-      depth: 32,
+      depth: 36,
       bevelEnabled: true,
-      bevelThickness: 3.5,
-      bevelSize: 2.5,
+      bevelThickness: 4.0,
+      bevelSize: 3.0,
       bevelOffset: 0,
-      bevelSegments: 4
+      bevelSegments: 5
     };
 
-    // Dark Titanium / Architectural Obsidian Material
+    // Refined Brushed Titanium / Obsidian Material (Sculpted highlights & metallic sheen)
     const material = new THREE.MeshPhysicalMaterial({
-      color: 0x18181b,
-      emissive: 0x050508,
-      roughness: 0.28,
-      metalness: 0.92,
-      clearcoat: 0.6,
-      clearcoatRoughness: 0.18,
-      reflectivity: 0.9,
-      specularColor: new THREE.Color(0xf4eee8)
+      color: 0x363640,
+      emissive: 0x08080c,
+      roughness: 0.22,
+      metalness: 0.88,
+      clearcoat: 0.75,
+      clearcoatRoughness: 0.12,
+      reflectivity: 0.95,
+      specularColor: new THREE.Color(0xffffff)
     });
 
     const datumX = 511.5;
@@ -92,12 +96,11 @@ export const Logo3DCanvas = ({ className = '', style = {} }) => {
       shape.closePath();
 
       const geometry = new THREE.ExtrudeGeometry(shape, extrudeSettings);
-      geometry.center(); // Center individual module or keep aligned
-      
-      // Calculate real offset relative to datum
+      geometry.center();
+
       const mesh = new THREE.Mesh(geometry, material);
-      const posX = (x0 + w / 2);
-      const posY = (y0 - h / 2);
+      const posX = x0 + w / 2;
+      const posY = y0 - h / 2;
       mesh.position.set(posX, posY, 0);
       mesh.castShadow = true;
       mesh.receiveShadow = true;
@@ -105,45 +108,41 @@ export const Logo3DCanvas = ({ className = '', style = {} }) => {
       logoGroup.add(mesh);
     });
 
-    // Lighting Setup
-    // Key Light (Warm architectural white)
-    const keyLight = new THREE.DirectionalLight(0xfff2e6, 3.8);
-    keyLight.position.set(120, 180, 260);
+    // Enhanced Studio Multi-Point Lighting
+    // 1. Key Light (Warm sculptural light from top-right)
+    const keyLight = new THREE.DirectionalLight(0xfff6ed, 4.5);
+    keyLight.position.set(160, 220, 300);
     scene.add(keyLight);
 
-    // Rim / Backlight (Cool silver edge light)
-    const rimLight = new THREE.DirectionalLight(0xccddff, 4.5);
-    rimLight.position.set(-180, -120, -180);
+    // 2. Cool Rim Light (Sharp silver backlight from bottom-left)
+    const rimLight = new THREE.DirectionalLight(0xb0c8ff, 6.0);
+    rimLight.position.set(-220, -160, -200);
     scene.add(rimLight);
 
-    // Top Specular Light
-    const topLight = new THREE.DirectionalLight(0xffffff, 2.5);
-    topLight.position.set(0, 300, 100);
+    // 3. Top Specular Glint Light
+    const topLight = new THREE.DirectionalLight(0xffffff, 3.8);
+    topLight.position.set(0, 350, 140);
     scene.add(topLight);
 
-    // Subtle Front Fill Light
-    const fillLight = new THREE.PointLight(0xf4eee8, 1.8, 800);
-    fillLight.position.set(0, 0, 300);
+    // 4. Subtle Front Fill Light for Facet Definition
+    const fillLight = new THREE.PointLight(0xf4eee8, 2.5, 900);
+    fillLight.position.set(0, 40, 360);
     scene.add(fillLight);
 
-    // Ambient Lighting
-    const ambientLight = new THREE.AmbientLight(0x1a1a1f, 1.2);
+    // 5. Ambient Base Light
+    const ambientLight = new THREE.AmbientLight(0x282832, 1.4);
     scene.add(ambientLight);
 
-    // Mouse Tracking & Parallax
-    let mouseX = 0;
-    let mouseY = 0;
-    let targetRotationX = 0.12; // Slight default dynamic tilt
+    // Initial slight dynamic tilt
+    let targetRotationX = 0.12;
     let targetRotationY = -0.22;
 
     const handleMouseMove = (e) => {
       const rect = container.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
       const y = (e.clientY - rect.top) / rect.height - 0.5;
-      mouseX = x;
-      mouseY = y;
-      targetRotationY = x * 0.85;
-      targetRotationX = -y * 0.65;
+      targetRotationY = x * 0.95;
+      targetRotationX = -y * 0.75;
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -162,20 +161,20 @@ export const Logo3DCanvas = ({ className = '', style = {} }) => {
 
     // Animation Loop
     let animationFrameId;
-    let clock = new THREE.Clock();
+    const clock = new THREE.Clock();
 
     const animate = () => {
       animationFrameId = requestAnimationFrame(animate);
       const elapsedTime = clock.getElapsedTime();
 
-      // Gentle floating levitation oscillation
-      logoGroup.position.y = Math.sin(elapsedTime * 1.4) * 8;
-      logoGroup.position.z = Math.cos(elapsedTime * 1.1) * 6;
+      // Smooth floating harmonic levitation
+      logoGroup.position.y = Math.sin(elapsedTime * 1.5) * 7;
+      logoGroup.position.z = Math.cos(elapsedTime * 1.2) * 5;
 
-      // Smooth damped rotation towards mouse position + harmonic sway
-      logoGroup.rotation.x += (targetRotationX + Math.sin(elapsedTime * 0.8) * 0.04 - logoGroup.rotation.x) * 0.06;
-      logoGroup.rotation.y += (targetRotationY + Math.cos(elapsedTime * 0.7) * 0.06 - logoGroup.rotation.y) * 0.06;
-      logoGroup.rotation.z = -logoGroup.rotation.y * 0.15;
+      // Damped lerp rotation tracking
+      logoGroup.rotation.x += (targetRotationX + Math.sin(elapsedTime * 0.8) * 0.035 - logoGroup.rotation.x) * 0.07;
+      logoGroup.rotation.y += (targetRotationY + Math.cos(elapsedTime * 0.7) * 0.045 - logoGroup.rotation.y) * 0.07;
+      logoGroup.rotation.z = -logoGroup.rotation.y * 0.18;
 
       renderer.render(scene, camera);
     };
@@ -201,7 +200,6 @@ export const Logo3DCanvas = ({ className = '', style = {} }) => {
       style={{
         width: '100%',
         height: '100%',
-        minHeight: '480px',
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
