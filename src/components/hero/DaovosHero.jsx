@@ -59,7 +59,7 @@ export const DaovosHero = ({ onSpecimenClick }) => {
         {/* Layer A: Monumental Backdrop Text */}
         <HeroBackdropText text="DAOVOS" />
 
-        {/* Layer B: Centerpiece 3D Extruded Logo (WebGL Three.js) */}
+        {/* Layer B: Centerpiece 3D Extruded Logo (WebGL Three.js scaled proportionally) */}
         <div
           style={{
             position: 'absolute',
@@ -70,7 +70,7 @@ export const DaovosHero = ({ onSpecimenClick }) => {
             zIndex: 10
           }}
         >
-          <Logo3DCanvas style={{ width: '100%', height: '100%', maxHeight: '640px' }} />
+          <Logo3DCanvas scale={0.62} style={{ width: '100%', height: '100%', maxHeight: '520px' }} />
         </div>
 
         {/* Layer C: Expressive Calligraphic Accent Layer (Overlapping 3D Centerpiece) */}
