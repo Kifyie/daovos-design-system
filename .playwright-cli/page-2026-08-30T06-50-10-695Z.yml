@@ -1,0 +1,179 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e10]:
+        - generic: DIGITAL
+        - generic [ref=f1e12]:
+          - generic [ref=f1e13]: THE PROMISE
+          - heading "WE TURN IT" [level=2] [ref=f1e14]:
+            - generic [ref=f1e16]:
+              - generic [ref=f1e17]: W
+              - generic [ref=f1e18]: E
+              - generic [ref=f1e19]: T
+              - generic [ref=f1e20]: U
+              - generic [ref=f1e21]: R
+              - generic [ref=f1e22]: "N"
+              - generic [ref=f1e23]: I
+              - generic [ref=f1e24]: T
+          - heading "DIGITAL." [level=2] [ref=f1e25]:
+            - generic [ref=f1e27]:
+              - generic [ref=f1e28]: D
+              - generic [ref=f1e29]: I
+              - generic [ref=f1e30]: G
+              - generic [ref=f1e31]: I
+              - generic [ref=f1e32]: T
+              - generic [ref=f1e33]: A
+              - generic [ref=f1e34]: L
+              - generic [ref=f1e35]: .
+      - region "What DAOVOS makes" [ref=f1e36]:
+        - generic [ref=f1e38]:
+          - generic [ref=f1e39]: 02 // WHAT WE MAKE
+          - generic [ref=f1e41]:
+            - generic [ref=f1e42]: DAOVOS
+            - article [ref=f1e43]:
+              - paragraph [ref=f1e44]: 01 / DIGITAL HOMES
+              - heading "CUSTOM WEBSITES" [level=2] [ref=f1e45]: CUSTOMWEBSITES
+              - generic [ref=f1e46]: A complete digital home shaped around the brand, its audience, and the way it needs to grow.
+            - figure "AUDIENCE / STRUCTURE / GROWTH" [ref=f1e47]:
+              - img "Layered audience and growth radar visualization" [ref=f1e48]
+            - generic [ref=f1e64]: DISTINCT BY DESIGN / NEVER FROM A TEMPLATE
+            - article [ref=f1e65]:
+              - paragraph [ref=f1e66]: 02 / ONE DECISIVE ROUTE
+              - heading [level=2] [ref=f1e67]:
+                - text: GET
+                - emphasis [ref=f1e68]: FOCUSED
+              - generic [ref=f1e69]: One message. One audience. One measurable action.
+            - generic [ref=f1e70]: "001"
+            - figure "ATTENTION → ACTION" [ref=f1e71]:
+              - img "Abstract folded perspective planes" [ref=f1e72]
+            - blockquote [ref=f1e82]: “Every element keeps the eye moving toward one clear decision.”
+            - generic [ref=f1e83]:
+              - img "Campaign signal and response scatter visualization" [ref=f1e84]
+              - generic [ref=f1e111]: CAMPAIGN SIGNAL / RESPONSE
+            - generic [ref=f1e112]: LANDING EXPERIENCES / ONE ROUTE
+            - article [ref=f1e113]:
+              - paragraph [ref=f1e114]: 03 / DISCOVERY TO PURCHASE
+              - heading "COMMERCE SYSTEMS" [level=2] [ref=f1e115]: COMMERCESYSTEMS
+              - generic [ref=f1e116]: Catalogue, product detail, and checkout read as one continuous experience.
+            - generic [ref=f1e117]: "002"
+            - figure "DISCOVER → DECIDE → PURCHASE" [ref=f1e118]:
+              - img "Discovery to purchase flow visualization" [ref=f1e119]
+            - generic [ref=f1e135]: DISCOVER / DECIDE / PURCHASE / RETURN
+            - article [ref=f1e136]:
+              - paragraph [ref=f1e137]: 04 / ORGANIZED FOR USE
+              - heading [level=2] [ref=f1e138]:
+                - text: MAKE
+                - emphasis [ref=f1e139]: COMPLEXITY
+                - text: CLEAR
+              - generic [ref=f1e140]: Responsive interfaces turn dense content and behavior into a product people understand.
+            - figure "CONTENT / HIERARCHY / RESPONSE" [ref=f1e141]:
+              - img "Responsive interface hierarchy visualization" [ref=f1e142]
+            - generic [ref=f1e159]: "003"
+            - generic [ref=f1e160]: INTERFACE SYSTEMS / CLEAR AT EVERY SCALE
+            - article [ref=f1e161]:
+              - paragraph [ref=f1e162]: 05 / THE SYSTEM STAYS LIVE
+              - heading "CARE + OPTIMIZATION" [level=2] [ref=f1e163]: CARE +OPTIMIZATION
+              - generic [ref=f1e164]: Long-term technical care keeps the experience fast, current, and dependable after launch.
+            - figure "LIVE / CURRENT / DEPENDABLE" [ref=f1e165]:
+              - img "Continuous optimization vortex pattern" [ref=f1e166]
+            - generic [ref=f1e192]: BUILD / LAUNCH / LEARN / IMPROVE
+            - article [ref=f1e193]:
+              - paragraph [ref=f1e194]: THE DAOVOS SYSTEM
+              - heading [level=2] [ref=f1e195]:
+                - text: Design.Build.
+                - emphasis [ref=f1e196]: Keep moving.
+              - generic [ref=f1e197]: Five capabilities. One connected digital experience.
+        - region "Start a project with DAOVOS" [ref=f1e198]:
+          - generic [ref=f1e199]:
+            - generic [ref=f1e200]:
+              - generic [ref=f1e201]: 03 // PROJECT INPUT
+              - generic [ref=f1e203]:
+                - paragraph [ref=f1e204]: THE STARTING POINT
+                - heading "YOU BRING THE IDEA." [level=2] [ref=f1e205]:
+                  - generic [ref=f1e206]: YOU BRING
+                  - generic [ref=f1e208]: THE IDEA.
+                - paragraph [ref=f1e210]: Ambition, context, and a reason to make something unmistakably yours.
+              - generic [ref=f1e211]: IDEA / AMBITION / CONTEXT
+            - generic [ref=f1e212]:
+              - generic [ref=f1e213]: DAOVOS / PROJECT OUTPUT
+              - generic [ref=f1e215]:
+                - paragraph [ref=f1e216]: THE BUILT RESPONSE
+                - heading "WE BUILD THE EXPERIENCE." [level=2] [ref=f1e217]:
+                  - generic [ref=f1e218]: WE BUILD
+                  - generic [ref=f1e220]: THE EXPERIENCE.
+              - generic [ref=f1e222]: DESIGN / DEVELOPMENT / CARE
+  - button [ref=f1e231] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

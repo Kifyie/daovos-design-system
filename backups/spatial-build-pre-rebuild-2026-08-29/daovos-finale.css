@@ -1,0 +1,365 @@
+/** DAOVOS finale — field capture, shutter close, brand resolution. */
+
+.finale-root {
+  position: relative;
+  z-index: 62;
+  color: #ede6df;
+  background-color: #0a0a0c;
+}
+
+.finale-stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 680px;
+  overflow: hidden;
+  background-color: #0a0a0c;
+  isolation: isolate;
+}
+
+.finale-field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(237, 230, 223, 0.2);
+  border-bottom: 1px solid rgba(237, 230, 223, 0.2);
+  will-change: transform, opacity;
+}
+
+.finale-prelude {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.finale-prelude span {
+  color: #aba6a1;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.finale-prelude strong {
+  color: #ede6df;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+}
+
+.finale-shutter {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  height: 50.1%;
+  background-color: #ede6df;
+  will-change: transform;
+}
+
+.finale-shutter--top {
+  top: 0;
+  border-bottom: 1px solid rgba(17, 17, 18, 0.24);
+}
+
+.finale-shutter--bottom {
+  bottom: 0;
+  border-top: 1px solid rgba(17, 17, 18, 0.24);
+}
+
+.finale-seal {
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  color: #111112;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.finale-chrome,
+.finale-footer {
+  position: absolute;
+  right: clamp(24px, 5vw, 64px);
+  left: clamp(24px, 5vw, 64px);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-6);
+  color: #5a5958;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.finale-chrome {
+  top: clamp(24px, 4vh, 40px);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(17, 17, 18, 0.2);
+}
+
+.finale-footer {
+  bottom: clamp(24px, 4vh, 40px);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(17, 17, 18, 0.2);
+}
+
+.finale-wordmark-wrap {
+  position: absolute;
+  top: clamp(96px, 13vh, 128px);
+  right: clamp(24px, 5vw, 64px);
+  left: clamp(24px, 5vw, 64px);
+  z-index: 2;
+  color: #111112;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.finale-wordmark-wrap svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 28vh;
+}
+
+.finale-resolution {
+  position: absolute;
+  right: clamp(24px, 5vw, 64px);
+  bottom: clamp(124px, 16vh, 164px);
+  left: clamp(24px, 5vw, 64px);
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(280px, 5fr);
+  align-items: end;
+  gap: var(--space-12);
+}
+
+.finale-title-line {
+  overflow: hidden;
+}
+
+.finale-title-line > span {
+  display: block;
+  font-family: var(--font-family-display);
+  font-size: clamp(4rem, 2.2rem + 5vw, 9rem);
+  font-weight: 600;
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+  will-change: transform;
+}
+
+.finale-title-line:last-child > span {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(17, 17, 18, 0.9);
+}
+
+.finale-invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: var(--space-2);
+}
+
+.finale-invitation-label {
+  color: #5a5958;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.finale-invitation p {
+  max-width: 36em;
+  margin: var(--space-4) 0 var(--space-6);
+  color: #2b2b2e;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.finale-project-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-4) 0;
+  color: #111112;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-decoration: none;
+  border-top: 1px solid #111112;
+  border-bottom: 1px solid #111112;
+}
+
+.finale-project-link:focus-visible {
+  outline: 2px solid #111112;
+  outline-offset: 5px;
+}
+
+.finale-project-link i {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.finale-reveal {
+  will-change: transform, opacity;
+}
+
+.finale-register {
+  position: absolute;
+  top: 50%;
+  right: clamp(16px, 2vw, 28px);
+  z-index: 3;
+  display: flex;
+  gap: var(--space-3);
+  color: #5a5958;
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%);
+}
+
+.finale-register-item {
+  display: inline-flex;
+  gap: var(--space-2);
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.finale-register-item i {
+  color: #111112;
+  font-style: normal;
+}
+
+.finale-seam {
+  position: absolute;
+  top: 50%;
+  right: clamp(24px, 5vw, 64px);
+  left: clamp(24px, 5vw, 64px);
+  z-index: 1;
+  height: 1px;
+  background-color: rgba(17, 17, 18, 0.18);
+  will-change: transform;
+}
+
+.finale-static .finale-stage {
+  background-color: #ede6df;
+}
+
+.finale-static .finale-field,
+.finale-static .finale-prelude,
+.finale-static .finale-shutter {
+  display: none;
+}
+
+.finale-static .finale-seal,
+.finale-static .finale-wordmark-wrap,
+.finale-static .finale-register-item,
+.finale-static .finale-reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.finale-static .finale-title-line > span {
+  transform: none !important;
+}
+
+@media (max-width: 900px) {
+  .finale-stage {
+    min-height: 660px;
+  }
+
+  .finale-chrome,
+  .finale-footer {
+    right: var(--space-6);
+    left: var(--space-6);
+    font-size: 6px;
+  }
+
+  .finale-chrome {
+    top: var(--space-6);
+  }
+
+  .finale-footer {
+    bottom: var(--space-6);
+  }
+
+  .finale-chrome > :last-child,
+  .finale-footer > :first-child {
+    display: none;
+  }
+
+  .finale-footer {
+    justify-content: flex-end;
+  }
+
+  .finale-wordmark-wrap {
+    top: 88px;
+    right: var(--space-6);
+    left: var(--space-6);
+  }
+
+  .finale-wordmark-wrap svg {
+    max-height: 20vh;
+  }
+
+  .finale-resolution {
+    right: var(--space-6);
+    bottom: 84px;
+    left: var(--space-6);
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .finale-title-line > span {
+    font-size: clamp(3.3rem, 17vw, 6rem);
+  }
+
+  .finale-invitation p {
+    margin: var(--space-3) 0 var(--space-4);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .finale-register {
+    display: none;
+  }
+
+  .finale-seam {
+    right: var(--space-6);
+    left: var(--space-6);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .finale-stage {
+    background-color: #ede6df;
+  }
+
+  .finale-field,
+  .finale-prelude,
+  .finale-shutter {
+    display: none;
+  }
+
+  .finale-seal,
+  .finale-wordmark-wrap,
+  .finale-register-item,
+  .finale-reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+
+  .finale-title-line > span {
+    transform: none !important;
+  }
+}

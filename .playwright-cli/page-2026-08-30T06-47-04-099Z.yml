@@ -1,0 +1,230 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: 00—01
+        - generic [ref=e303]:
+          - generic: DATUM 00 // GRID REGISTERED
+          - navigation [ref=e311]:
+            - generic [ref=e331]:
+              - link "01Studio" [ref=e332] [cursor=pointer]:
+                - /url: "#studio"
+              - link "02Who We Are" [ref=e333] [cursor=pointer]:
+                - /url: "#whoweare"
+              - link "03Process" [ref=e334] [cursor=pointer]:
+                - /url: "#process"
+              - link "04Recognition" [ref=e335] [cursor=pointer]:
+                - /url: "#recognition"
+              - button "Specimen" [ref=e336] [cursor=pointer]
+          - generic [ref=e337]:
+            - generic:
+              - generic:
+                - heading "DAOVOS" [level=1]
+            - generic [ref=e339] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: D
+                        - generic: I
+                        - generic: G
+                        - generic: I
+                        - generic: T
+                        - generic: A
+                        - generic: L
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: S
+                      - generic: "Y"
+                      - generic: S
+                      - generic: T
+                      - generic: E
+                      - generic: M
+                      - generic: S
+          - generic [ref=e341]:
+            - generic [ref=e343]:
+              - generic [ref=e344]: 01 // INTRO
+              - heading "ARCHITECTURAL DIGITAL SYSTEMS" [level=3] [ref=e347]
+              - paragraph [ref=e348]: DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - heading "ACCEPTING NEW COMMISSIONS" [level=4] [ref=e354]
+                - paragraph [ref=e355]: Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.
+              - generic [ref=e356] [cursor=pointer]: Start a project
+          - generic: SCROLL
+        - generic [ref=e381]:
+          - generic [ref=e382]: STUDIO
+          - generic [ref=e383]:
+            - generic [ref=e384]: WHO WE ARE
+            - generic [ref=e386]: 01 / 04
+          - generic [ref=e387]:
+            - generic [ref=e388]: THE STUDIO
+            - paragraph [ref=e389]: NOT AN AGENCY.
+            - paragraph [ref=e390]: A DIGITAL STUDIO.
+          - generic [ref=e391]: NEXT SECTION // 01
+      - generic [ref=e395]:
+        - generic [ref=e396]: WHO WE ARE
+        - generic [ref=e398]:
+          - generic [ref=e399]: "01"
+          - generic [ref=e400]: / 04
+      - region "What DAOVOS makes" [ref=e402]:
+        - generic [ref=e404]:
+          - generic [ref=e405]:
+            - generic [ref=e406]: 02 // WHAT WE MAKE
+            - generic [ref=e407]: ONE CONTINUOUS SERVICE FIELD
+          - generic [ref=e408]:
+            - generic [ref=e409]: DAOVOS
+            - article [ref=e410]:
+              - paragraph [ref=e411]: 01 / DIGITAL HOMES
+              - heading "CUSTOM WEBSITES" [level=2] [ref=e412]: CUSTOMWEBSITES
+              - generic [ref=e413]: A complete digital home shaped around the brand, its audience, and the way it needs to grow.
+            - figure "AUDIENCE / STRUCTURE / GROWTH" [ref=e414]:
+              - img "Layered audience and growth radar visualization" [ref=e415]
+            - generic [ref=e431]: DISTINCT BY DESIGN / NEVER FROM A TEMPLATE
+            - article [ref=e432]:
+              - paragraph [ref=e433]: 02 / ONE DECISIVE ROUTE
+              - heading [level=2] [ref=e434]:
+                - text: GET
+                - emphasis [ref=e435]: FOCUSED
+              - generic [ref=e436]: One message. One audience. One measurable action.
+            - generic [ref=e437]: "001"
+            - figure "ATTENTION → ACTION" [ref=e438]:
+              - img "Abstract folded perspective planes" [ref=e439]
+            - blockquote [ref=e449]: “Every element keeps the eye moving toward one clear decision.”
+            - generic [ref=e450]:
+              - img "Campaign signal and response scatter visualization" [ref=e451]
+              - generic [ref=e478]: CAMPAIGN SIGNAL / RESPONSE
+            - generic [ref=e479]: LANDING EXPERIENCES / ONE ROUTE
+            - article [ref=e480]:
+              - paragraph [ref=e481]: 03 / DISCOVERY TO PURCHASE
+              - heading "COMMERCE SYSTEMS" [level=2] [ref=e482]: COMMERCESYSTEMS
+              - generic [ref=e483]: Catalogue, product detail, and checkout read as one continuous experience.
+            - generic [ref=e484]: "002"
+            - figure "DISCOVER → DECIDE → PURCHASE" [ref=e485]:
+              - img "Discovery to purchase flow visualization" [ref=e486]
+            - generic [ref=e502]: DISCOVER / DECIDE / PURCHASE / RETURN
+            - article [ref=e503]:
+              - paragraph [ref=e504]: 04 / ORGANIZED FOR USE
+              - heading [level=2] [ref=e505]:
+                - text: MAKE
+                - emphasis [ref=e506]: COMPLEXITY
+                - text: CLEAR
+              - generic [ref=e507]: Responsive interfaces turn dense content and behavior into a product people understand.
+            - figure "CONTENT / HIERARCHY / RESPONSE" [ref=e508]:
+              - img "Responsive interface hierarchy visualization" [ref=e509]
+            - generic [ref=e526]: "003"
+            - generic [ref=e527]: INTERFACE SYSTEMS / CLEAR AT EVERY SCALE
+            - article [ref=e528]:
+              - paragraph [ref=e529]: 05 / THE SYSTEM STAYS LIVE
+              - heading "CARE + OPTIMIZATION" [level=2] [ref=e530]: CARE +OPTIMIZATION
+              - generic [ref=e531]: Long-term technical care keeps the experience fast, current, and dependable after launch.
+            - figure "LIVE / CURRENT / DEPENDABLE" [ref=e532]:
+              - img "Continuous optimization vortex pattern" [ref=e533]
+            - generic [ref=e559]: BUILD / LAUNCH / LEARN / IMPROVE
+            - article [ref=e560]:
+              - paragraph [ref=e561]: THE DAOVOS SYSTEM
+              - heading [level=2] [ref=e562]:
+                - text: Design.Build.
+                - emphasis [ref=e563]: Keep moving.
+              - generic [ref=e564]: Five capabilities. One connected digital experience.
+        - region "Start a project with DAOVOS" [ref=e565]:
+          - generic [ref=e566]:
+            - generic [ref=e567]:
+              - generic [ref=e568]:
+                - generic [ref=e569]: 03 // PROJECT INPUT
+                - generic [ref=e570]: YOU / THE IDEA
+              - generic [ref=e571]:
+                - paragraph [ref=e572]: THE STARTING POINT
+                - heading "YOU BRING THE IDEA." [level=2] [ref=e573]:
+                  - generic [ref=e574]: YOU BRING
+                  - generic [ref=e576]: THE IDEA.
+                - paragraph [ref=e578]: Ambition, context, and a reason to make something unmistakably yours.
+              - generic [ref=e579]: IDEA / AMBITION / CONTEXT
+            - generic [ref=e580]:
+              - generic [ref=e581]:
+                - generic [ref=e582]: DAOVOS / PROJECT OUTPUT
+                - generic [ref=e583]: INTAKE / OPEN
+              - generic [ref=e584]:
+                - paragraph [ref=e585]: THE BUILT RESPONSE
+                - heading "WE BUILD THE EXPERIENCE." [level=2] [ref=e586]:
+                  - generic [ref=e587]: WE BUILD
+                  - generic [ref=e589]: THE EXPERIENCE.
+              - generic [ref=e591]: DESIGN / DEVELOPMENT / CARE
+  - button [ref=e600] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

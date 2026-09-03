@@ -1,0 +1,231 @@
+/**
+ * DAOVOS — WHO WE ARE v6 ("The Manifesto Pin")
+ * Pinned scrubbed statement sequence. Horizontal dossier lives separately.
+ * Dark monolith world. Zero shadows, hairlines, Precision easing, 8px scale.
+ */
+
+/* ==========================================================================
+   Section shell
+   ========================================================================== */
+
+.who-root {
+  position: relative;
+  z-index: 60;
+  display: flow-root;
+  color: #ede6df;
+}
+
+/* ==========================================================================
+   Pinned manifesto stage
+   ========================================================================== */
+
+.who-pin {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0a0a0c;
+}
+
+.who-ether {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* Top-weighted fade + radial boundary kill (no canvas rectangle) */
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 96%), radial-gradient(ellipse 80% 90% at 50% 42%, black 55%, transparent 97%);
+  mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 96%), radial-gradient(ellipse 80% 90% at 50% 42%, black 55%, transparent 97%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
+/* Ghost words — monumental outlined echoes behind the statements */
+.who-ghost {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.who-ghost-word {
+  position: absolute;
+  font-family: var(--font-family-display);
+  font-weight: 600;
+  font-size: clamp(6rem, 22vw, 22rem);
+  letter-spacing: -0.02em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(237, 230, 223, 0.35);
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Progress rail */
+.who-rail {
+  position: absolute;
+  left: clamp(20px, 3.5vw, 48px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.who-rail-label {
+  writing-mode: vertical-rl;
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  font-weight: 600;
+  color: #6b6b6f;
+}
+
+.who-rail-track {
+  position: relative;
+  width: 1px;
+  height: 180px;
+  background-color: rgba(237, 230, 223, 0.14);
+}
+
+.who-rail-fill {
+  position: absolute;
+  inset: 0;
+  background-color: #ede6df;
+  transform-origin: top center;
+}
+
+.who-counter {
+  position: relative;
+  height: 14px;
+  width: 44px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #ede6df;
+}
+
+.who-counter-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.who-counter-total {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #6b6b6f;
+}
+
+/* Statement slides */
+.who-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who-slide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+  padding: 0 clamp(24px, 6vw, 96px);
+}
+
+.who-slide-label {
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  font-weight: 600;
+  color: #aba6a1;
+  margin-bottom: var(--space-3);
+}
+
+.who-slide-line {
+  margin: 0;
+  color: #f4eee8;
+  font-family: var(--font-family-display);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  font-size: clamp(2.6rem, 1.4rem + 5.4vw, 6.75rem);
+}
+
+.who-slide-accent {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(237, 230, 223, 0.9);
+}
+
+/* ==========================================================================
+   Reduced motion — static fallback (no pin, first statement visible)
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .who-pin {
+    height: auto;
+    padding: var(--space-32) 0;
+  }
+
+  .who-stage {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .who-slide {
+    position: relative;
+    opacity: 1;
+  }
+
+  .who-slide:not(:first-child) {
+    display: none;
+  }
+
+  .who-ghost,
+  .who-rail {
+    display: none;
+  }
+
+}
+
+/* ==========================================================================
+   Reduced-motion static fallback (JS adds .who-static to .who-root)
+   ========================================================================== */
+
+.who-static .who-slide {
+  position: relative;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.who-static .who-slide + .who-slide {
+  margin-top: var(--space-12);
+}
+
+.who-static .who-slide-label,
+.who-static .who-counter-num {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .who-rail {
+    display: none;
+  }
+
+  .who-slide-line {
+    font-size: clamp(2.2rem, 1.2rem + 5vw, 4.5rem);
+  }
+
+}

@@ -2,41 +2,27 @@ import React from 'react';
 
 /**
  * DAOVOS Hero Backdrop Monumental Typography
- * Spans the background behind the 3D extruded logo with subtle architectural gradient fade.
+ * Rendered in bespoke 'Calentha'. Gradient + drift/sheen animation live in
+ * hero.css (.hero-backdrop-title) so background-position can animate.
+ * Parallax depth via .hero-parallax-deep (moves opposite the display type).
  */
 export const HeroBackdropText = ({ text = 'DAOVOS' }) => {
   return (
     <div
-      className="hero-backdrop-text-container"
+      className="hero-parallax-deep"
       style={{
         position: 'absolute',
-        top: '46%',
+        top: '50%',
         left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '92%',
+        width: '100%',
         textAlign: 'center',
         userSelect: 'none',
         pointerEvents: 'none',
-        zIndex: 5
+        zIndex: 5,
+        overflow: 'visible'
       }}
     >
-      <h1
-        style={{
-          fontFamily: 'var(--font-family-display)',
-          fontSize: 'clamp(5rem, 16vw, 17rem)',
-          fontWeight: 700,
-          letterSpacing: '0.04em',
-          lineHeight: 0.85,
-          textTransform: 'uppercase',
-          margin: 0,
-          background: 'linear-gradient(180deg, rgba(244, 238, 232, 0.22) 0%, rgba(244, 238, 232, 0.04) 75%, rgba(244, 238, 232, 0.0) 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          filter: 'drop-shadow(0 2px 20px rgba(0,0,0,0.4))'
-        }}
-      >
-        {text}
-      </h1>
+      <h1 className="hero-backdrop-title">{text}</h1>
     </div>
   );
 };

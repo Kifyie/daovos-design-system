@@ -1,0 +1,342 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: 00—01
+        - generic [ref=e303]:
+          - generic: DATUM 00 // GRID REGISTERED
+          - navigation [ref=e311]:
+            - generic [ref=e331]:
+              - link "01Studio" [ref=e332] [cursor=pointer]:
+                - /url: "#studio"
+              - link "02Who We Are" [ref=e333] [cursor=pointer]:
+                - /url: "#whoweare"
+              - link "03Process" [ref=e334] [cursor=pointer]:
+                - /url: "#process"
+              - link "04Recognition" [ref=e335] [cursor=pointer]:
+                - /url: "#recognition"
+              - button "Specimen" [ref=e336] [cursor=pointer]
+          - generic [ref=e337]:
+            - generic:
+              - generic:
+                - heading "DAOVOS" [level=1]
+            - generic [ref=e339] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: D
+                        - generic: I
+                        - generic: G
+                        - generic: I
+                        - generic: T
+                        - generic: A
+                        - generic: L
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: S
+                      - generic: "Y"
+                      - generic: S
+                      - generic: T
+                      - generic: E
+                      - generic: M
+                      - generic: S
+          - generic [ref=e341]:
+            - generic [ref=e343]:
+              - generic [ref=e344]: 01 // INTRO
+              - heading "ARCHITECTURAL DIGITAL SYSTEMS" [level=3] [ref=e347]
+              - paragraph [ref=e348]: DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - heading "ACCEPTING NEW COMMISSIONS" [level=4] [ref=e354]
+                - paragraph [ref=e355]: Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.
+              - generic [ref=e356] [cursor=pointer]: Start a project
+          - generic: SCROLL
+        - generic [ref=e381]:
+          - generic [ref=e382]: STUDIO
+          - generic [ref=e383]:
+            - generic [ref=e384]: WHO WE ARE
+            - generic [ref=e386]: 01 / 04
+          - generic [ref=e387]:
+            - generic [ref=e388]: THE STUDIO
+            - paragraph [ref=e389]: NOT AN AGENCY.
+            - paragraph [ref=e390]: A DIGITAL STUDIO.
+          - generic [ref=e391]: NEXT SECTION // 01
+      - generic [ref=e395]:
+        - generic [ref=e396]: WHO WE ARE
+        - generic [ref=e398]:
+          - generic [ref=e399]: "01"
+          - generic [ref=e400]: / 04
+      - region "What DAOVOS makes" [ref=e402]:
+        - generic [ref=e404]:
+          - generic [ref=e405]: ONE CONTINUOUS SERVICE FIELD
+          - generic [ref=e407]:
+            - generic [ref=e408]: DAOVOS
+            - article [ref=e409]:
+              - paragraph [ref=e410]:
+                - generic [ref=e411]: "0"
+                - generic [ref=e412]: "1"
+                - generic [ref=e413]: /
+                - generic [ref=e414]: D
+                - generic [ref=e415]: I
+                - generic [ref=e416]: G
+                - generic [ref=e417]: I
+                - generic [ref=e418]: T
+                - generic [ref=e419]: A
+                - generic [ref=e420]: L
+                - generic [ref=e421]: H
+                - generic [ref=e422]: O
+                - generic [ref=e423]: M
+                - generic [ref=e424]: E
+                - generic [ref=e425]: S
+              - heading "CUSTOM WEBSITES" [level=2] [ref=e426]:
+                - generic [ref=e427]: CUSTOM
+                - generic [ref=e428]: WEBSITES
+              - generic [ref=e429]: A complete digital home shaped around the brand, its audience, and the way it needs to grow.
+            - figure [ref=e430]:
+              - generic [ref=e431]:
+                - img "Monumental architectural facade organized by a strict structural grid" [ref=e433]
+                - generic:
+                  - generic: BUILT
+                  - generic: TO BELONG
+                - generic [ref=e491]: STRUCTURE / IDENTITY / SCALE
+            - generic [ref=e492]: DISTINCT BY DESIGN / NEVER FROM A TEMPLATE
+            - article [ref=e493]:
+              - paragraph [ref=e494]:
+                - generic [ref=e495]: "0"
+                - generic [ref=e496]: "2"
+                - generic [ref=e497]: /
+                - generic [ref=e498]: O
+                - generic [ref=e499]: "N"
+                - generic [ref=e500]: E
+                - generic [ref=e501]: D
+                - generic [ref=e502]: E
+                - generic [ref=e503]: C
+                - generic [ref=e504]: I
+                - generic [ref=e505]: S
+                - generic [ref=e506]: I
+                - generic [ref=e507]: V
+                - generic [ref=e508]: E
+                - generic [ref=e509]: R
+                - generic [ref=e510]: O
+                - generic [ref=e511]: U
+                - generic [ref=e512]: T
+                - generic [ref=e513]: E
+              - heading "GET FOCUSED" [level=2] [ref=e514]:
+                - generic [ref=e515]: GET
+                - emphasis [ref=e517]: FOCUSED
+              - generic [ref=e518]: One message. One audience. One measurable action.
+            - generic [ref=e519]: "001"
+            - figure [ref=e520]:
+              - generic [ref=e521]:
+                - img "A single figure held inside a focused beam of light" [ref=e523]
+                - generic:
+                  - generic: ONE
+                  - generic: CLEAR MOVE
+            - blockquote "“Every element keeps the eye moving toward one clear decision.”" [ref=e568]:
+              - generic [ref=e569]: “Every
+              - generic [ref=e570]: element
+              - generic [ref=e571]: keeps
+              - generic [ref=e572]: the
+              - generic [ref=e573]: toward
+              - generic [ref=e574]: one
+              - generic [ref=e575]: clear
+              - generic [ref=e576]: decision.”
+            - generic [ref=e577]: INTO ACTION
+            - article [ref=e606]:
+              - paragraph [ref=e607]:
+                - generic [ref=e608]: "0"
+                - generic [ref=e609]: "3"
+                - generic [ref=e610]: /
+                - generic [ref=e611]: D
+                - generic [ref=e612]: I
+                - generic [ref=e613]: S
+                - generic [ref=e614]: C
+                - generic [ref=e615]: O
+                - generic [ref=e616]: V
+                - generic [ref=e617]: E
+                - generic [ref=e618]: T
+                - generic [ref=e619]: O
+                - generic [ref=e620]: P
+                - generic [ref=e621]: U
+                - generic [ref=e622]: R
+                - generic [ref=e623]: C
+                - generic [ref=e624]: H
+                - generic [ref=e625]: A
+                - generic [ref=e626]: S
+                - generic [ref=e627]: E
+              - heading "COMMERCE SYSTEMS" [level=2] [ref=e628]:
+                - generic: COMMERCE
+                - generic [ref=e629]: SYSTEMS
+            - generic [ref=e630]: "002"
+            - figure [ref=e631]:
+              - generic [ref=e632]:
+                - img "A rigorously organized retail system displayed across modular shelves" [ref=e634]
+                - generic: TO CARE
+            - article [ref=e703]:
+              - paragraph [ref=e704]:
+                - generic [ref=e705]: "4"
+                - generic [ref=e706]: /
+                - generic [ref=e707]: O
+                - generic [ref=e708]: R
+                - generic [ref=e709]: G
+                - generic [ref=e710]: A
+                - generic [ref=e711]: "N"
+                - generic [ref=e712]: I
+                - generic [ref=e713]: Z
+                - generic [ref=e714]: E
+                - generic [ref=e715]: D
+                - generic [ref=e716]: F
+                - generic [ref=e717]: O
+                - generic [ref=e718]: R
+                - generic [ref=e719]: U
+                - generic [ref=e720]: S
+                - generic [ref=e721]: E
+              - heading "COMPLEXITY CLEAR" [level=2] [ref=e722]:
+                - emphasis [ref=e724]: COMPLEXITY
+                - generic [ref=e725]: CLEAR
+            - figure [ref=e726]:
+              - generic [ref=e727]:
+                - img "An abstract signal field reorganized into a responsive visual system" [ref=e729]
+                - generic:
+                  - generic: ORDER
+                  - generic: THE COMPLEX
+            - generic [ref=e742]: "003"
+            - article [ref=e743]:
+              - paragraph [ref=e744]:
+                - generic [ref=e745]: "0"
+                - generic [ref=e746]: "5"
+                - generic [ref=e747]: /
+                - generic [ref=e748]: T
+                - generic [ref=e749]: H
+                - generic [ref=e750]: E
+                - generic [ref=e751]: S
+                - generic [ref=e752]: "Y"
+                - generic [ref=e753]: S
+                - generic [ref=e754]: T
+                - generic [ref=e755]: E
+                - generic [ref=e756]: M
+                - generic [ref=e757]: S
+                - generic [ref=e758]: T
+                - generic [ref=e759]: A
+                - generic [ref=e760]: "Y"
+                - generic [ref=e761]: S
+                - generic [ref=e762]: L
+                - generic [ref=e763]: I
+                - generic [ref=e764]: V
+              - heading "CARE + OPTIMIZATION" [level=2] [ref=e765]:
+                - generic: CARE +
+                - generic [ref=e766]: OPTIMIZATION
+            - figure [ref=e767]:
+              - generic [ref=e768]:
+                - img "A dense technical infrastructure kept connected and operational" [ref=e770]
+                - generic: IN MOTION
+            - article [ref=e794]:
+              - paragraph [ref=e795]:
+                - generic [ref=e796]: T
+                - generic [ref=e797]: H
+                - generic [ref=e798]: E
+                - generic [ref=e799]: D
+                - generic [ref=e800]: A
+                - generic [ref=e801]: O
+                - generic [ref=e802]: V
+                - generic [ref=e803]: S
+                - generic [ref=e804]: S
+                - generic [ref=e805]: "Y"
+                - generic [ref=e806]: S
+                - generic [ref=e807]: T
+                - generic [ref=e808]: E
+                - generic [ref=e809]: M
+              - heading "Build. Keep moving." [level=2] [ref=e810]:
+                - generic [ref=e811]: Build.
+                - emphasis [ref=e813]: Keep moving.
+        - region "Start a project with DAOVOS" [ref=e814]:
+          - generic [ref=e815]:
+            - generic [ref=e818]:
+              - paragraph: THE STARTING POINT
+              - heading "YOU BRING THE IDEA." [level=2] [ref=e819]:
+                - generic [ref=e820]: YOU BRING
+                - generic [ref=e822]: THE IDEA.
+            - generic [ref=e826]:
+              - paragraph: THE BUILT RESPONSE
+              - heading "WE BUILD THE EXPERIENCE." [level=2] [ref=e827]:
+                - generic [ref=e828]: WE BUILD
+                - generic [ref=e830]: THE EXPERIENCE.
+  - button [ref=e840] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

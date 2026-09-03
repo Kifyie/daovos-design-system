@@ -1,0 +1,229 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: 00—01
+        - generic [ref=e303]:
+          - generic: DATUM 00 // GRID REGISTERED
+          - navigation [ref=e311]:
+            - generic [ref=e331]:
+              - link "01Studio" [ref=e332] [cursor=pointer]:
+                - /url: "#studio"
+              - link "02Who We Are" [ref=e333] [cursor=pointer]:
+                - /url: "#whoweare"
+              - link "03Process" [ref=e334] [cursor=pointer]:
+                - /url: "#process"
+              - link "04Recognition" [ref=e335] [cursor=pointer]:
+                - /url: "#recognition"
+              - button "Specimen" [ref=e336] [cursor=pointer]
+          - generic [ref=e337]:
+            - generic:
+              - generic:
+                - heading "DAOVOS" [level=1]
+            - generic [ref=e339] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: D
+                        - generic: I
+                        - generic: G
+                        - generic: I
+                        - generic: T
+                        - generic: A
+                        - generic: L
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: S
+                      - generic: "Y"
+                      - generic: S
+                      - generic: T
+                      - generic: E
+                      - generic: M
+                      - generic: S
+          - generic [ref=e341]:
+            - generic [ref=e343]:
+              - generic [ref=e344]: 01 // INTRO
+              - heading "ARCHITECTURAL DIGITAL SYSTEMS" [level=3] [ref=e347]
+              - paragraph [ref=e348]: DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - heading "ACCEPTING NEW COMMISSIONS" [level=4] [ref=e354]
+                - paragraph [ref=e355]: Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.
+              - generic [ref=e356] [cursor=pointer]: Start a project
+          - generic: SCROLL
+        - generic [ref=e381]:
+          - generic [ref=e382]: STUDIO
+          - generic [ref=e383]:
+            - generic [ref=e384]: WHO WE ARE
+            - generic [ref=e386]: 01 / 04
+          - generic [ref=e387]:
+            - generic [ref=e388]: THE STUDIO
+            - paragraph [ref=e389]: NOT AN AGENCY.
+            - paragraph [ref=e390]: A DIGITAL STUDIO.
+          - generic [ref=e391]: NEXT SECTION // 01
+      - generic [ref=e395]:
+        - generic [ref=e396]: WHO WE ARE
+        - generic [ref=e398]:
+          - generic [ref=e399]: "01"
+          - generic [ref=e400]: / 04
+      - region "What DAOVOS makes" [ref=e402]:
+        - generic [ref=e404]:
+          - generic [ref=e405]:
+            - generic [ref=e406]: 02 // WHAT WE MAKE
+            - generic [ref=e407]: SCROLL TO MOVE THROUGH THE SYSTEM
+          - generic [ref=e408]:
+            - article [ref=e409]:
+              - generic: DIGITAL HOMES
+              - generic [ref=e410]:
+                - generic [ref=e411]: DAOVOS / SERVICE STATE 01
+                - generic [ref=e412]: 05 SYSTEMS
+              - generic [ref=e413]: "000"
+              - figure [ref=e414]:
+                - generic [ref=e415]: BUILT AROUND YOU
+            - article [ref=e450]:
+              - generic: ONE DECISIVE ROUTE
+              - generic [ref=e451]:
+                - generic [ref=e452]: DAOVOS / SERVICE STATE 02
+                - generic [ref=e453]: 05 SYSTEMS
+              - generic [ref=e454]:
+                - paragraph [ref=e455]: ATTENTION INTO ACTION
+                - heading "LANDING EXPERIENCES" [level=2] [ref=e456]:
+                  - generic [ref=e457]: LANDING
+                  - generic [ref=e459]: EXPERIENCES
+                - paragraph [ref=e461]: Focused launch environments that turn one clear message into one measurable action.
+                - paragraph [ref=e462]: CAMPAIGN / PRODUCT / CONVERSION
+              - generic [ref=e463]: "001"
+              - figure [ref=e464]:
+                - strong [ref=e473]: ONE
+            - article [ref=e475]:
+              - generic: DISCOVERY TO PURCHASE
+              - generic [ref=e476]:
+                - generic [ref=e477]: DAOVOS / SERVICE STATE 03
+                - generic [ref=e478]: 05 SYSTEMS
+              - generic [ref=e479]:
+                - paragraph [ref=e480]: EVERY STEP CONNECTED
+                - heading "COMMERCE SYSTEMS" [level=2] [ref=e481]:
+                  - generic [ref=e482]: COMMERCE
+                  - generic [ref=e484]: SYSTEMS
+                - paragraph [ref=e486]: Storefront systems where catalogue, product detail, and checkout move as one continuous experience.
+                - paragraph [ref=e487]: CATALOGUE / CHECKOUT / RETENTION
+              - generic [ref=e488]: "002"
+              - figure [ref=e489]:
+                - generic [ref=e490]:
+                  - generic [ref=e496]: DISCOVER
+                  - generic [ref=e497]: DECIDE
+                  - generic [ref=e498]: PURCHASE
+            - article [ref=e500]:
+              - generic: COMPLEXITY MADE CLEAR
+              - generic [ref=e501]:
+                - generic [ref=e502]: DAOVOS / SERVICE STATE 04
+                - generic [ref=e503]: 05 SYSTEMS
+              - generic [ref=e504]:
+                - paragraph [ref=e505]: ORGANIZED FOR USE
+                - heading "INTERFACE SYSTEMS" [level=2] [ref=e506]:
+                  - generic [ref=e507]: INTERFACE
+                  - generic [ref=e509]: SYSTEMS
+                - paragraph [ref=e511]: Responsive interfaces that turn dense content and behavior into a product people understand.
+                - paragraph [ref=e512]: UI / UX / DESIGN SYSTEMS
+              - generic [ref=e513]: "003"
+              - figure [ref=e514]:
+                - generic [ref=e515]:
+                  - main [ref=e525]
+                  - generic [ref=e530]: ↗
+            - article [ref=e532]:
+              - generic: KEPT IN MOTION
+              - generic [ref=e533]:
+                - generic [ref=e534]: DAOVOS / SERVICE STATE 05
+                - generic [ref=e535]: 05 SYSTEMS
+              - generic [ref=e536]:
+                - paragraph [ref=e537]: THE SYSTEM STAYS LIVE
+                - heading "CARE + OPTIMIZATION" [level=2] [ref=e538]:
+                  - generic [ref=e539]: CARE +
+                  - generic [ref=e541]: OPTIMIZATION
+                - paragraph [ref=e543]: Long-term technical care keeps the experience fast, current, and dependable after launch.
+                - paragraph [ref=e544]: MAINTENANCE / MOBILE / ITERATION
+              - generic [ref=e545]: "004"
+              - figure [ref=e546]:
+                - generic [ref=e547]: LIVE / CURRENT / DEPENDABLE
+          - generic [ref=e557]:
+            - generic [ref=e558]: DAOVOS / SERVICE INDEX
+            - generic [ref=e560]: 05 STATES
+  - button [ref=e569] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

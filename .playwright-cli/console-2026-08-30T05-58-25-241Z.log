@@ -1,0 +1,7 @@
+[    1543ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=b8c4c292:20102
+[    2338ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[    2440ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:4173/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[  492060ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:4173/src/components/sections/KineticServiceJourney.jsx?t=1788069997289:0
+[  492069ms] [ERROR] [vite] Failed to reload /src/components/sections/KineticServiceJourney.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:881
+[  627667ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:4173/src/components/sections/service-journey.css?t=1788070132892:0
+[  627667ms] [ERROR] [vite] Failed to reload /src/components/sections/service-journey.css. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:881

@@ -1,0 +1,12 @@
+[     625ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:3000/node_modules/.vite/deps/react-dom_client.js?v=b8c4c292:20102
+[    1563ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:3000/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[    1663ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:3000/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[   73395ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:3000/node_modules/.vite/deps/react-dom_client.js?v=b8c4c292:20102
+[   73781ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:3000/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[   73806ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:3000/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[  175298ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:3000/node_modules/.vite/deps/react-dom_client.js?v=b8c4c292:20102
+[  175622ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:3000/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[  175639ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:3000/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[  436631ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:3000/node_modules/.vite/deps/react-dom_client.js?v=b8c4c292:20102
+[  437056ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:3000/node_modules/.vite/deps/three.js?v=b8c4c292:298
+[  437076ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:3000/node_modules/.vite/deps/three.js?v=b8c4c292:298

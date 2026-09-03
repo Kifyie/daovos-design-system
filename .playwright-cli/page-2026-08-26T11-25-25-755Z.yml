@@ -1,0 +1,147 @@
+- generic [active] [ref=f4e1]:
+  - main [ref=f4e3]:
+    - generic [ref=f4e8]:
+      - generic [ref=f4e10]:
+        - generic: IDEA
+        - generic [ref=f4e12]:
+          - generic [ref=f4e13]: THE PROMISE
+          - heading "YOU BRING" [level=2] [ref=f4e14]:
+            - generic [ref=f4e16]:
+              - generic [ref=f4e17]: "Y"
+              - generic [ref=f4e18]: O
+              - generic [ref=f4e19]: U
+              - generic [ref=f4e20]: B
+              - generic [ref=f4e21]: R
+              - generic [ref=f4e22]: I
+              - generic [ref=f4e23]: "N"
+              - generic [ref=f4e24]: G
+          - heading "THE IDEA." [level=2] [ref=f4e25]:
+            - generic [ref=f4e27]:
+              - generic [ref=f4e28]: T
+              - generic [ref=f4e29]: H
+              - generic [ref=f4e30]: E
+              - generic [ref=f4e31]: I
+              - generic [ref=f4e32]: D
+              - generic [ref=f4e33]: E
+              - generic [ref=f4e34]: A
+              - generic [ref=f4e35]: .
+      - generic [ref=f4e37]:
+        - generic [ref=f4e38]:
+          - generic [ref=f4e39]: 01 // WHO WE ARE
+          - generic [ref=f4e41]: "DAOVOS DIGITAL STUDIO — SECTOR: WEB"
+        - generic [ref=f4e42]:
+          - generic [ref=f4e43]:
+            - generic [ref=f4e45]: MICZYNZ
+            - paragraph [ref=f4e46]:
+              - generic [ref=f4e47]: Make high-quality digital experiences
+              - generic [ref=f4e48]: accessible — strong design, modern
+              - generic [ref=f4e49]: technology, a simple client experience.
+          - generic [ref=f4e50]:
+            - generic [ref=f4e52]: VIASSP
+            - paragraph [ref=f4e53]:
+              - generic [ref=f4e54]: Grow from a web agency into a recognizable
+              - generic [ref=f4e55]: digital company providing everything a
+              - generic [ref=f4e56]: modern brand needs to build, launch, and
+              - generic [ref=f4e57]: grow online.
+          - generic [ref=f4e58]:
+            - generic [ref=f4e60]: PRTZTIZ
+            - paragraph [ref=f4e61]:
+              - generic [ref=f4e62]: You bring the idea. Daovos turns it into a
+              - generic [ref=f4e63]: digital experience.
+        - generic [ref=f4e65]:
+          - generic [ref=f4e66]:
+            - generic [ref=f4e67]: WEB DESIGN
+            - generic [ref=f4e69]: DEVELOPMENT
+            - generic [ref=f4e71]: LANDING PAGES
+            - generic [ref=f4e73]: E-COMMERCE
+            - generic [ref=f4e75]: UI/UX
+            - generic [ref=f4e77]: REDESIGNS
+            - generic [ref=f4e79]: MAINTENANCE
+            - generic [ref=f4e81]: MOBILE OPTIMIZATION
+          - generic [ref=f4e83]:
+            - generic [ref=f4e84]: WEB DESIGN
+            - generic [ref=f4e86]: DEVELOPMENT
+            - generic [ref=f4e88]: LANDING PAGES
+            - generic [ref=f4e90]: E-COMMERCE
+            - generic [ref=f4e92]: UI/UX
+            - generic [ref=f4e94]: REDESIGNS
+            - generic [ref=f4e96]: MAINTENANCE
+            - generic [ref=f4e98]: MOBILE OPTIMIZATION
+        - generic [ref=f4e100]:
+          - generic [ref=f4e101]: STRUCTURE WRFTMLXEIZMWJUXVFGLQWWIWONPXZPAYJEOGCNPISLFBIKJVPSGAIQRTC
+          - generic [ref=f4e102]: EST. MMXXVI — SPEC-DAOVOS-001
+  - button [ref=f4e111] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [disabled]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

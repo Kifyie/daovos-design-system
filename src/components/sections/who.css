@@ -1,0 +1,768 @@
+/**
+ * DAOVOS — WHO WE ARE v6 ("The Manifesto Pin")
+ * Pinned scrubbed statement sequence. Horizontal dossier lives separately.
+ * Dark monolith world. Zero shadows, hairlines, Precision easing, 8px scale.
+ */
+
+/* ==========================================================================
+   Section shell
+   ========================================================================== */
+
+.who-root {
+  position: relative;
+  z-index: 60;
+  display: flow-root;
+  color: #ede6df;
+}
+
+/* ==========================================================================
+   Pinned manifesto stage
+   ========================================================================== */
+
+.who-pin {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ede6df;
+  isolation: isolate;
+}
+
+/* ========================================================================== 
+   WHO → service atlas lateral plane exchange
+   ========================================================================== */
+
+.who-plane-field,
+.who-plane-surface {
+  position: absolute;
+  inset: 0;
+}
+
+.who-plane-field {
+  z-index: 0;
+  overflow: hidden;
+  color: #111112;
+  background: #ede6df;
+}
+
+.who-plane-wordmark-columns {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.who-plane-wordmark-column {
+  position: relative;
+  overflow: hidden;
+  border-left: 1px solid rgba(17, 17, 18, 0.18);
+}
+
+.who-plane-wordmark-column:nth-child(even) {
+  color: #ede6df;
+  border-left-color: rgba(237, 230, 223, 0.24);
+  background: #09090b;
+}
+
+.who-plane-wordmark-column:nth-child(odd) {
+  color: #09090b;
+  background: #ede6df;
+}
+
+.who-plane-wordmark-column:last-child {
+  border-right: 1px solid rgba(17, 17, 18, 0.18);
+}
+
+.who-plane-wordmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(380px, 52vw, 720px);
+  height: auto;
+  opacity: 0.28;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.who-plane-field-meta,
+.who-plane-field-index {
+  position: absolute;
+  z-index: 3;
+  color: #111112;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.22em;
+  will-change: transform, opacity;
+}
+
+.who-plane-field-meta--top {
+  top: clamp(20px, 3vh, 32px);
+  left: clamp(24px, 4vw, 64px);
+}
+
+.who-plane-field-meta--bottom {
+  right: clamp(24px, 4vw, 64px);
+  bottom: clamp(20px, 3vh, 32px);
+}
+
+.who-plane-field-index {
+  top: clamp(20px, 3vh, 32px);
+  right: clamp(24px, 4vw, 64px);
+  color: rgba(17, 17, 18, 0.48);
+}
+
+.who-plane-surface {
+  z-index: 2;
+  overflow: hidden;
+  backface-visibility: hidden;
+  contain: paint;
+  will-change: transform, opacity;
+}
+
+.who-plane-outgoing {
+  z-index: 3;
+  color: #ede6df;
+  background: #0a0a0c;
+}
+
+.who-atlas-incoming {
+  z-index: 2;
+  color: #09090b;
+  background: #ede6df;
+}
+
+.who-plane-edge {
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  border: 1px solid rgba(237, 230, 223, 0.48);
+  pointer-events: none;
+}
+
+.who-atlas-incoming .who-plane-edge {
+  border-color: rgba(9, 9, 11, 0.42);
+}
+
+.who-atlas-preview-grid {
+  position: absolute;
+  inset: 0;
+}
+
+.who-atlas-preview-line {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  background: rgba(9, 9, 11, 0.2);
+  will-change: transform;
+}
+
+.who-atlas-preview-line--vertical {
+  top: 0;
+  bottom: 0;
+  left: calc(var(--handoff-line) * (100% / 12));
+  width: 1px;
+}
+
+.who-atlas-preview-line--horizontal {
+  right: 0;
+  left: 0;
+  top: calc(var(--handoff-line) * (100% / 8));
+  height: 1px;
+}
+
+.who-atlas-preview-content {
+  z-index: 1;
+  overflow: hidden;
+  will-change: transform, opacity;
+}
+
+.who-build-title-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.who-build-title-block {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  background: #09090b;
+  will-change: transform;
+}
+
+.who-build-title-block--left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(8.333% + 2px);
+}
+
+.who-build-title-block--corner {
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 25%;
+}
+
+.who-build-kinetic {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.who-build-star-wheel {
+  top: 3.5%;
+  right: 5.5%;
+  width: clamp(88px, 10vw, 176px);
+  color: #ede6df;
+}
+
+.who-build-star-wheel svg,
+.who-build-orbit svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.who-build-star-ring,
+.who-build-star-shape {
+  fill: none;
+  stroke: currentColor;
+  vector-effect: non-scaling-stroke;
+}
+
+.who-build-star-ring {
+  stroke-width: 1;
+  stroke-dasharray: 4 7;
+  opacity: 0.58;
+}
+
+.who-build-star-shape {
+  stroke-width: 1.5;
+}
+
+.who-build-star-hub {
+  fill: currentColor;
+}
+
+.who-build-star-rotor,
+.who-build-orbit-rotor {
+  will-change: transform;
+}
+
+.who-build-orbit {
+  bottom: 4.5%;
+  left: 14.5%;
+  width: clamp(72px, 7.8vw, 138px);
+  color: #09090b;
+}
+
+.who-build-orbit-axis,
+.who-build-orbit-ring {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.who-build-orbit-ring {
+  stroke-dasharray: 5 5;
+}
+
+.who-build-orbit-ring--inner {
+  stroke-dasharray: 2 6;
+  opacity: 0.62;
+}
+
+.who-build-orbit-axis {
+  opacity: 0.42;
+}
+
+.who-build-orbit-node,
+.who-build-orbit-core {
+  fill: currentColor;
+}
+
+.who-build-orbit-core {
+  stroke: #ede6df;
+  stroke-width: 5;
+  vector-effect: non-scaling-stroke;
+}
+
+.who-build-title {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 8.333%;
+  left: 8.333%;
+  margin: 0;
+  color: #09090b;
+  font-family: 'nm', 'Arial Narrow', sans-serif;
+  font-size: clamp(72px, 11.5vw, 220px);
+  font-weight: 700;
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  transform: translateY(-50%);
+}
+
+.who-build-title span {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  will-change: clip-path;
+}
+
+.who-build-title span:first-child {
+  padding-left: 8.333%;
+  text-align: left;
+}
+
+.who-build-title span:last-child {
+  margin-top: 0.08em;
+  padding: 0.06em 0.1em 0.12em;
+  color: #ede6df;
+  background: #09090b;
+  text-align: right;
+}
+
+.who-atlas-preview-header {
+  position: absolute;
+  z-index: 6;
+  top: clamp(20px, 3.6vh, 36px);
+  right: 4.5vw;
+  left: 4.5vw;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(9, 9, 11, 0.24);
+  color: rgba(9, 9, 11, 0.57);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.who-atlas-preview-brand,
+.who-atlas-preview-spine {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Satoshi', Inter, sans-serif;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.who-atlas-preview-brand {
+  top: 12.5%;
+  bottom: 0;
+  left: 0;
+  width: 8.33%;
+  overflow: hidden;
+  font-size: clamp(44px, 6vw, 108px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.who-atlas-preview-copy {
+  position: absolute;
+  z-index: 3;
+  top: 16%;
+  bottom: 5%;
+  left: 10.5%;
+  width: 29%;
+  padding: 4vh 2vw;
+}
+
+.who-atlas-preview-copy > span,
+.who-atlas-preview-focus > span {
+  color: rgba(9, 9, 11, 0.57);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.who-atlas-preview-copy h2,
+.who-atlas-preview-focus h2 {
+  margin: 3vh 0 0;
+  color: #09090b;
+  font-family: 'nm', 'Arial Narrow', sans-serif;
+  font-size: clamp(44px, 5.4vw, 98px);
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+}
+
+.who-atlas-preview-copy p {
+  max-width: 34ch;
+  margin: 5vh 0 0;
+  font: 400 clamp(13px, 1vw, 18px)/1.42 'Satoshi', Inter, sans-serif;
+}
+
+.who-atlas-preview-figure {
+  position: absolute;
+  z-index: 4;
+  top: 18%;
+  bottom: 3%;
+  left: 41%;
+  width: 31%;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #09090b;
+  background: #09090b;
+}
+
+.who-atlas-preview-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 64% 58%;
+  filter: grayscale(1) contrast(1.18);
+}
+
+.who-atlas-preview-figure figcaption {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #ede6df;
+  font-family: 'Calentha', Georgia, serif;
+  font-size: clamp(26px, 3vw, 58px);
+  line-height: 0.83;
+  letter-spacing: -0.025em;
+}
+
+.who-atlas-preview-figure figcaption span {
+  display: block;
+  width: max-content;
+  padding: 0.08em 0.14em 0.12em;
+  background: #09090b;
+}
+
+.who-atlas-preview-spine {
+  top: 12.5%;
+  bottom: 0;
+  left: 72%;
+  width: 8.33%;
+  border-right: 1px solid rgba(9, 9, 11, 0.2);
+  border-left: 1px solid rgba(9, 9, 11, 0.2);
+  font-size: clamp(13px, 1.35vw, 24px);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.who-atlas-preview-focus {
+  position: absolute;
+  z-index: 3;
+  top: 18%;
+  right: 2.5%;
+  width: 16%;
+}
+
+.who-atlas-preview-focus h2 {
+  font-size: clamp(40px, 4.7vw, 86px);
+}
+
+.who-atlas-preview-focus em {
+  font-family: 'Calentha', Georgia, serif;
+  font-weight: 400;
+}
+
+.who-ether {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* Top-weighted fade + radial boundary kill (no canvas rectangle) */
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 96%), radial-gradient(ellipse 80% 90% at 50% 42%, black 55%, transparent 97%);
+  mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 96%), radial-gradient(ellipse 80% 90% at 50% 42%, black 55%, transparent 97%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
+/* Ghost words — monumental outlined echoes behind the statements */
+.who-ghost {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.who-ghost-word {
+  position: absolute;
+  font-family: var(--font-family-display);
+  font-weight: 600;
+  font-size: clamp(6rem, 22vw, 22rem);
+  letter-spacing: -0.02em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(237, 230, 223, 0.35);
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Progress rail */
+.who-rail {
+  position: absolute;
+  left: clamp(20px, 3.5vw, 48px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.who-rail-label {
+  writing-mode: vertical-rl;
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  font-weight: 600;
+  color: #6b6b6f;
+}
+
+.who-rail-track {
+  position: relative;
+  width: 1px;
+  height: 180px;
+  background-color: rgba(237, 230, 223, 0.14);
+}
+
+.who-rail-fill {
+  position: absolute;
+  inset: 0;
+  background-color: #ede6df;
+  transform-origin: top center;
+}
+
+.who-counter {
+  position: relative;
+  height: 14px;
+  width: 44px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #ede6df;
+}
+
+.who-counter-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.who-counter-total {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #6b6b6f;
+}
+
+/* Statement slides */
+.who-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who-slide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+  padding: 0 clamp(24px, 6vw, 96px);
+}
+
+.who-slide-label {
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  font-weight: 600;
+  color: #aba6a1;
+  margin-bottom: var(--space-3);
+}
+
+.who-slide-line {
+  margin: 0;
+  color: #f4eee8;
+  font-family: var(--font-family-display);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  font-size: clamp(2.6rem, 1.4rem + 5.4vw, 6.75rem);
+}
+
+.who-slide-accent {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(237, 230, 223, 0.9);
+}
+
+/* ==========================================================================
+   Reduced motion — static fallback (no pin, first statement visible)
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .who-pin {
+    height: auto;
+    padding: var(--space-32) 0;
+    background: #0a0a0c;
+  }
+
+  .who-plane-field,
+  .who-atlas-incoming {
+    display: none;
+  }
+
+  .who-plane-outgoing {
+    position: relative;
+    inset: auto;
+  }
+
+  .who-stage {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .who-slide {
+    position: relative;
+    opacity: 1;
+  }
+
+  .who-slide:not(:first-child) {
+    display: none;
+  }
+
+  .who-ghost,
+  .who-rail {
+    display: none;
+  }
+
+}
+
+/* ==========================================================================
+   Reduced-motion static fallback (JS adds .who-static to .who-root)
+   ========================================================================== */
+
+.who-static .who-slide {
+  position: relative;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.who-static .who-slide + .who-slide {
+  margin-top: var(--space-12);
+}
+
+.who-static .who-slide-label,
+.who-static .who-counter-num {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .who-plane-field-meta--bottom {
+    right: auto;
+    left: 24px;
+  }
+
+  .who-plane-wordmark-columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .who-plane-wordmark-column:last-child {
+    display: none;
+  }
+
+  .who-atlas-preview-header {
+    right: 24px;
+    left: 24px;
+  }
+
+  .who-atlas-preview-header span:last-child,
+  .who-atlas-preview-spine,
+  .who-atlas-preview-focus {
+    display: none;
+  }
+
+  .who-atlas-preview-brand {
+    width: 12.5%;
+  }
+
+  .who-atlas-preview-copy {
+    left: 14%;
+    width: 35%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .who-atlas-preview-copy h2 {
+    font-size: clamp(34px, 8.5vw, 64px);
+  }
+
+  .who-atlas-preview-copy p {
+    font-size: 13px;
+  }
+
+  .who-atlas-preview-figure {
+    right: 3%;
+    left: auto;
+    width: 46%;
+  }
+
+  .who-atlas-preview-figure figcaption {
+    font-size: clamp(24px, 7vw, 44px);
+  }
+
+  .who-build-title-block--left {
+    width: calc(12.5% + 2px);
+  }
+
+  .who-build-title-block--corner {
+    width: 33.333%;
+    height: 20%;
+  }
+
+  .who-build-star-wheel {
+    top: 3%;
+    right: 3.5%;
+    width: clamp(64px, 13vw, 92px);
+  }
+
+  .who-build-orbit {
+    bottom: 4%;
+    left: 16%;
+    width: clamp(56px, 12vw, 78px);
+  }
+
+  .who-build-title {
+    right: 5%;
+    left: 12.5%;
+    font-size: clamp(42px, 12vw, 80px);
+  }
+
+  .who-build-title span:first-child {
+    padding-left: 5%;
+  }
+
+  .who-rail {
+    display: none;
+  }
+
+  .who-slide-line {
+    font-size: clamp(2.2rem, 1.2rem + 5vw, 4.5rem);
+  }
+
+}

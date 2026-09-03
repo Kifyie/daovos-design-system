@@ -1,0 +1,257 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: 00—01
+        - generic [ref=e303]:
+          - generic: DATUM 00 // GRID REGISTERED
+          - navigation [ref=e311]:
+            - generic [ref=e331]:
+              - link "01Studio" [ref=e332] [cursor=pointer]:
+                - /url: "#studio"
+              - link "02Who We Are" [ref=e333] [cursor=pointer]:
+                - /url: "#whoweare"
+              - link "03Process" [ref=e334] [cursor=pointer]:
+                - /url: "#process"
+              - link "04Recognition" [ref=e335] [cursor=pointer]:
+                - /url: "#recognition"
+              - button "Specimen" [ref=e336] [cursor=pointer]
+          - generic [ref=e337]:
+            - generic:
+              - generic:
+                - heading "DAOVOS" [level=1]
+            - generic [ref=e339] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: D
+                        - generic: I
+                        - generic: G
+                        - generic: I
+                        - generic: T
+                        - generic: A
+                        - generic: L
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: S
+                      - generic: "Y"
+                      - generic: S
+                      - generic: T
+                      - generic: E
+                      - generic: M
+                      - generic: S
+          - generic [ref=e341]:
+            - generic [ref=e343]:
+              - generic [ref=e344]: 01 // INTRO
+              - heading "ARCHITECTURAL DIGITAL SYSTEMS" [level=3] [ref=e347]
+              - paragraph [ref=e348]: DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - heading "ACCEPTING NEW COMMISSIONS" [level=4] [ref=e354]
+                - paragraph [ref=e355]: Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.
+              - generic [ref=e356] [cursor=pointer]: Start a project
+          - generic: SCROLL
+        - generic [ref=e381]:
+          - generic [ref=e382]: STUDIO
+          - generic [ref=e383]:
+            - generic [ref=e384]: WHO WE ARE
+            - generic [ref=e386]: 01 / 04
+          - generic [ref=e387]:
+            - generic [ref=e388]: THE STUDIO
+            - paragraph [ref=e389]: NOT AN AGENCY.
+            - paragraph [ref=e390]: A DIGITAL STUDIO.
+          - generic [ref=e391]: NEXT SECTION // 01
+      - generic [ref=e395]:
+        - generic [ref=e396]: WHO WE ARE
+        - generic [ref=e398]:
+          - generic [ref=e399]: "01"
+          - generic [ref=e400]: / 04
+      - region "What DAOVOS makes" [ref=e402]:
+        - generic [ref=e404]:
+          - generic [ref=e405]:
+            - generic [ref=e406]: 02 // WHAT WE MAKE
+            - generic [ref=e407]: ONE CONTINUOUS SERVICE FIELD
+          - generic [ref=e408]:
+            - generic [ref=e409]: DAOVOS
+            - article [ref=e410]:
+              - paragraph [ref=e411]: 01 / DIGITAL HOMES
+              - heading "CUSTOM WEBSITES" [level=2] [ref=e412]: CUSTOMWEBSITES
+              - generic [ref=e413]: A complete digital home shaped around the brand, its audience, and the way it needs to grow.
+            - figure [ref=e414]:
+              - generic [ref=e415]:
+                - img "Monumental architectural facade organized by a strict structural grid" [ref=e417]
+                - generic:
+                  - generic: BUILT
+                  - generic: TO BELONG
+                - generic [ref=e475]: STRUCTURE / IDENTITY / SCALE
+            - generic [ref=e476]: DISTINCT BY DESIGN / NEVER FROM A TEMPLATE
+            - article [ref=e477]:
+              - paragraph [ref=e478]: 02 / ONE DECISIVE ROUTE
+              - heading [level=2] [ref=e479]:
+                - text: GET
+                - emphasis [ref=e480]: FOCUSED
+              - generic [ref=e481]: One message. One audience. One measurable action.
+            - generic [ref=e482]: "001"
+            - figure [ref=e483]:
+              - generic [ref=e484]:
+                - img "A single figure held inside a focused beam of light" [ref=e486]
+                - generic:
+                  - generic: ONE
+                  - generic: CLEAR MOVE
+                - generic [ref=e501]: ATTENTION → ACTION
+            - blockquote [ref=e502]: “Every element keeps the eye moving toward one clear decision.”
+            - generic [ref=e504]:
+              - generic:
+                - generic: SIGNAL
+                - generic: INTO ACTION
+              - generic [ref=e517]: CAMPAIGN SIGNAL / RESPONSE
+            - generic [ref=e518]: LANDING EXPERIENCES / ONE ROUTE
+            - article [ref=e519]:
+              - paragraph [ref=e520]: 03 / DISCOVERY TO PURCHASE
+              - heading "COMMERCE SYSTEMS" [level=2] [ref=e521]: COMMERCESYSTEMS
+              - generic [ref=e522]: Catalogue, product detail, and checkout read as one continuous experience.
+            - generic [ref=e523]: "002"
+            - figure [ref=e524]:
+              - generic [ref=e525]:
+                - img "A rigorously organized retail system displayed across modular shelves" [ref=e527]
+                - generic:
+                  - generic: FROM CART
+                  - generic: TO CARE
+                - generic [ref=e543]: DISCOVER → DECIDE → PURCHASE
+            - generic [ref=e544]: DISCOVER / DECIDE / PURCHASE / RETURN
+            - article [ref=e545]:
+              - paragraph [ref=e546]: 04 / ORGANIZED FOR USE
+              - heading [level=2] [ref=e547]:
+                - text: MAKE
+                - emphasis [ref=e548]: COMPLEXITY
+                - text: CLEAR
+              - generic [ref=e549]: Responsive interfaces turn dense content and behavior into a product people understand.
+            - figure [ref=e550]:
+              - generic [ref=e551]:
+                - img "An abstract signal field reorganized into a responsive visual system" [ref=e553]
+                - generic:
+                  - generic: ORDER
+                  - generic: THE COMPLEX
+                - generic [ref=e566]: CONTENT / HIERARCHY / RESPONSE
+            - generic [ref=e567]: "003"
+            - generic [ref=e568]: INTERFACE SYSTEMS / CLEAR AT EVERY SCALE
+            - article [ref=e569]:
+              - paragraph [ref=e570]: 05 / THE SYSTEM STAYS LIVE
+              - heading "CARE + OPTIMIZATION" [level=2] [ref=e571]: CARE +OPTIMIZATION
+              - generic [ref=e572]: Long-term technical care keeps the experience fast, current, and dependable after launch.
+            - figure [ref=e573]:
+              - generic [ref=e574]:
+                - img "A dense technical infrastructure kept connected and operational" [ref=e576]
+                - generic:
+                  - generic: STAY
+                  - generic: IN MOTION
+                - generic [ref=e600]: LIVE / CURRENT / DEPENDABLE
+            - generic [ref=e601]: BUILD / LAUNCH / LEARN / IMPROVE
+            - article [ref=e602]:
+              - paragraph [ref=e603]: THE DAOVOS SYSTEM
+              - heading [level=2] [ref=e604]:
+                - text: Design.Build.
+                - emphasis [ref=e605]: Keep moving.
+              - generic [ref=e606]: Five capabilities. One connected digital experience.
+        - region "Start a project with DAOVOS" [ref=e607]:
+          - generic [ref=e608]:
+            - generic [ref=e609]:
+              - generic [ref=e610]:
+                - generic [ref=e611]: 03 // PROJECT INPUT
+                - generic [ref=e612]: YOU / THE IDEA
+              - generic [ref=e613]:
+                - paragraph [ref=e614]: THE STARTING POINT
+                - heading "YOU BRING THE IDEA." [level=2] [ref=e615]:
+                  - generic [ref=e616]: YOU BRING
+                  - generic [ref=e618]: THE IDEA.
+                - paragraph [ref=e620]: Ambition, context, and a reason to make something unmistakably yours.
+              - generic [ref=e621]: IDEA / AMBITION / CONTEXT
+            - generic [ref=e622]:
+              - generic [ref=e623]:
+                - generic [ref=e624]: DAOVOS / PROJECT OUTPUT
+                - generic [ref=e625]: INTAKE / OPEN
+              - generic [ref=e626]:
+                - paragraph [ref=e627]: THE BUILT RESPONSE
+                - heading "WE BUILD THE EXPERIENCE." [level=2] [ref=e628]:
+                  - generic [ref=e629]: WE BUILD
+                  - generic [ref=e631]: THE EXPERIENCE.
+              - generic [ref=e633]: DESIGN / DEVELOPMENT / CARE
+  - button [ref=e642] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

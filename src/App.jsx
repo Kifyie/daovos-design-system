@@ -1,5 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { Agentation } from 'agentation';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { useGSAP } from '@gsap/react';
 import { DaovosHero } from './components/hero';
+import {
+  HeroPlaneTransition,
+  WhoWeAreSection,
+  ServiceJourney
+} from './components/sections';
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, useGSAP);
+
+const SPECIMEN_ACCESS_ENABLED = false;
 import {
   DaovosSymbol,
   DaovosWordmark,
@@ -105,6 +119,31 @@ export default function App() {
     }
   }, [theme, reducedMotion]);
 
+  // GSAP ScrollSmoother — buttery momentum scroll for the website view only.
+  // Paused during the hero intro preloader (scrolling mid-intro would drag
+  // the reveal choreography). Skipped under prefers-reduced-motion.
+  useGSAP(() => {
+    if (SPECIMEN_ACCESS_ENABLED && viewMode !== 'website') return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const smoother = ScrollSmoother.create({
+      wrapper: '#smooth-wrapper',
+      content: '#smooth-content',
+      smooth: 1.15,
+      effects: false,
+      normalizeScroll: false,
+      ignoreMobileResize: true,
+      paused: true
+    });
+
+    const unlock = setTimeout(() => smoother.paused(false), 2900);
+
+    return () => {
+      clearTimeout(unlock);
+      smoother.kill();
+    };
+  }, { dependencies: [viewMode] });
+
   const copyToClipboard = (text, label) => {
     navigator.clipboard.writeText(text);
     setCopiedToken(label || text);
@@ -131,20 +170,24 @@ export default function App() {
     { id: 'export', number: '12', title: 'Tokens & Export' }
   ];
 
-  // Primary Website Hero View
-  if (viewMode === 'website') {
-    return (
-      <main className="daovos-website-root" style={{ minHeight: '100vh', backgroundColor: '#0a0a0c' }}>
-        <DaovosHero onSpecimenClick={() => setViewMode('specimen')} />
-      </main>
-    );
-  }
-
-  // Design System Specimen View
   return (
-    <div className="daovos-vos-app" style={{ minHeight: '100vh', paddingBottom: 'var(--space-32)' }}>
-      {/* Grid Overlay */}
-      <GridOverlay visible={gridOverlay} />
+    <>
+      {!SPECIMEN_ACCESS_ENABLED || viewMode === 'website' ? (
+        <main className="daovos-website-root" style={{ minHeight: '100vh', backgroundColor: '#0a0a0c' }}>
+          <div id="smooth-wrapper">
+            <div id="smooth-content">
+              <HeroPlaneTransition>
+                <DaovosHero />
+              </HeroPlaneTransition>
+              <WhoWeAreSection />
+              <ServiceJourney />
+            </div>
+          </div>
+        </main>
+      ) : (
+        <div className="daovos-vos-app" style={{ minHeight: '100vh', paddingBottom: 'var(--space-32)' }}>
+          {/* Grid Overlay */}
+          <GridOverlay visible={gridOverlay} />
 
       {/* Global Architectural Navigation Bar */}
       <header
@@ -1045,5 +1088,8 @@ module.exports = {
         </section>
       </Container>
     </div>
+      )}
+      <Agentation />
+    </>
   );
 }

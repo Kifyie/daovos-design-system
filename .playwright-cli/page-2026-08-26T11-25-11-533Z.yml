@@ -1,0 +1,159 @@
+- generic [active] [ref=f3e1]:
+  - main [ref=f3e3]:
+    - generic [ref=f3e8]:
+      - generic [ref=f3e10]:
+        - generic: STUDIO
+        - generic [ref=f3e11]:
+          - generic [ref=f3e12]: WHO WE ARE
+          - generic [ref=f3e15]:
+            - generic [ref=f3e16]: "01"
+            - generic [ref=f3e17]: / 04
+        - generic [ref=f3e19]:
+          - generic [ref=f3e20]: THE STUDIO
+          - heading "NOT AN AGENCY." [level=2] [ref=f3e21]:
+            - generic [ref=f3e23]:
+              - generic [ref=f3e24]: "N"
+              - generic [ref=f3e25]: O
+              - generic [ref=f3e26]: T
+              - generic [ref=f3e27]: A
+              - generic [ref=f3e28]: "N"
+              - generic [ref=f3e29]: A
+              - generic [ref=f3e30]: G
+              - generic [ref=f3e31]: E
+              - generic [ref=f3e32]: "N"
+              - generic [ref=f3e33]: C
+              - generic [ref=f3e34]: "Y"
+              - generic [ref=f3e35]: .
+          - heading "A DIGITAL STUDIO." [level=2] [ref=f3e36]:
+            - generic [ref=f3e38]:
+              - generic [ref=f3e39]: A
+              - generic [ref=f3e40]: D
+              - generic [ref=f3e41]: I
+              - generic [ref=f3e42]: G
+              - generic [ref=f3e43]: I
+              - generic [ref=f3e44]: T
+              - generic [ref=f3e45]: A
+              - generic [ref=f3e46]: L
+              - generic [ref=f3e47]: S
+              - generic [ref=f3e48]: T
+              - generic [ref=f3e49]: U
+              - generic [ref=f3e50]: D
+              - generic [ref=f3e51]: I
+              - generic [ref=f3e52]: O
+              - generic [ref=f3e53]: .
+      - generic [ref=f3e55]:
+        - generic [ref=f3e56]:
+          - generic [ref=f3e57]: 01 // WHO WE ARE
+          - generic [ref=f3e59]: "DAOVOS DIGITAL STUDIO — SECTOR: WEB"
+        - generic [ref=f3e60]:
+          - generic [ref=f3e61]:
+            - generic [ref=f3e63]: MIYDDMJ
+            - paragraph [ref=f3e64]:
+              - generic [ref=f3e65]: Make high-quality digital experiences accessible — strong design, modern technology, a
+              - generic [ref=f3e66]: simple client experience.
+          - generic [ref=f3e67]:
+            - generic [ref=f3e69]: VINGXF
+            - paragraph [ref=f3e70]:
+              - generic [ref=f3e71]: Grow from a web agency into a recognizable digital company providing everything a
+              - generic [ref=f3e72]: modern brand needs to build, launch, and grow online.
+          - generic [ref=f3e73]:
+            - generic [ref=f3e75]: PRGPTSJ
+            - paragraph [ref=f3e76]:
+              - generic [ref=f3e77]: You bring the idea. Daovos turns it into a digital experience.
+        - generic [ref=f3e79]:
+          - generic [ref=f3e80]:
+            - generic [ref=f3e81]: WEB DESIGN
+            - generic [ref=f3e83]: DEVELOPMENT
+            - generic [ref=f3e85]: LANDING PAGES
+            - generic [ref=f3e87]: E-COMMERCE
+            - generic [ref=f3e89]: UI/UX
+            - generic [ref=f3e91]: REDESIGNS
+            - generic [ref=f3e93]: MAINTENANCE
+            - generic [ref=f3e95]: MOBILE OPTIMIZATION
+          - generic [ref=f3e97]:
+            - generic [ref=f3e98]: WEB DESIGN
+            - generic [ref=f3e100]: DEVELOPMENT
+            - generic [ref=f3e102]: LANDING PAGES
+            - generic [ref=f3e104]: E-COMMERCE
+            - generic [ref=f3e106]: UI/UX
+            - generic [ref=f3e108]: REDESIGNS
+            - generic [ref=f3e110]: MAINTENANCE
+            - generic [ref=f3e112]: MOBILE OPTIMIZATION
+        - generic [ref=f3e114]:
+          - generic [ref=f3e115]: STRUCTURE · PRECISION · MODULARITY · RELIABILITY · SCALE · PROGRESS
+          - generic [ref=f3e116]: EST. MMXXVI — SPEC-DAOVOS-001
+  - button [ref=f3e125] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [disabled]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

@@ -1,56 +1,60 @@
 import React, { useState } from 'react';
-import { Eye, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 /**
- * DAOVOS Hero Feature Card (Bottom-Right)
- * Matches the reference image's elevated floating information module.
+ * DAOVOS Hero Feature Slab (Bottom-Right)
+ * Flat hairline architectural surface — square corners, no elevation.
+ * Corner brackets draw in on hover; arrow action slides on hover.
  */
-export const HeroFeatureCard = ({
-  title = "THIS MONTH'S EXCLUSIVE",
-  description = 'Pre-order now and unlock exclusive private architectural frameworks for enterprise scale.',
-  actionText = 'See more info'
+export const HeroFeatureSlab = ({
+  title = 'ACCEPTING NEW COMMISSIONS',
+  description = 'Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.',
+  actionText = 'Start a project'
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className="hero-feature-card flex-col justify-between"
+      className="hero-slab flex-col justify-between"
       style={{
-        width: '260px',
-        padding: '20px',
-        backgroundColor: 'rgba(26, 26, 30, 0.85)',
-        backdropFilter: 'blur(16px)',
-        border: '1px solid rgba(244, 238, 232, 0.12)',
-        borderRadius: '16px',
-        boxShadow: '0 16px 36px rgba(0, 0, 0, 0.5)',
+        width: '280px',
+        padding: '18px 20px',
         zIndex: 25,
-        transition: 'transform var(--motion-duration-interface) var(--motion-ease-precision), border-color var(--motion-duration-micro) var(--motion-ease-precision)',
-        transform: isHovered ? 'translateY(-4px)' : 'translateY(0px)',
-        borderColor: isHovered ? 'rgba(244, 238, 232, 0.3)' : 'rgba(244, 238, 232, 0.12)'
+        boxSizing: 'border-box'
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div>
-        <h4
-          style={{
-            fontFamily: 'var(--font-family-display)',
-            fontSize: '15px',
-            fontWeight: 700,
-            letterSpacing: '0.06em',
-            textTransform: 'uppercase',
-            color: 'var(--daovos-color-bone-white)',
-            marginBottom: '8px'
-          }}
-        >
-          {title}
-        </h4>
+        <div className="flex-row items-center gap-2" style={{ marginBottom: '10px' }}>
+          <span
+            style={{
+              width: '6px',
+              height: '6px',
+              background: 'var(--daovos-color-bone-white)',
+              display: 'inline-block'
+            }}
+          />
+          <h4
+            style={{
+              fontFamily: 'var(--font-family-mono)',
+              color: 'var(--daovos-color-bone-white)',
+              margin: 0,
+              fontSize: '11px',
+              fontWeight: 600,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase'
+            }}
+          >
+            {title}
+          </h4>
+        </div>
         <p
           style={{
             fontFamily: 'var(--font-family-body)',
+            color: 'rgba(244, 238, 232, 0.75)',
+            lineHeight: 1.55,
             fontSize: '12px',
-            lineHeight: 1.5,
-            color: 'rgba(244, 238, 232, 0.6)',
             margin: 0
           }}
         >
@@ -59,39 +63,36 @@ export const HeroFeatureCard = ({
       </div>
 
       <div
-        className="flex-row items-center gap-2"
+        className="slab-action flex-row items-center justify-between"
         style={{
           marginTop: '16px',
+          paddingTop: '12px',
+          borderTop: '1px solid rgba(237, 230, 223, 0.12)',
           cursor: 'pointer'
         }}
       >
         <span
           style={{
-            fontFamily: 'var(--font-family-body)',
-            fontSize: '12px',
+            fontFamily: 'var(--font-family-mono)',
+            fontSize: '11px',
             fontWeight: 500,
-            color: isHovered ? 'var(--daovos-color-pure-white)' : 'rgba(244, 238, 232, 0.85)',
+            letterSpacing: '0.14em',
+            textTransform: 'uppercase',
+            color: isHovered ? 'var(--daovos-color-pure-white)' : 'var(--daovos-color-bone-white)',
             transition: 'color var(--motion-duration-micro) var(--motion-ease-precision)'
           }}
         >
           {actionText}
         </span>
-        <div
-          className="flex-row items-center justify-between"
-          style={{
-            width: '20px',
-            height: '20px',
-            borderRadius: '50%',
-            backgroundColor: 'rgba(244, 238, 232, 0.1)',
-            justifyContent: 'center',
-            color: 'rgba(244, 238, 232, 0.85)'
-          }}
-        >
-          <Eye size={11} />
-        </div>
+        <ArrowUpRight
+          className="slab-arrow"
+          size={14}
+          strokeWidth={1.5}
+          color="var(--daovos-color-bone-white)"
+        />
       </div>
     </div>
   );
 };
 
-export default HeroFeatureCard;
+export default HeroFeatureSlab;

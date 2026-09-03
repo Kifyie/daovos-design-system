@@ -1,0 +1,232 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: 00—01
+        - generic [ref=e303]:
+          - generic: DATUM 00 // GRID REGISTERED
+          - navigation [ref=e311]:
+            - generic [ref=e331]:
+              - link "01Studio" [ref=e332] [cursor=pointer]:
+                - /url: "#studio"
+              - link "02Who We Are" [ref=e333] [cursor=pointer]:
+                - /url: "#whoweare"
+              - link "03Process" [ref=e334] [cursor=pointer]:
+                - /url: "#process"
+              - link "04Recognition" [ref=e335] [cursor=pointer]:
+                - /url: "#recognition"
+              - button "Specimen" [ref=e336] [cursor=pointer]
+          - generic [ref=e337]:
+            - generic:
+              - generic:
+                - heading "DAOVOS" [level=1]
+            - generic [ref=e339] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: D
+                        - generic: I
+                        - generic: G
+                        - generic: I
+                        - generic: T
+                        - generic: A
+                        - generic: L
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: S
+                      - generic: "Y"
+                      - generic: S
+                      - generic: T
+                      - generic: E
+                      - generic: M
+                      - generic: S
+          - generic [ref=e341]:
+            - generic [ref=e343]:
+              - generic [ref=e344]: 01 // INTRO
+              - heading "ARCHITECTURAL DIGITAL SYSTEMS" [level=3] [ref=e347]
+              - paragraph [ref=e348]: DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - heading "ACCEPTING NEW COMMISSIONS" [level=4] [ref=e354]
+                - paragraph [ref=e355]: Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.
+              - generic [ref=e356] [cursor=pointer]: Start a project
+          - generic: SCROLL
+        - generic [ref=e381]:
+          - generic [ref=e382]: STUDIO
+          - generic [ref=e383]:
+            - generic [ref=e384]: WHO WE ARE
+            - generic [ref=e386]: 01 / 04
+          - generic [ref=e387]:
+            - generic [ref=e388]: THE STUDIO
+            - paragraph [ref=e389]: NOT AN AGENCY.
+            - paragraph [ref=e390]: A DIGITAL STUDIO.
+          - generic [ref=e391]: NEXT SECTION // 01
+      - generic [ref=e392]:
+        - generic [ref=e395]:
+          - generic [ref=e396]: WHO WE ARE
+          - generic [ref=e398]:
+            - generic [ref=e399]: "01"
+            - generic [ref=e400]: / 04
+        - region "DAOVOS mission, vision, promise, and capabilities" [ref=e402]:
+          - generic [ref=e404]:
+            - generic [ref=e405]:
+              - generic [ref=e406]: 01 // WHO WE ARE
+              - generic [ref=e408]: HORIZONTAL SYSTEM DOSSIER — X/04
+            - generic [ref=e409]:
+              - article [ref=e410]:
+                - generic: "01"
+                - generic [ref=e412]:
+                  - generic [ref=e413]: FIG. 01 / LIVE SCHEMATIC
+                  - img "Design, technology, and experience converging into one digital product" [ref=e414]:
+                    - generic [ref=e417]: OUTPUT / ACCESSIBLE DIGITAL EXPERIENCE
+                  - generic [ref=e418]: DAO-01 / 26.08 / SYSTEM
+              - article [ref=e419]:
+                - generic: "02"
+                - generic [ref=e420]:
+                  - heading "FROM WEB STUDIO" [level=2] [ref=e422]
+                  - heading "TO DIGITAL COMPANY." [level=2] [ref=e424]
+                  - paragraph [ref=e425]: Grow from a web agency into a recognizable digital company providing everything a modern brand needs to build, launch, and grow online.
+                  - generic [ref=e426]:
+                    - generic [ref=e427]:
+                      - generic [ref=e428]: "01"
+                      - text: WEB
+                    - generic [ref=e429]:
+                      - generic [ref=e430]: "02"
+                      - text: BRAND
+                    - generic [ref=e431]:
+                      - generic [ref=e432]: "03"
+                      - text: PRODUCTS
+                    - generic [ref=e433]:
+                      - generic [ref=e434]: "04"
+                      - text: AUTOMATION
+                - generic [ref=e435]:
+                  - generic [ref=e436]: FIG. 02 / LIVE SCHEMATIC
+                  - img "A central web studio expanding into a modular digital company" [ref=e437]:
+                    - generic [ref=e444]: EXPANSION MODEL / MODULAR / CONNECTED / RECOGNIZABLE
+                  - generic [ref=e445]: DAO-02 / 26.08 / SYSTEM
+              - article [ref=e446]:
+                - generic: "03"
+                - generic [ref=e447]:
+                  - heading "IDEA IN." [level=2] [ref=e449]
+                  - heading "EXPERIENCE OUT." [level=2] [ref=e451]
+                  - paragraph [ref=e452]: You bring the idea. Daovos turns it into a digital experience.
+                  - generic [ref=e453]:
+                    - generic [ref=e454]:
+                      - generic [ref=e455]: "01"
+                      - text: LISTEN
+                    - generic [ref=e456]:
+                      - generic [ref=e457]: "02"
+                      - text: DESIGN
+                    - generic [ref=e458]:
+                      - generic [ref=e459]: "03"
+                      - text: BUILD
+                    - generic [ref=e460]:
+                      - generic [ref=e461]: "04"
+                      - text: LAUNCH
+                - generic [ref=e462]:
+                  - generic [ref=e463]: FIG. 03 / LIVE SCHEMATIC
+                  - img "An idea moving through design and development into a finished interface" [ref=e464]:
+                    - generic [ref=e467]: IDEA
+                    - generic [ref=e468]: LISTEN
+                    - generic [ref=e469]: DESIGN
+                    - generic [ref=e470]: BUILD
+                    - generic [ref=e471]: LAUNCH
+                    - generic [ref=e472]: DIGITAL EXPERIENCE / LIVE
+                  - generic [ref=e473]: DAO-03 / 26.08 / SYSTEM
+              - article [ref=e474]:
+                - generic: "04"
+                - generic [ref=e475]:
+                  - heading "ONE STUDIO." [level=2] [ref=e477]
+                  - heading "THE FULL SYSTEM." [level=2] [ref=e479]
+                  - paragraph [ref=e480]: Strategy, interface, engineering, launch, and long-term support — assembled as one connected digital practice.
+                - generic [ref=e481]:
+                  - generic [ref=e482]: FIG. 04 / LIVE SCHEMATIC
+                  - generic "DAOVOS web capabilities" [ref=e483]
+                  - generic [ref=e484]: DAO-04 / 26.08 / SYSTEM
+                - generic [ref=e485]:
+                  - generic [ref=e486]: STRUCTURE · PRECISION · MODULARITY · RELIABILITY · SCALE · PROGRESS
+                  - generic [ref=e487]: EST. MMXXVI — SPEC-DAOVOS-001
+            - generic [ref=e488]:
+              - generic [ref=e489]: SCROLL / X-AXIS
+              - generic [ref=e494]:
+                - generic [ref=e495]: "01"
+                - text: / 04
+  - button [ref=e504] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [disabled]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

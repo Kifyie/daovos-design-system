@@ -1,0 +1,126 @@
+- generic [active] [ref=f5e1]:
+  - main [ref=f5e3]:
+    - generic [ref=f5e5]:
+      - generic [ref=f5e10]:
+        - generic: DIGITAL
+        - generic [ref=f5e11]:
+          - generic [ref=f5e12]: WHO WE ARE
+          - generic [ref=f5e15]:
+            - generic [ref=f5e16]: "03"
+            - generic [ref=f5e17]: / 04
+        - generic [ref=f5e19]:
+          - generic [ref=f5e20]: THE PROMISE
+          - heading "WE TURN IT" [level=2] [ref=f5e21]:
+            - generic [ref=f5e23]:
+              - generic [ref=f5e24]: W
+              - generic [ref=f5e25]: E
+              - generic [ref=f5e26]: T
+              - generic [ref=f5e27]: U
+              - generic [ref=f5e28]: R
+              - generic [ref=f5e29]: "N"
+              - generic [ref=f5e30]: I
+              - generic [ref=f5e31]: T
+          - heading "DIGITAL." [level=2] [ref=f5e32]:
+            - generic [ref=f5e34]:
+              - generic [ref=f5e35]: D
+              - generic [ref=f5e36]: I
+              - generic [ref=f5e37]: G
+              - generic [ref=f5e38]: I
+              - generic [ref=f5e39]: T
+              - generic [ref=f5e40]: A
+              - generic [ref=f5e41]: L
+              - generic [ref=f5e42]: .
+      - region "What DAOVOS makes" [ref=f5e43]:
+        - generic [ref=f5e47]:
+          - article [ref=f5e48]
+          - figure [ref=f5e49]:
+            - img "Monumental architectural facade organized by a strict structural grid" [ref=f5e52]
+          - article [ref=f5e110]
+          - figure [ref=f5e111]:
+            - img "A single figure held inside a focused beam of light" [ref=f5e114]
+          - article [ref=f5e179]
+          - figure [ref=f5e180]:
+            - img "A rigorously organized retail system displayed across modular shelves" [ref=f5e183]
+          - article [ref=f5e251]
+          - figure [ref=f5e252]:
+            - img "An abstract signal field reorganized into a responsive visual system" [ref=f5e255]
+          - article [ref=f5e267]
+          - figure [ref=f5e268]:
+            - img "A dense technical infrastructure kept connected and operational" [ref=f5e271]
+          - article [ref=f5e294]
+        - region "Start a project with DAOVOS" [ref=f5e295]
+  - button [ref=f5e307] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

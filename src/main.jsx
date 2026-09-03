@@ -9,7 +9,5 @@ import './styles/treatments.css';
 import './styles/textures.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App />
 );

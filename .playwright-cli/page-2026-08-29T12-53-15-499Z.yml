@@ -1,0 +1,173 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e10]:
+        - generic:
+          - generic: STUDIO
+          - generic: IDEA
+        - generic [ref=f1e11]:
+          - generic [ref=f1e12]: WHO WE ARE
+          - generic [ref=f1e15]:
+            - generic [ref=f1e16]: "02"
+            - generic [ref=f1e17]: / 04
+        - generic [ref=f1e19]:
+          - generic [ref=f1e20]: THE PROMISE
+          - heading "YOU BRING" [level=2] [ref=f1e21]:
+            - generic [ref=f1e23]:
+              - generic [ref=f1e24]: "Y"
+              - generic [ref=f1e25]: O
+              - generic [ref=f1e26]: U
+              - generic [ref=f1e27]: B
+              - generic [ref=f1e28]: R
+              - generic [ref=f1e29]: I
+              - generic [ref=f1e30]: "N"
+              - generic [ref=f1e31]: G
+          - heading "THE IDEA." [level=2] [ref=f1e32]:
+            - generic [ref=f1e34]:
+              - generic [ref=f1e35]: T
+              - generic [ref=f1e36]: H
+              - generic [ref=f1e37]: E
+              - generic [ref=f1e38]: I
+              - generic [ref=f1e39]: D
+              - generic [ref=f1e40]: E
+              - generic [ref=f1e41]: A
+              - generic [ref=f1e42]: .
+      - region "What DAOVOS makes" [ref=f1e43]:
+        - generic [ref=f1e45]:
+          - generic [ref=f1e46]:
+            - generic [ref=f1e47]: 02 // WHAT WE MAKE
+            - generic [ref=f1e48]: VERTICAL INPUT / HORIZONTAL PASSAGE
+          - generic [ref=f1e49]:
+            - article [ref=f1e50]:
+              - generic [ref=f1e51]:
+                - paragraph [ref=f1e52]: 01 / DIGITAL HOMES / DISTINCT BY DESIGN
+                - heading "CUSTOM WEBSITES" [level=2] [ref=f1e53]:
+                  - generic [ref=f1e54]: CUSTOM
+                  - generic [ref=f1e55]: WEBSITES
+                - paragraph [ref=f1e56]: A complete digital home shaped around the brand, its audience, and the way it needs to grow.
+                - paragraph [ref=f1e57]: BUSINESS · PORTFOLIO · BRAND
+              - figure [ref=f1e58]:
+                - img "A dithered globe representing a custom digital home" [ref=f1e59]
+              - generic [ref=f1e72]: "0105"
+            - article [ref=f1e74]:
+              - generic [ref=f1e75]:
+                - paragraph [ref=f1e76]: 02 / ONE MESSAGE / ONE DECISIVE ROUTE
+                - heading "LANDING EXPERIENCES" [level=2] [ref=f1e77]:
+                  - generic [ref=f1e78]: LANDING
+                  - generic [ref=f1e79]: EXPERIENCES
+                - paragraph [ref=f1e80]: Focused launch environments that turn attention into one clear, measurable action.
+                - paragraph [ref=f1e81]: CAMPAIGN · PRODUCT · CONVERSION
+              - figure [ref=f1e82]:
+                - img "A sequence of focused frames representing landing experiences" [ref=f1e83]
+              - generic [ref=f1e89]: "0205"
+            - article [ref=f1e91]:
+              - generic [ref=f1e92]:
+                - paragraph [ref=f1e93]: 03 / DISCOVERY / DECISION / PURCHASE
+                - heading "COMMERCE SYSTEMS" [level=2] [ref=f1e94]:
+                  - generic [ref=f1e95]: COMMERCE
+                  - generic [ref=f1e96]: SYSTEMS
+                - paragraph [ref=f1e97]: Storefront systems where catalogue, product detail, and checkout move as one continuous experience.
+                - paragraph [ref=f1e98]: CATALOGUE · CHECKOUT · RETENTION
+              - figure [ref=f1e99]:
+                - img "A flowing product and checkout system" [ref=f1e100]
+              - generic [ref=f1e115]: "0305"
+            - article [ref=f1e117]:
+              - generic [ref=f1e118]:
+                - paragraph [ref=f1e119]: 04 / COMPLEXITY / ORGANIZED FOR USE
+                - heading "INTERFACE SYSTEMS" [level=2] [ref=f1e120]:
+                  - generic [ref=f1e121]: INTERFACE
+                  - generic [ref=f1e122]: SYSTEMS
+                - paragraph [ref=f1e123]: Responsive interfaces that turn dense content and behavior into a product people understand.
+                - paragraph [ref=f1e124]: UI / UX · DESIGN SYSTEMS · PRODUCTS
+              - figure [ref=f1e125]:
+                - img "Responsive interface planes organized into a design system" [ref=f1e126]
+              - generic [ref=f1e136]: "0405"
+            - article [ref=f1e138]:
+              - generic [ref=f1e139]:
+                - paragraph [ref=f1e140]: 05 / LIVE SYSTEMS / KEPT IN MOTION
+                - heading "CARE + OPTIMIZATION" [level=2] [ref=f1e141]:
+                  - generic [ref=f1e142]: CARE +
+                  - generic [ref=f1e143]: OPTIMIZATION
+                - paragraph [ref=f1e144]: Long-term technical care that keeps the experience fast, current, and dependable after launch.
+                - paragraph [ref=f1e145]: MAINTENANCE · MOBILE · ITERATION
+              - figure [ref=f1e146]:
+                - img "A continuous orbit representing ongoing technical care" [ref=f1e147]
+              - generic [ref=f1e156]: "0505"
+          - generic [ref=f1e158]:
+            - generic [ref=f1e159]: WHAT WE MAKE
+            - generic [ref=f1e161]: 05 CHAPTERS
+  - button [ref=f1e170] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

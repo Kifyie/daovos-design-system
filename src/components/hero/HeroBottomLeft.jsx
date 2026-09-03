@@ -2,11 +2,11 @@ import React from 'react';
 
 /**
  * DAOVOS Hero Bottom-Left Specification Block
- * Matches the reference layout: bold technical uppercase title + descriptive narrative.
+ * Mono technical title with hairline datum + descriptive narrative.
  */
 export const HeroBottomLeft = ({
-  title = 'LIMITED ALLOCATION',
-  description = 'Own the next-generation digital system engineered for architectural precision, modular reliability and monumental scale.'
+  title = 'ARCHITECTURAL DIGITAL SYSTEMS',
+  description = 'DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.'
 }) => {
   return (
     <div
@@ -17,15 +17,41 @@ export const HeroBottomLeft = ({
         zIndex: 25
       }}
     >
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+          marginBottom: '12px'
+        }}
+      >
+        <div
+          style={{
+            width: '32px',
+            height: '1px',
+            background: 'rgba(237, 230, 223, 0.4)'
+          }}
+        />
+        <span
+          style={{
+            fontFamily: 'var(--font-family-mono)',
+            fontSize: '9px',
+            letterSpacing: '0.28em',
+            color: 'rgba(244, 238, 232, 0.45)'
+          }}
+        >
+          01 // INTRO
+        </span>
+      </div>
       <h3
         style={{
-          fontFamily: 'var(--font-family-display)',
-          fontSize: '18px',
-          fontWeight: 700,
-          letterSpacing: '0.06em',
+          fontFamily: 'var(--font-family-mono)',
+          fontSize: '12px',
+          fontWeight: 600,
+          letterSpacing: '0.22em',
           textTransform: 'uppercase',
           color: 'var(--daovos-color-bone-white)',
-          marginBottom: '8px'
+          marginBottom: '12px'
         }}
       >
         {title}
@@ -34,9 +60,10 @@ export const HeroBottomLeft = ({
         style={{
           fontFamily: 'var(--font-family-body)',
           fontSize: '13px',
-          lineHeight: 1.55,
-          color: 'rgba(244, 238, 232, 0.65)',
-          margin: 0
+          lineHeight: 1.7,
+          color: 'rgba(244, 238, 232, 0.68)',
+          margin: 0,
+          maxWidth: '320px'
         }}
       >
         {description}

@@ -1,0 +1,154 @@
+- generic [active] [ref=f4e1]:
+  - main [ref=f4e3]:
+    - generic [ref=f4e5]:
+      - generic [ref=f4e10]:
+        - generic:
+          - generic: STUDIO
+          - generic: IDEA
+        - generic [ref=f4e12]:
+          - generic [ref=f4e13]: THE PROMISE
+          - heading "YOU BRING" [level=2] [ref=f4e14]:
+            - generic [ref=f4e16]:
+              - generic [ref=f4e17]: "Y"
+              - generic [ref=f4e18]: O
+              - generic [ref=f4e19]: U
+              - generic [ref=f4e20]: B
+              - generic [ref=f4e21]: R
+              - generic [ref=f4e22]: I
+              - generic [ref=f4e23]: "N"
+              - generic [ref=f4e24]: G
+          - heading "THE IDEA." [level=2] [ref=f4e25]:
+            - generic [ref=f4e27]:
+              - generic [ref=f4e28]: T
+              - generic [ref=f4e29]: H
+              - generic [ref=f4e30]: E
+              - generic [ref=f4e31]: I
+              - generic [ref=f4e32]: D
+              - generic [ref=f4e33]: E
+              - generic [ref=f4e34]: A
+              - generic [ref=f4e35]: .
+      - region "What DAOVOS makes" [ref=f4e36]:
+        - generic [ref=f4e38]:
+          - generic [ref=f4e39]: 02 // WHAT WE MAKE
+          - generic [ref=f4e41]:
+            - article [ref=f4e42]:
+              - generic [ref=f4e43]:
+                - paragraph [ref=f4e44]: 01 / DIGITAL HOMES / DISTINCT BY DESIGN
+                - heading "CUSTOM WEBSITES" [level=2] [ref=f4e45]:
+                  - generic [ref=f4e46]: CUSTOM
+                  - generic [ref=f4e47]: WEBSITES
+                - paragraph [ref=f4e48]: A complete digital home shaped around the brand, its audience, and the way it needs to grow.
+              - figure [ref=f4e49]:
+                - img "A monumental architectural facade organized as a precise digital home" [ref=f4e52]
+            - article [ref=f4e53]:
+              - generic [ref=f4e54]:
+                - paragraph [ref=f4e55]: 02 / ONE MESSAGE / ONE DECISIVE ROUTE
+                - heading "LANDING EXPERIENCES" [level=2] [ref=f4e56]:
+                  - generic [ref=f4e57]: LANDING
+                  - generic [ref=f4e58]: EXPERIENCES
+                - paragraph [ref=f4e59]: Focused launch environments that turn attention into one clear, measurable action.
+              - figure [ref=f4e60]:
+                - img "A single white spotlight cutting through a dark stage" [ref=f4e63]
+            - article [ref=f4e64]:
+              - generic [ref=f4e65]:
+                - paragraph [ref=f4e66]: 03 / DISCOVERY / DECISION / PURCHASE
+                - heading "COMMERCE SYSTEMS" [level=2] [ref=f4e67]:
+                  - generic [ref=f4e68]: COMMERCE
+                  - generic [ref=f4e69]: SYSTEMS
+                - paragraph [ref=f4e70]: Storefront systems where catalogue, product detail, and checkout move as one continuous experience.
+              - figure [ref=f4e71]:
+                - img "A carefully structured retail environment with products arranged in sequence" [ref=f4e74]
+            - article [ref=f4e75]:
+              - generic [ref=f4e76]:
+                - paragraph [ref=f4e77]: 04 / COMPLEXITY / ORGANIZED FOR USE
+                - heading "INTERFACE SYSTEMS" [level=2] [ref=f4e78]:
+                  - generic [ref=f4e79]: INTERFACE
+                  - generic [ref=f4e80]: SYSTEMS
+                - paragraph [ref=f4e81]: Responsive interfaces that turn dense content and behavior into a product people understand.
+              - figure [ref=f4e82]:
+                - img "An abstract digital surface suggesting a responsive interface" [ref=f4e85]
+            - article [ref=f4e86]:
+              - generic [ref=f4e87]:
+                - paragraph [ref=f4e88]: 05 / LIVE SYSTEMS / KEPT IN MOTION
+                - heading "CARE + OPTIMIZATION" [level=2] [ref=f4e89]:
+                  - generic [ref=f4e90]: CARE +
+                  - generic [ref=f4e91]: OPTIMIZATION
+                - paragraph [ref=f4e92]: Long-term technical care that keeps the experience fast, current, and dependable after launch.
+              - figure [ref=f4e93]:
+                - img "Server infrastructure kept organized and operational" [ref=f4e96]
+          - generic [ref=f4e97]: 05 CHAPTERS
+  - button [ref=f4e108] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

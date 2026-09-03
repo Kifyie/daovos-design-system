@@ -1,0 +1,455 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - button "Toggle Sidebar" [ref=e3] [cursor=pointer]
+    - complementary [ref=e10]:
+      - generic [ref=e12]:
+        - button "Sorted by Id" [ref=e14] [cursor=pointer]
+        - generic [ref=e18] [cursor=pointer]: All Components
+        - link "01 Anime js scrollbar" [ref=e23] [cursor=pointer]:
+          - /url: /v1/skiper1
+        - link "02 Dynamic island" [ref=e28] [cursor=pointer]:
+          - /url: /v1/skiper2
+        - link "03 Apple play button" [ref=e33] [cursor=pointer]:
+          - /url: /v1/skiper3
+        - link "04 Theme toggle buttons" [ref=e38] [cursor=pointer]:
+          - /url: /v1/skiper4
+        - link "05 Things drag and scroll" [ref=e43] [cursor=pointer]:
+          - /url: /v1/skiper5
+        - link "06 Hover members" [ref=e48] [cursor=pointer]:
+          - /url: /v1/skiper6
+        - link "07 Nike preloader" [ref=e53] [cursor=pointer]:
+          - /url: /v1/skiper7
+        - link "08 Words preloader" [ref=e58] [cursor=pointer]:
+          - /url: /v1/skiper8
+        - link "09 Stairs preloader" [ref=e63] [cursor=pointer]:
+          - /url: /v1/skiper9
+        - link "10 Double stairs preloader" [ref=e68] [cursor=pointer]:
+          - /url: /v1/skiper10
+        - link "11 Pixel preloader" [ref=e73] [cursor=pointer]:
+          - /url: /v1/skiper11
+        - link "12 Vercel Liquid simulation" [ref=e78] [cursor=pointer]:
+          - /url: /v1/skiper12
+        - link "13 Nike menu" [ref=e83] [cursor=pointer]:
+          - /url: /v1/skiper13
+        - link "14 Ascii Simulation" [ref=e88] [cursor=pointer]:
+          - /url: /v1/skiper14
+        - link "15 Box loading preloader" [ref=e93] [cursor=pointer]:
+          - /url: /v1/skiper15
+        - link "16 Card stack scroll" [ref=e98] [cursor=pointer]:
+          - /url: /v1/skiper16
+        - link "17 Card stack with gsap and rotate" [ref=e103] [cursor=pointer]:
+          - /url: /v1/skiper17
+        - link "18 Image cursor trail" [ref=e108] [cursor=pointer]:
+          - /url: /v1/skiper18
+        - link "19 Svg follow scroll" [ref=e113] [cursor=pointer]:
+          - /url: /v1/skiper19
+        - link "20 UniSwap Country Dialog" [ref=e118] [cursor=pointer]:
+          - /url: /v1/skiper20
+        - link "21 Family wallet" [ref=e123] [cursor=pointer]:
+          - /url: /v1/skiper21
+        - link "22 Aave token swap" [ref=e128] [cursor=pointer]:
+          - /url: /v1/skiper22
+        - link "23 Minimal Card Expand" [ref=e133] [cursor=pointer]:
+          - /url: /v1/skiper23
+        - link "24 Tik tik color list" [ref=e138] [cursor=pointer]:
+          - /url: /v1/skiper24
+        - link "25 Music toggle btn" [ref=e143] [cursor=pointer]:
+          - /url: /v1/skiper25
+        - link "26 Theme toggle btn" [ref=e148] [cursor=pointer]:
+          - /url: /v1/skiper26
+        - link "27 Rolling text" [ref=e153] [cursor=pointer]:
+          - /url: /v1/skiper27
+        - link "28 3D perspective text" [ref=e158] [cursor=pointer]:
+          - /url: /v1/skiper28
+        - link "29 Siena parallax" [ref=e163] [cursor=pointer]:
+          - /url: /v1/skiper29
+        - link "30 Oliver parallax" [ref=e168] [cursor=pointer]:
+          - /url: /v1/skiper30
+        - link "31 Text Scroll animation" [ref=e173] [cursor=pointer]:
+          - /url: /v1/skiper31
+        - link "32 Scroll images reveal 001" [ref=e178] [cursor=pointer]:
+          - /url: /v1/skiper32
+        - link "33 Scroll images reveal 002" [ref=e183] [cursor=pointer]:
+          - /url: /v1/skiper33
+        - link "34 Scroll images reveal 003" [ref=e188] [cursor=pointer]:
+          - /url: /v1/skiper34
+        - link "35 Hover expand" [ref=e193] [cursor=pointer]:
+          - /url: /v1/skiper35
+        - link "36 Interactive3d Hero" [ref=e198] [cursor=pointer]:
+          - /url: /v1/skiper36
+        - link "37 Animated number" [ref=e203] [cursor=pointer]:
+          - /url: /v1/skiper37
+        - link "38 Apple Navbar V001" [ref=e208] [cursor=pointer]:
+          - /url: /v1/skiper38
+        - link "39 Canvas crowd" [ref=e213] [cursor=pointer]:
+          - /url: /v1/skiper39
+        - link "40 CssLink" [ref=e218] [cursor=pointer]:
+          - /url: /v1/skiper40
+        - link "41 Progressive Blur" [ref=e223] [cursor=pointer]:
+          - /url: /v1/skiper41
+        - link "42 Animated icons 001" [ref=e228] [cursor=pointer]:
+          - /url: /v1/skiper42
+        - link "43 Vercel Tooltip" [ref=e233] [cursor=pointer]:
+          - /url: /v1/skiper43
+        - link "44 Vercel scroll with blur" [ref=e238] [cursor=pointer]:
+          - /url: /v1/skiper44
+        - link "45 Family Receive button" [ref=e243] [cursor=pointer]:
+          - /url: /v1/skiper45
+        - link "46 Nextjs gooey menu" [ref=e248] [cursor=pointer]:
+          - /url: /v1/skiper46
+        - link "47 Perspective carousel" [ref=e253] [cursor=pointer]:
+          - /url: /v1/skiper47
+        - link "48 Card swipe carousel" [ref=e258] [cursor=pointer]:
+          - /url: /v1/skiper48
+        - link "49 Inverted perspective carousel" [ref=e263] [cursor=pointer]:
+          - /url: /v1/skiper49
+        - link "50 Creative carousel 001" [ref=e268] [cursor=pointer]:
+          - /url: /v1/skiper50
+        - link "51 Creative carousel 002" [ref=e273] [cursor=pointer]:
+          - /url: /v1/skiper51
+        - link "52 ExpandOnHover" [ref=e278] [cursor=pointer]:
+          - /url: /v1/skiper52
+        - link "53 ExpandOnHover vertical" [ref=e283] [cursor=pointer]:
+          - /url: /v1/skiper53
+        - link "54 Shadcn clipPath Carousal" [ref=e288] [cursor=pointer]:
+          - /url: /v1/skiper54
+        - link "55 Parallax Image" [ref=e293] [cursor=pointer]:
+          - /url: /v1/skiper55
+        - link "56 Devouring details sign in" [ref=e298] [cursor=pointer]:
+          - /url: /v1/skiper56
+        - link "57 Vercel navigation bar" [ref=e303] [cursor=pointer]:
+          - /url: /v1/skiper57
+        - link "58 Text roll navigation" [ref=e308] [cursor=pointer]:
+          - /url: /v1/skiper58
+        - link "59 Drawing cursor effect" [ref=e313] [cursor=pointer]:
+          - /url: /v1/skiper59
+        - link "60 Side Scroll Navigation" [ref=e318] [cursor=pointer]:
+          - /url: /v1/skiper60
+        - link "61 Mouse follow animations" [ref=e323] [cursor=pointer]:
+          - /url: /v1/skiper61
+        - link "62 Loop animation hook" [ref=e328] [cursor=pointer]:
+          - /url: /v1/skiper62
+        - link "63 Apple squicircle effect" [ref=e333] [cursor=pointer]:
+          - /url: /v1/skiper63
+        - link "64 Gooey Effect" [ref=e338] [cursor=pointer]:
+          - /url: /v1/skiper64
+        - link "65 Breakpoint indicator" [ref=e343] [cursor=pointer]:
+          - /url: /v1/skiper65
+        - link "66 SVG clip path mask" [ref=e348] [cursor=pointer]:
+          - /url: /v1/skiper66
+        - link "67 Video player 001" [ref=e353] [cursor=pointer]:
+          - /url: /v1/skiper67
+        - link "68 Animated number input" [ref=e358] [cursor=pointer]:
+          - /url: /v1/skiper68
+        - link "69 Skiper Number flow" [ref=e363] [cursor=pointer]:
+          - /url: /v1/skiper69
+        - link "70 Text reveal box" [ref=e368] [cursor=pointer]:
+          - /url: /v1/skiper70
+        - link "71 Image reveal" [ref=e373] [cursor=pointer]:
+          - /url: /v1/skiper71
+        - link "72 Horizontal Text reveal" [ref=e378] [cursor=pointer]:
+          - /url: /v1/skiper72
+        - link "73 Infinite canvas" [ref=e383] [cursor=pointer]:
+          - /url: /v1/skiper73
+        - link "74 Timeline calendar" [ref=e388] [cursor=pointer]:
+          - /url: /v1/skiper74
+        - link "75 Apple Navbar V002" [ref=e393] [cursor=pointer]:
+          - /url: /v1/skiper75
+        - link "76 Apple Feature Block" [ref=e398] [cursor=pointer]:
+          - /url: /v1/skiper76
+        - link "77 Apple carousel" [ref=e403] [cursor=pointer]:
+          - /url: /v1/skiper77
+        - link "78 Dia Browser's Carousal" [ref=e408] [cursor=pointer]:
+          - /url: /v1/skiper78
+        - link "79 Team showcase scroll" [ref=e413] [cursor=pointer]:
+          - /url: /v1/skiper79
+        - link "80 Projects Showcase" [ref=e418] [cursor=pointer]:
+          - /url: /v1/skiper80
+        - link "81 AI Input 001" [ref=e423] [cursor=pointer]:
+          - /url: /v1/skiper81
+        - link "82 AI Input 002" [ref=e428] [cursor=pointer]:
+          - /url: /v1/skiper82
+        - link "83 AI Input 003" [ref=e433] [cursor=pointer]:
+          - /url: /v1/skiper83
+        - link "84 AI Input 004" [ref=e438] [cursor=pointer]:
+          - /url: /v1/skiper84
+        - link "85 AI Input 005" [ref=e443] [cursor=pointer]:
+          - /url: /v1/skiper85
+        - link "86 Apple Ai gradient" [ref=e448] [cursor=pointer]:
+          - /url: /v1/skiper86
+        - link "87 Scroll with fade effect" [ref=e453] [cursor=pointer]:
+          - /url: /v1/skiper87
+        - link "88 3D Rolling Text on scroll" [ref=e458] [cursor=pointer]:
+          - /url: /v1/skiper88
+        - link "89 Scroll progress 001" [ref=e463] [cursor=pointer]:
+          - /url: /v1/skiper89
+        - link "90 Gradient hover cards" [ref=e468] [cursor=pointer]:
+          - /url: /v1/skiper90
+        - link "91 video player 002" [ref=e473] [cursor=pointer]:
+          - /url: /v1/skiper91
+        - link "92 Vercel Command Search" [ref=e478] [cursor=pointer]:
+          - /url: /v1/skiper92
+        - link "94 Scroll progress 002" [ref=e483] [cursor=pointer]:
+          - /url: /v1/skiper94
+        - link "95 Scroll progress 003" [ref=e488] [cursor=pointer]:
+          - /url: /v1/skiper95
+        - link "96 Expandable tabs navigation" [ref=e493] [cursor=pointer]:
+          - /url: /v1/skiper96
+        - link "97 video player 003" [ref=e498] [cursor=pointer]:
+          - /url: /v1/skiper97
+        - link "98 Vertical tooltip menu" [ref=e503] [cursor=pointer]:
+          - /url: /v1/skiper98
+        - link "99 Animated icons 002" [ref=e508] [cursor=pointer]:
+          - /url: /v1/skiper99
+        - link "100 Draggable snap button" [ref=e513] [cursor=pointer]:
+          - /url: /v1/skiper100
+        - link "101 Custom tooltip" [ref=e518] [cursor=pointer]:
+          - /url: /v1/skiper101
+        - link "102 Debug Pannel" [ref=e523] [cursor=pointer]:
+          - /url: /v1/skiper102
+        - link "103 Bouncy accordion" [ref=e528] [cursor=pointer]:
+          - /url: /v1/skiper103
+        - link "104 Scroll reveal grid cards" [ref=e533] [cursor=pointer]:
+          - /url: /v1/skiper104
+        - link [ref=e538] [cursor=pointer]:
+          - /url: /v1/skiper105
+          - generic [ref=e540]:
+            - text: 105 Auto Scale input
+            - superscript [ref=e541]: New
+        - link [ref=e544] [cursor=pointer]:
+          - /url: /v1/skiper106
+          - generic [ref=e546]:
+            - text: 106 Smooth caret input
+            - superscript [ref=e547]: New
+        - link [ref=e550] [cursor=pointer]:
+          - /url: /v1/skiper107
+          - generic [ref=e552]:
+            - text: 107 Knockout bracket
+            - superscript [ref=e553]: New
+  - main [ref=e555]:
+    - generic [ref=e556]:
+      - generic [ref=e557]:
+        - button "Show Info" [ref=e559] [cursor=pointer]
+        - button "full page Preview" [ref=e568] [cursor=pointer]:
+          - link [ref=e569]:
+            - /url: /v1/preview/skiper42
+        - button "Pro Login Required" [ref=e576] [cursor=pointer]:
+          - paragraph [ref=e581]
+        - generic [ref=e586]:
+          - button "Command + K" [ref=e587] [cursor=pointer]
+          - generic [ref=e592]:
+            - heading "Command Palette" [level=2] [ref=e593]
+            - paragraph [ref=e594]: Search for a command to run...
+      - generic [ref=e595]:
+        - generic [ref=e597]:
+          - paragraph [ref=e598]: Loading component...
+          - generic [ref=e599]:
+            - button "Select package manager" [ref=e600] [cursor=pointer]: pnpm
+            - code [ref=e605]: pnpm dlx shadcn add @skiper-ui/skiper42
+            - generic [ref=e606] [cursor=pointer]
+        - generic [ref=e611]:
+          - generic [ref=e613]:
+            - link "Components" [ref=e614] [cursor=pointer]:
+              - /url: /components
+            - link "Pro" [ref=e616] [cursor=pointer]:
+              - /url: /components?source=pro
+            - generic [ref=e618]: Animated icons 001
+          - generic [ref=e619]:
+            - heading "Animated icons 001" [level=3] [ref=e620]
+            - paragraph [ref=e621]: A collection of beautifully animated interactive icons with hover effects, click animations, and smooth transitions. Each icon demonstrates different animation techniques using Framer Motion, perfect for creating engaging UI elements.
+            - heading [level=3] [ref=e622]:
+              - text: Dependencies
+              - generic [ref=e623] [cursor=pointer]
+            - generic [ref=e627]:
+              - link "framer-motion" [ref=e628] [cursor=pointer]:
+                - /url: https://motion.dev/
+              - link "lucide-react" [ref=e631] [cursor=pointer]:
+                - /url: https://lucide.dev/
+            - heading "Interaction Type" [level=3] [ref=e635]
+            - table [ref=e636]:
+              - rowgroup [ref=e637]:
+                - row [ref=e638]:
+                  - cell [ref=e639]
+                  - cell "Click icons to trigger interactive effects" [ref=e646]
+            - heading [level=3] [ref=e647]:
+              - text: Install via Pro CLI [
+              - link "Requires a Pro license key" [ref=e648] [cursor=pointer]:
+                - /url: /docs/quick-start#pro-cli-authentication
+              - text: "]"
+            - generic [ref=e649]:
+              - button "Select package manager" [ref=e650] [cursor=pointer]: pnpm
+              - code [ref=e655]: pnpm dlx shadcn add @skiper-ui/skiper42
+              - generic [ref=e656] [cursor=pointer]
+            - generic [ref=e660]:
+              - heading "Using Icons" [level=3] [ref=e661]
+              - generic [ref=e663]:
+                - code [ref=e665]:
+                  - text: "import { SideBarIcon, SourceButton, LockSourceButton, MusicIcon, SpinnerIcon, } from \"@/components/v1/skiper42\"; const CustomIcons = () => { return ("
+                  - generic [ref=e666]:
+                    - generic [ref=e667]: <div
+                    - text: className
+                    - generic [ref=e668]: ="flex gap-4"
+                    - text: ">"
+                  - generic [ref=e669]:
+                    - generic [ref=e670]: <CopyIcon
+                    - text: copyText
+                    - generic [ref=e671]: ="copied Hello form skiper ui"
+                    - text: />
+                  - generic [ref=e672]:
+                    - generic [ref=e673]: <SpinnerIcon
+                    - text: color
+                    - generic [ref=e674]: ="red"
+                    - text: size
+                    - generic [ref=e675]: "={20}"
+                    - text: />
+                  - generic [ref=e676]:
+                    - generic [ref=e677]: <SideBarIcon
+                    - text: />
+                  - generic [ref=e678]:
+                    - generic [ref=e679]: <SourceButton
+                    - text: />
+                  - generic [ref=e680]:
+                    - generic [ref=e681]: <MusicIcon
+                    - text: />
+                  - text: "{/* similar for other */}"
+                  - generic [ref=e682]:
+                    - generic [ref=e683]: </div
+                    - text: ">"
+                  - text: "); };"
+                - generic [ref=e684] [cursor=pointer]
+              - table [ref=e689]:
+                - rowgroup [ref=e690]:
+                  - row [ref=e691]:
+                    - columnheader "Props" [ref=e692]
+                    - columnheader "Description" [ref=e694]
+                - rowgroup [ref=e696]:
+                  - row [ref=e697]:
+                    - cell [ref=e698]:
+                      - paragraph [ref=e699]: className
+                    - cell "Additional CSS classes for styling" [ref=e700]
+                  - row [ref=e701]:
+                    - cell [ref=e702]:
+                      - paragraph [ref=e703]: color
+                    - cell "Color of the spinner bars (for SpinnerIcon)" [ref=e704]
+                  - row [ref=e705]:
+                    - cell [ref=e706]:
+                      - paragraph [ref=e707]: size
+                    - cell "Size of the spinner in pixels (for SpinnerIcon)" [ref=e708]
+                  - row [ref=e709]:
+                    - cell [ref=e710]:
+                      - paragraph [ref=e711]: copyText
+                    - cell "Text to copy when the icon is clicked (for CopyIcon)" [ref=e712]
+              - heading "Available icons" [level=3] [ref=e713]
+              - paragraph [ref=e714]: The component includes 17 different animated icons with included with personal favorite copy icon with clipboard functionality.
+              - table [ref=e715]:
+                - rowgroup [ref=e716]:
+                  - row [ref=e717]:
+                    - columnheader "Icons" [ref=e718]
+                    - columnheader "Description" [ref=e720]
+                - rowgroup [ref=e722]:
+                  - row [ref=e723]:
+                    - cell [ref=e724]:
+                      - paragraph [ref=e725]: SideBarIcon
+                    - cell "Expandable sidebar indicator with width animation" [ref=e726]
+                  - row [ref=e727]:
+                    - cell [ref=e728]:
+                      - paragraph [ref=e729]: SourceButton
+                    - cell "Code brackets with moving arrows and lines" [ref=e730]
+                  - row [ref=e731]:
+                    - cell [ref=e732]:
+                      - paragraph [ref=e733]: LockSourceButton
+                    - cell "3D rotating lock with perspective effect" [ref=e734]
+                  - row [ref=e735]:
+                    - cell [ref=e736]:
+                      - paragraph [ref=e737]: LogoutIcon
+                    - cell "Exit arrow with sliding animation" [ref=e738]
+                  - row [ref=e739]:
+                    - cell [ref=e740]:
+                      - paragraph [ref=e741]: DollerIcon
+                    - cell "Dollar sign with 360° rotation" [ref=e742]
+                  - row [ref=e743]:
+                    - cell [ref=e744]:
+                      - paragraph [ref=e745]: CopyIcon
+                    - cell "Copy/checkmark toggle with clipboard functionality" [ref=e746]
+                  - row [ref=e747]:
+                    - cell [ref=e748]:
+                      - paragraph [ref=e749]: MusicIcon
+                    - cell "Animated waveform bars with play/pause" [ref=e750]
+                  - row [ref=e751]:
+                    - cell [ref=e752]:
+                      - paragraph [ref=e753]: PlusIcon
+                    - cell "Plus/minus toggle with rotation" [ref=e754]
+                  - row [ref=e755]:
+                    - cell [ref=e756]:
+                      - paragraph [ref=e757]: HamMenuIcon
+                    - cell "Hamburger menu with dynamic bar lengths" [ref=e758]
+                  - row [ref=e759]:
+                    - cell [ref=e760]:
+                      - paragraph [ref=e761]: ChevIcon
+                    - cell "Chevron up/down toggle" [ref=e762]
+                  - row [ref=e763]:
+                    - cell [ref=e764]:
+                      - paragraph [ref=e765]: MailIcon
+                    - cell "Triangle alert with shake animation" [ref=e766]
+                  - row [ref=e767]:
+                    - cell [ref=e768]:
+                      - paragraph [ref=e769]: WorldIcon
+                    - cell "Globe with controllable spin animation" [ref=e770]
+                  - row [ref=e771]:
+                    - cell [ref=e772]:
+                      - paragraph [ref=e773]: FileIcon
+                    - cell "Link icon with path drawing animation" [ref=e774]
+                  - row [ref=e775]:
+                    - cell [ref=e776]:
+                      - paragraph [ref=e777]: TrashIcon
+                    - cell "Trash can with lid flip animation" [ref=e778]
+                  - row [ref=e779]:
+                    - cell [ref=e780]:
+                      - paragraph [ref=e781]: SendIcon
+                    - cell "Send arrow with slide-out effect" [ref=e782]
+                  - row [ref=e783]:
+                    - cell [ref=e784]:
+                      - paragraph [ref=e785]: SpinnerIcon
+                    - cell "Loading spinner with fading bars" [ref=e786]
+                  - row [ref=e787]:
+                    - cell [ref=e788]:
+                      - paragraph [ref=e789]: BellIcon
+                    - cell "Bell with ring animation and clapper" [ref=e790]
+              - heading "Attribution" [level=3] [ref=e791]
+              - paragraph [ref=e792]:
+                - text: Icons are used from
+                - link "Lucide" [ref=e793] [cursor=pointer]:
+                  - /url: https://lucide.dev/
+                - text: with custom animations and interactions.
+            - heading "Source code" [level=3] [ref=e794]
+            - generic [ref=e795]:
+              - text: Click on the top right
+              - button "Source Code" [ref=e797] [cursor=pointer]
+              - text: to view the source code
+            - heading "Keep in mind" [level=3] [ref=e804]
+            - paragraph [ref=e805]: Most components here are recreations of the best out there. I don't claim to be the original creator. This is my attempt to reverse-engineer, replicate, and often add a few extra features. I've tried to credit everyone, but if I missed something, let me know.
+            - heading "Contact" [level=3] [ref=e806]
+            - generic [ref=e807]:
+              - text: Additionlly, if you find any bug or issue, feel free to
+              - button "yo@gxuri.me" [ref=e809] [cursor=pointer]:
+                - link [ref=e810]:
+                  - /url: mailto:yo@gxuri.me
+              - text: Drop a dm.
+            - heading "License & Usage:" [level=3] [ref=e815]
+            - list [ref=e816]:
+              - listitem [ref=e817]: Free to use and modify in both personal and commercial projects.
+              - listitem [ref=e818]: Attribution to Skiper UI is required when using the free version.
+              - listitem [ref=e819]: No attribution required with Skiper UI Pro.
+            - generic [ref=e820]:
+              - separator [ref=e821]
+              - generic [ref=e822]:
+                - link [ref=e823] [cursor=pointer]:
+                  - /url: /v1/skiper41
+                  - generic [ref=e824]: Previous
+                  - paragraph [ref=e827]: Progressive Blur
+                - link [ref=e828] [cursor=pointer]:
+                  - /url: /v1/skiper43
+                  - generic [ref=e829]: Next
+                  - paragraph [ref=e832]: Vercel Tooltip
+  - region "Notifications alt+T"
+  - alert [ref=e833]

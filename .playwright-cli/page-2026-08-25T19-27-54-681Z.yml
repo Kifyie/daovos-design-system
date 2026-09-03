@@ -1,0 +1,157 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - generic: DATUM 00 // GRID REGISTERED
+        - navigation [ref=f1e14]:
+          - generic [ref=f1e34]:
+            - link "01Studio" [ref=f1e35] [cursor=pointer]:
+              - /url: "#studio"
+            - link "02Who We Are" [ref=f1e36] [cursor=pointer]:
+              - /url: "#whoweare"
+            - link "03Process" [ref=f1e37] [cursor=pointer]:
+              - /url: "#process"
+            - link "04Recognition" [ref=f1e38] [cursor=pointer]:
+              - /url: "#recognition"
+            - button "Specimen" [ref=f1e39] [cursor=pointer]
+        - generic [ref=f1e40]:
+          - generic:
+            - generic:
+              - heading "DAOVOS" [level=1]
+          - generic [ref=f1e42] [cursor=pointer]
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: D
+                      - generic: I
+                      - generic: G
+                      - generic: I
+                      - generic: T
+                      - generic: A
+                      - generic: L
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: S
+                    - generic: "Y"
+                    - generic: S
+                    - generic: T
+                    - generic: E
+                    - generic: M
+                    - generic: S
+        - generic [ref=f1e44]:
+          - generic [ref=f1e46]:
+            - generic [ref=f1e47]: 01 // INTRO
+            - heading "ARCHITECTURAL DIGITAL SYSTEMS" [level=3] [ref=f1e50]
+            - paragraph [ref=f1e51]: DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.
+          - generic [ref=f1e53]:
+            - generic [ref=f1e54]:
+              - heading "ACCEPTING NEW COMMISSIONS" [level=4] [ref=f1e57]
+              - paragraph [ref=f1e58]: Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.
+            - generic [ref=f1e59] [cursor=pointer]: Start a project
+        - generic: SCROLL
+      - region "Transition to Who We Are" [ref=f1e64]
+      - generic [ref=f1e73]:
+        - generic [ref=f1e76]:
+          - generic [ref=f1e77]: WHO WE ARE
+          - generic [ref=f1e79]:
+            - generic [ref=f1e80]: "01"
+            - generic [ref=f1e81]: / 04
+        - generic [ref=f1e84]:
+          - generic [ref=f1e85]:
+            - generic [ref=f1e86]: 01 // WHO WE ARE
+            - generic [ref=f1e88]: "DAOVOS DIGITAL STUDIO — SECTOR: WEB"
+          - generic [ref=f1e89]:
+            - generic [ref=f1e90]:
+              - generic [ref=f1e91]: MISSION
+              - paragraph [ref=f1e92]:
+                - generic [ref=f1e93]: Make high-quality digital experiences accessible — strong design, modern technology, a
+                - generic [ref=f1e94]: simple client experience.
+            - generic [ref=f1e95]:
+              - generic [ref=f1e96]: VISION
+              - paragraph [ref=f1e97]:
+                - generic [ref=f1e98]: Grow from a web agency into a recognizable digital company providing everything a
+                - generic [ref=f1e99]: modern brand needs to build, launch, and grow online.
+            - generic [ref=f1e100]:
+              - generic [ref=f1e101]: PROMISE
+              - paragraph [ref=f1e102]:
+                - generic [ref=f1e103]: You bring the idea. Daovos turns it into a digital experience.
+          - generic [ref=f1e104]: STRUCTURE · PRECISION · MODULARITY · RELIABILITY · SCALE · PROGRESS
+  - button [ref=f1e114] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [disabled]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

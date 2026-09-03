@@ -1,0 +1,193 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e3]:
+    - generic [ref=f1e8]:
+      - generic [ref=f1e10]:
+        - generic:
+          - generic: STUDIO
+          - generic: IDEA
+        - generic [ref=f1e11]:
+          - generic [ref=f1e12]: WHO WE ARE
+          - generic [ref=f1e15]:
+            - generic [ref=f1e16]: "02"
+            - generic [ref=f1e17]: / 04
+        - generic [ref=f1e19]:
+          - generic [ref=f1e20]: THE PROMISE
+          - heading "YOU BRING" [level=2] [ref=f1e21]:
+            - generic [ref=f1e23]:
+              - generic [ref=f1e24]: "Y"
+              - generic [ref=f1e25]: O
+              - generic [ref=f1e26]: U
+              - generic [ref=f1e27]: B
+              - generic [ref=f1e28]: R
+              - generic [ref=f1e29]: I
+              - generic [ref=f1e30]: "N"
+              - generic [ref=f1e31]: G
+          - heading "THE IDEA." [level=2] [ref=f1e32]:
+            - generic [ref=f1e34]:
+              - generic [ref=f1e35]: T
+              - generic [ref=f1e36]: H
+              - generic [ref=f1e37]: E
+              - generic [ref=f1e38]: I
+              - generic [ref=f1e39]: D
+              - generic [ref=f1e40]: E
+              - generic [ref=f1e41]: A
+              - generic [ref=f1e42]: .
+      - region "DAOVOS mission, vision, promise, and capabilities" [ref=f1e43]:
+        - generic [ref=f1e45]:
+          - generic [ref=f1e46]:
+            - generic [ref=f1e47]: 01 // WHO WE ARE
+            - generic [ref=f1e49]: HORIZONTAL SYSTEM DOSSIER — X/04
+          - generic [ref=f1e50]:
+            - article [ref=f1e51]:
+              - generic: "01"
+              - generic [ref=f1e53]:
+                - generic [ref=f1e54]: FIG. 01 / LIVE SCHEMATIC
+                - img "Design, technology, and experience converging into one digital product" [ref=f1e55]:
+                  - generic [ref=f1e58]: OUTPUT / ACCESSIBLE DIGITAL EXPERIENCE
+                - generic [ref=f1e59]: DAO-01 / 26.08 / SYSTEM
+            - article [ref=f1e60]:
+              - generic: "02"
+              - generic [ref=f1e61]:
+                - heading "FROM WEB STUDIO" [level=2] [ref=f1e63]
+                - heading "TO DIGITAL COMPANY." [level=2] [ref=f1e65]
+                - paragraph [ref=f1e66]: Grow from a web agency into a recognizable digital company providing everything a modern brand needs to build, launch, and grow online.
+                - generic [ref=f1e67]:
+                  - generic [ref=f1e68]:
+                    - generic [ref=f1e69]: "01"
+                    - text: WEB
+                  - generic [ref=f1e70]:
+                    - generic [ref=f1e71]: "02"
+                    - text: BRAND
+                  - generic [ref=f1e72]:
+                    - generic [ref=f1e73]: "03"
+                    - text: PRODUCTS
+                  - generic [ref=f1e74]:
+                    - generic [ref=f1e75]: "04"
+                    - text: AUTOMATION
+              - generic [ref=f1e76]:
+                - generic [ref=f1e77]: FIG. 02 / LIVE SCHEMATIC
+                - img "A central web studio expanding into a modular digital company" [ref=f1e78]:
+                  - generic [ref=f1e85]: EXPANSION MODEL / MODULAR / CONNECTED / RECOGNIZABLE
+                - generic [ref=f1e86]: DAO-02 / 26.08 / SYSTEM
+            - article [ref=f1e87]:
+              - generic: "03"
+              - generic [ref=f1e88]:
+                - heading "IDEA IN." [level=2] [ref=f1e90]
+                - heading "EXPERIENCE OUT." [level=2] [ref=f1e92]
+                - paragraph [ref=f1e93]: You bring the idea. Daovos turns it into a digital experience.
+                - generic [ref=f1e94]:
+                  - generic [ref=f1e95]:
+                    - generic [ref=f1e96]: "01"
+                    - text: LISTEN
+                  - generic [ref=f1e97]:
+                    - generic [ref=f1e98]: "02"
+                    - text: DESIGN
+                  - generic [ref=f1e99]:
+                    - generic [ref=f1e100]: "03"
+                    - text: BUILD
+                  - generic [ref=f1e101]:
+                    - generic [ref=f1e102]: "04"
+                    - text: LAUNCH
+              - generic [ref=f1e103]:
+                - generic [ref=f1e104]: FIG. 03 / LIVE SCHEMATIC
+                - img "An idea moving through design and development into a finished interface" [ref=f1e105]:
+                  - generic [ref=f1e108]: IDEA
+                  - generic [ref=f1e109]: LISTEN
+                  - generic [ref=f1e110]: DESIGN
+                  - generic [ref=f1e111]: BUILD
+                  - generic [ref=f1e112]: LAUNCH
+                  - generic [ref=f1e113]: DIGITAL EXPERIENCE / LIVE
+                - generic [ref=f1e114]: DAO-03 / 26.08 / SYSTEM
+            - article [ref=f1e115]:
+              - generic: "04"
+              - generic [ref=f1e116]:
+                - heading "ONE STUDIO." [level=2] [ref=f1e118]
+                - heading "THE FULL SYSTEM." [level=2] [ref=f1e120]
+                - paragraph [ref=f1e121]: Strategy, interface, engineering, launch, and long-term support — assembled as one connected digital practice.
+              - generic [ref=f1e122]:
+                - generic [ref=f1e123]: FIG. 04 / LIVE SCHEMATIC
+                - generic "DAOVOS web capabilities" [ref=f1e124]
+                - generic [ref=f1e125]: DAO-04 / 26.08 / SYSTEM
+              - generic [ref=f1e126]:
+                - generic [ref=f1e127]: STRUCTURE · PRECISION · MODULARITY · RELIABILITY · SCALE · PROGRESS
+                - generic [ref=f1e128]: EST. MMXXVI — SPEC-DAOVOS-001
+          - generic [ref=f1e129]:
+            - generic [ref=f1e130]: SCROLL / X-AXIS
+            - generic [ref=f1e136]:
+              - generic [ref=f1e137]: "01"
+              - text: / 04
+  - button [ref=f1e146] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [disabled]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

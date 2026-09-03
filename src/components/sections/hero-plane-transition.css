@@ -1,0 +1,342 @@
+/**
+ * Hero → WHO plane exchange.
+ * CSS owns only the static construction; every moving part is controlled by GSAP.
+ */
+
+.hero-plane-root {
+  position: relative;
+  z-index: 70;
+  height: 285vh;
+  min-height: 1680px;
+  overflow: visible;
+  background-color: var(--daovos-color-bone-white);
+}
+
+.hero-plane-stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  overflow: hidden;
+  background-color: var(--daovos-color-bone-white);
+  isolation: isolate;
+}
+
+.hero-plane-field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  color: #111112;
+  background-color: var(--daovos-color-bone-white);
+}
+
+.hero-plane-field::before,
+.hero-plane-field::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-plane-field::before {
+  inset: 0 clamp(20px, 3vw, 48px);
+  border-right: 1px solid rgba(17, 17, 18, 0.18);
+  border-left: 1px solid rgba(17, 17, 18, 0.18);
+}
+
+.hero-plane-field::after {
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: rgba(17, 17, 18, 0.18);
+}
+
+.hero-plane-wordmark-rows {
+  position: absolute;
+  inset: 9vh 0;
+  display: grid;
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  align-items: center;
+}
+
+.hero-plane-wordmark-row {
+  min-width: 0;
+  overflow: hidden;
+  color: #222224;
+  border-top: 1px solid rgba(17, 17, 18, 0.14);
+}
+
+.hero-plane-wordmark-row:last-child {
+  border-bottom: 1px solid rgba(17, 17, 18, 0.14);
+}
+
+.hero-plane-wordmark-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.hero-plane-wordmark-group {
+  display: flex;
+  align-items: center;
+  flex: none;
+  gap: clamp(48px, 6vw, 112px);
+  padding: clamp(12px, 1.5vh, 20px) clamp(24px, 3vw, 56px);
+}
+
+.hero-plane-wordmark {
+  width: clamp(260px, 28vw, 560px);
+  height: auto;
+  flex: none;
+  opacity: 0.78;
+}
+
+.hero-plane-field-meta,
+.hero-plane-field-index {
+  position: absolute;
+  z-index: 4;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.22em;
+  color: #111112;
+  will-change: transform, opacity;
+}
+
+.hero-plane-field-meta--top {
+  top: clamp(18px, 3vh, 32px);
+  left: clamp(24px, 4vw, 64px);
+}
+
+.hero-plane-field-meta--bottom {
+  right: clamp(24px, 4vw, 64px);
+  bottom: clamp(18px, 3vh, 32px);
+}
+
+.hero-plane-field-index {
+  right: clamp(24px, 4vw, 64px);
+  top: clamp(18px, 3vh, 32px);
+  color: rgba(17, 17, 18, 0.48);
+}
+
+.hero-plane-surface {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  color: var(--daovos-color-bone-white);
+  background-color: #0a0a0c;
+  backface-visibility: hidden;
+  contain: paint;
+  will-change: transform, opacity;
+}
+
+.hero-plane-outgoing {
+  z-index: 3;
+}
+
+.hero-plane-incoming {
+  z-index: 2;
+  border: 1px solid rgba(237, 230, 223, 0.58);
+}
+
+.hero-plane-edge {
+  position: absolute;
+  inset: 0;
+  z-index: 90;
+  border: 1px solid rgba(237, 230, 223, 0.48);
+  pointer-events: none;
+}
+
+.hero-plane-preview-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-plane-preview-line {
+  position: absolute;
+  display: block;
+  background-color: rgba(237, 230, 223, 0.055);
+}
+
+.hero-plane-preview-line--vertical {
+  top: 0;
+  bottom: 0;
+  left: calc(var(--preview-line) * (100% / 12));
+  width: 1px;
+}
+
+.hero-plane-preview-line--horizontal {
+  right: 0;
+  left: 0;
+  top: calc(var(--preview-line) * (100% / 8));
+  height: 1px;
+}
+
+.hero-plane-preview-content {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform, opacity;
+}
+
+.hero-plane-preview-ghost {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  font-family: var(--font-family-display);
+  font-size: clamp(7rem, 22vw, 22rem);
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  -webkit-text-stroke: 1px rgba(237, 230, 223, 0.16);
+  white-space: nowrap;
+}
+
+.hero-plane-preview-copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8vw;
+  text-align: center;
+}
+
+.hero-plane-preview-label {
+  margin-bottom: clamp(20px, 3vh, 32px);
+  color: #aba6a1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+}
+
+.hero-plane-preview-copy p {
+  margin: 0;
+  color: #f4eee8;
+  font-family: var(--font-family-display);
+  font-size: clamp(2.6rem, 1.4rem + 5.4vw, 6.75rem);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.hero-plane-preview-copy .hero-plane-preview-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(237, 230, 223, 0.9);
+}
+
+.hero-plane-preview-rail {
+  position: absolute;
+  left: clamp(20px, 3.5vw, 48px);
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  transform: translateY(-50%);
+  color: #aba6a1;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  writing-mode: vertical-rl;
+}
+
+.hero-plane-preview-rail i {
+  display: block;
+  width: 1px;
+  height: 160px;
+  background-color: rgba(237, 230, 223, 0.55);
+}
+
+.hero-plane-preview-coordinate {
+  position: absolute;
+  right: clamp(20px, 3.5vw, 48px);
+  bottom: clamp(20px, 4vh, 42px);
+  color: #6b6b6f;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.hero-plane-reduced {
+  height: 100vh;
+  min-height: 560px;
+}
+
+.hero-plane-reduced .hero-plane-field,
+.hero-plane-reduced .hero-plane-incoming {
+  display: none;
+}
+
+.hero-plane-reduced .hero-plane-outgoing {
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+@media (max-width: 900px) {
+  .hero-plane-root {
+    height: 235vh;
+    min-height: 1320px;
+  }
+
+  .hero-plane-stage {
+    min-height: 520px;
+  }
+
+  .hero-plane-wordmark-rows {
+    inset: 8vh 0;
+  }
+
+  .hero-plane-wordmark-group {
+    gap: 28px;
+    padding: 10px 18px;
+  }
+
+  .hero-plane-wordmark {
+    width: clamp(210px, 64vw, 320px);
+  }
+
+  .hero-plane-preview-rail {
+    display: none;
+  }
+
+  .hero-plane-preview-copy p {
+    font-size: clamp(2.1rem, 10vw, 4.5rem);
+  }
+
+  .hero-plane-field-meta--bottom {
+    right: auto;
+    left: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-plane-root {
+    height: 100vh;
+    min-height: 560px;
+  }
+
+  .hero-plane-field,
+  .hero-plane-incoming {
+    display: none;
+  }
+
+  .hero-plane-outgoing {
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}

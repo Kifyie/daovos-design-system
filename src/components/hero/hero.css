@@ -1,0 +1,648 @@
+/* ============================================================
+   DAOVOS HERO — Motion & HUD System
+   One orchestrated entrance. Ambient parallax. No bounce.
+   ============================================================ */
+
+:root {
+  --bone: #EDE6DF;
+  --hairline: rgba(237, 230, 223, 0.14);
+  --hairline-strong: rgba(237, 230, 223, 0.32);
+}
+
+/* ------------------------------------------------------------
+   TOP MASTHEAD — quiet brand orientation, no navigation or controls
+   ------------------------------------------------------------ */
+.hero-top-rail {
+  position: relative;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: clamp(24px, 3vw, 56px);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px clamp(24px, 5vw, 64px) 16px;
+  color: var(--bone);
+  opacity: 0;
+  transform: translateY(-28px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s,
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+  pointer-events: none;
+}
+
+.hero-top-rail::after {
+  position: absolute;
+  right: clamp(24px, 5vw, 64px);
+  bottom: 0;
+  left: clamp(24px, 5vw, 64px);
+  height: 1px;
+  content: '';
+  background: var(--hairline);
+}
+
+.hero-top-rail.is-entered {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-top-rail__brand {
+  display: flex;
+  align-items: center;
+}
+
+.hero-top-rail__meta {
+  justify-self: end;
+  margin: 0;
+  color: rgba(237, 230, 223, 0.68);
+  font: 700 8px/1.1 'DM Mono', monospace;
+  letter-spacing: 0.14em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .hero-top-rail {
+    grid-template-columns: auto 1fr;
+    gap: 18px;
+    padding: 18px 18px 14px;
+  }
+
+  .hero-top-rail::after {
+    right: 18px;
+    left: 18px;
+  }
+
+  .hero-top-rail__meta {
+    font-size: 6px;
+    letter-spacing: 0.11em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-top-rail {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ------------------------------------------------------------
+   PARALLAX CONSUMERS
+   Section root exposes --par-x / --par-y (-1 .. 1, lerped).
+   Each depth layer multiplies via calc. 3D canvas: untouched.
+   ------------------------------------------------------------ */
+.hero-parallax-deep {
+  transform: translate(-50%, -50%) translate3d(calc(var(--par-x, 0) * -16px), calc(var(--par-y, 0) * -10px), 0);
+  will-change: transform;
+}
+
+.hero-parallax-mid {
+  transform: translate3d(calc(var(--par-x, 0) * 10px), calc(var(--par-y, 0) * 7px), 0);
+  will-change: transform;
+}
+
+/* ------------------------------------------------------------
+   ACCENT OVERLAY — flanking layout, stacks on small screens
+   ------------------------------------------------------------ */
+.hero-accent-overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 clamp(24px, 6vw, 88px);
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------
+   BACKDROP MONUMENT — visible, quiet, alive
+   Gradient lives here (not inline) so background-size/position
+   can animate for the slow shimmer sweep.
+   ------------------------------------------------------------ */
+.hero-backdrop-title {
+  font-family: "Calentha", serif;
+  font-size: clamp(4.5rem, 14.5vw, 16rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  padding: 24px 0;
+  text-transform: uppercase;
+  margin: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(237, 230, 223, 0.34) 0%,
+    rgba(237, 230, 223, 0.16) 52%,
+    rgba(237, 230, 223, 0.02) 96%
+  );
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation:
+    backdropDrift 22s ease-in-out infinite,
+    backdropSheen 14s ease-in-out infinite;
+}
+
+@keyframes backdropDrift {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 10px -4px; }
+}
+
+/* Horizontal light pass across the monument letters */
+@keyframes backdropSheen {
+  0%, 100% { background-position: 0% 0%; }
+  50%      { background-position: 100% 0%; }
+}
+
+/* ------------------------------------------------------------
+   PER-LETTER MASK REVEAL — architectural, sharp, staggered
+   ------------------------------------------------------------ */
+.mask-word {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.mask-letter-clip {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.07em 0.015em;
+  margin: -0.07em -0.015em;
+}
+
+.mask-letter {
+  display: inline-block;
+  transform: translateY(118%);
+  transition: transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.is-entered .mask-letter {
+  transform: translateY(0);
+}
+
+/* ------------------------------------------------------------
+   TYPEWRITER CARET
+   ------------------------------------------------------------ */
+.tw-caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  margin-left: 2px;
+  background: var(--bone);
+  vertical-align: text-bottom;
+  animation: caretBlink 1.05s steps(1) infinite;
+}
+
+@keyframes caretBlink {
+  0%, 55%  { opacity: 1; }
+  56%, 100% { opacity: 0; }
+}
+
+/* ------------------------------------------------------------
+   HUD — registration marks, rails, telemetry, scroll cue
+   ------------------------------------------------------------ */
+.hud-fade {
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hud-fade.is-entered {
+  opacity: 1;
+}
+
+.hud-corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  opacity: 0;
+  scale: 1.6;
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    scale 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hud-corner.is-entered {
+  opacity: 0.5;
+  scale: 1;
+}
+
+.hud-rail {
+  writing-mode: vertical-rl;
+  font-family: var(--font-family-mono);
+  font-size: 9px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(237, 230, 223, 0.34);
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hud-telemetry {
+  font-family: var(--font-family-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: rgba(237, 230, 223, 0.55);
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hud-live-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--bone);
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  animation: livePulse 2.4s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 0.25; }
+  50%      { opacity: 1; }
+}
+
+/* Scroll cue: hairline with a travelling dash */
+.hud-scroll-line {
+  position: relative;
+  width: 1px;
+  height: 44px;
+  background: var(--hairline);
+  overflow: hidden;
+}
+
+.hud-scroll-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -40%;
+  width: 100%;
+  height: 40%;
+  background: var(--bone);
+  animation: scrollDash 2.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes scrollDash {
+  0%   { top: -40%; }
+  70%, 100% { top: 110%; }
+}
+
+/* Floor light spill under the emblem (grounds the 3D piece) */
+.hero-floor-glow {
+  position: absolute;
+  left: 50%;
+  top: 71%;
+  width: min(46vw, 560px);
+  height: 110px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(237, 230, 223, 0.05) 0%, rgba(237, 230, 223, 0.015) 45%, transparent 72%);
+  pointer-events: none;
+  z-index: 9;
+}
+
+/* ------------------------------------------------------------
+   NAV — index prefixes + underline sweep
+   ------------------------------------------------------------ */
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-link .nav-index {
+  font-size: 9px;
+  opacity: 0.38;
+  margin-right: 6px;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--bone);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-link:hover .nav-index {
+  opacity: 1;
+}
+
+/* Specimen portal button */
+.nav-portal {
+  font-family: var(--font-family-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bone);
+  background: transparent;
+  border: 1px solid var(--hairline-strong);
+  padding: 9px 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-portal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bone);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 0;
+}
+
+.nav-portal:hover::before {
+  transform: scaleY(1);
+}
+
+.nav-portal:hover {
+  color: #0a0a0d;
+}
+
+.nav-portal span {
+  position: relative;
+  z-index: 1;
+}
+
+/* ------------------------------------------------------------
+   FEATURE CARD — flat hairline slab, corner brackets on hover
+   ------------------------------------------------------------ */
+.hero-slab {
+  position: relative;
+  background: rgba(23, 23, 23, 0.55);
+  border: 1px solid var(--hairline);
+  border-radius: 0;
+  backdrop-filter: blur(8px);
+  transition:
+    border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-slab:hover {
+  border-color: var(--hairline-strong);
+  background: rgba(23, 23, 23, 0.78);
+}
+
+.hero-slab::before,
+.hero-slab::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  opacity: 0;
+  transition:
+    opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.hero-slab::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid var(--bone);
+  border-left: 1px solid var(--bone);
+  transform: translate(4px, 4px);
+}
+
+.hero-slab::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1px solid var(--bone);
+  border-right: 1px solid var(--bone);
+  transform: translate(-4px, -4px);
+}
+
+.hero-slab:hover::before,
+.hero-slab:hover::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.slab-action .slab-arrow {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slab-action:hover .slab-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* ------------------------------------------------------------
+   LINEWAVES WRAPPER — quiet center, presence at edges
+   ------------------------------------------------------------ */
+.hero-linewaves-bg {
+  mask-image: radial-gradient(ellipse 62% 58% at 50% 47%, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.5) 42%, rgba(0, 0, 0, 0.92) 78%, black 100%);
+  -webkit-mask-image: radial-gradient(ellipse 62% 58% at 50% 47%, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.5) 42%, rgba(0, 0, 0, 0.92) 78%, black 100%);
+}
+
+/* ------------------------------------------------------------
+   BLUEPRINT REVEAL — hairline grid traces after intro plates part
+   ------------------------------------------------------------ */
+.hero-blueprint {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.35s;
+}
+
+.hero-blueprint.is-dissolved {
+  opacity: 0;
+}
+
+.bp-line {
+  position: absolute;
+  background: rgba(237, 230, 223, 0.28);
+}
+
+/* Horizontal datums draw outward from center */
+.bp-h {
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bp-h-center { top: 50%; transition-delay: 0s; }
+.bp-h-top    { top: 18%; background: rgba(237, 230, 223, 0.12); transition-delay: 0.12s; }
+.bp-h-bottom { top: 82%; background: rgba(237, 230, 223, 0.12); transition-delay: 0.12s; }
+
+/* Vertical datums draw downward from center */
+.bp-v {
+  top: 0;
+  height: 100%;
+  width: 1px;
+  transform: scaleY(0);
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bp-v-left {
+  left: clamp(24px, 5vw, 64px);
+  transition-delay: 0.08s;
+}
+
+.bp-v-right {
+  right: clamp(24px, 5vw, 64px);
+  transition-delay: 0.08s;
+}
+
+.bp-v-center {
+  left: 50%;
+  background: rgba(237, 230, 223, 0.16);
+  transition-delay: 0.2s;
+}
+
+.hero-blueprint.is-active .bp-h,
+.hero-blueprint.is-active .bp-v {
+  transform: scale(1);
+}
+
+/* Registration ticks — small squares at margin/tertiary intersections */
+.bp-tick {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgba(237, 230, 223, 0.55);
+  opacity: 0;
+  transform: rotate(45deg) scale(1.8);
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bp-tick-tl { left: calc(clamp(24px, 5vw, 64px) - 3px); top: calc(18% - 3px); transition-delay: 0.75s; }
+.bp-tick-tr { right: calc(clamp(24px, 5vw, 64px) - 3px); top: calc(18% - 3px); transition-delay: 0.82s; }
+.bp-tick-bl { left: calc(clamp(24px, 5vw, 64px) - 3px); bottom: calc(18% - 3px); transition-delay: 0.89s; }
+.bp-tick-br { right: calc(clamp(24px, 5vw, 64px) - 3px); bottom: calc(18% - 3px); transition-delay: 0.96s; }
+
+.hero-blueprint.is-active .bp-tick {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+
+/* Coordinate label at center datum */
+.bp-label {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-family-mono);
+  font-size: 8px;
+  letter-spacing: 0.34em;
+  color: rgba(237, 230, 223, 0.4);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.85s;
+}
+
+.hero-blueprint.is-active .bp-label {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-blueprint,
+  .bp-line,
+  .bp-tick,
+  .bp-label {
+    display: none !important;
+  }
+}
+
+/* ------------------------------------------------------------
+   FILM GRAIN — faint fractal-noise plate, static
+   ------------------------------------------------------------ */
+.hero-grain {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  background-size: 160px 160px;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+@media (max-width: 900px) {
+  .hud-rail { display: none; }
+
+  .hud-bottom-center { display: none !important; }
+
+  .hero-subtext { display: none; }
+
+  .nav-link { display: none; }
+
+  .hero-accent-stacked {
+    flex-direction: column;
+    justify-content: center;
+    gap: 38vh;
+    padding: 0 24px;
+  }
+
+  .hero-bottom-row.flex-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .hero-slab {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------------
+   REDUCED MOTION — everything lands instantly, ambient off
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  .mask-letter,
+  .hud-corner,
+  .hud-fade {
+    transition: none !important;
+    transform: none !important;
+    scale: 1 !important;
+    opacity: 1 !important;
+  }
+
+  .hero-backdrop-title,
+  .tw-caret,
+  .hud-live-dot,
+  .hud-scroll-line::after {
+    animation: none !important;
+  }
+
+  .hero-grain {
+    display: none !important;
+  }
+
+  .hero-parallax-deep,
+  .hero-parallax-mid {
+    transform: none;
+  }
+
+  .hero-parallax-deep {
+    transform: translate(-50%, -50%);
+  }
+}

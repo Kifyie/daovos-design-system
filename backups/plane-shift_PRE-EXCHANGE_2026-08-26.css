@@ -1,0 +1,193 @@
+/**
+ * DAOVOS hero-to-section plane shift.
+ * No content layer: two dark architectural surfaces exchange depth through
+ * a brief bone-white datum field.
+ */
+
+.plane-shift-root {
+  position: relative;
+  z-index: 60;
+  height: 135vh;
+  min-height: 100vh;
+  margin-top: -1px;
+  background-color: #0a0a0c;
+}
+
+.plane-shift-stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  overflow: hidden;
+  perspective: 1600px;
+  perspective-origin: 50% 50%;
+  background-color: var(--daovos-color-bone-white);
+  isolation: isolate;
+}
+
+.plane-shift-void {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-color: var(--daovos-color-bone-white);
+}
+
+.plane-shift-datum {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: rgba(17, 17, 18, 0.72);
+  will-change: transform, opacity;
+}
+
+.plane-shift-rails {
+  position: absolute;
+  inset: 0;
+}
+
+.plane-shift-rail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc((var(--plane-rail-index) + 1) * (100% / 7));
+  width: 1px;
+  background-color: var(--daovos-color-near-black);
+  will-change: transform, opacity;
+}
+
+.plane-shift-registration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--space-6);
+  height: var(--space-6);
+  margin-top: calc(var(--space-3) * -1);
+  margin-left: calc(var(--space-3) * -1);
+  border: 1px solid rgba(17, 17, 18, 0.62);
+  will-change: transform, opacity;
+}
+
+.plane-shift-registration::before,
+.plane-shift-registration::after {
+  content: '';
+  position: absolute;
+  background-color: var(--daovos-color-near-black);
+}
+
+.plane-shift-registration::before {
+  top: 50%;
+  left: calc(var(--space-2) * -1);
+  width: calc(var(--space-6) + var(--space-4));
+  height: 1px;
+}
+
+.plane-shift-registration::after {
+  top: calc(var(--space-2) * -1);
+  left: 50%;
+  width: 1px;
+  height: calc(var(--space-6) + var(--space-4));
+}
+
+.plane-shift-plane {
+  position: absolute;
+  inset: -2px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #0a0a0c;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+.plane-shift-plane--outgoing {
+  z-index: 3;
+}
+
+.plane-shift-plane--incoming {
+  z-index: 2;
+}
+
+.plane-shift-edge {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: var(--daovos-color-bone-white);
+}
+
+.plane-shift-edge--bottom {
+  bottom: 0;
+}
+
+.plane-shift-edge--top {
+  top: 0;
+}
+
+.plane-shift-reduced {
+  height: var(--space-8);
+  min-height: var(--space-8);
+}
+
+.plane-shift-reduced .plane-shift-stage {
+  height: var(--space-8);
+  min-height: var(--space-8);
+  perspective: none;
+}
+
+.plane-shift-reduced .plane-shift-plane--outgoing,
+.plane-shift-reduced .plane-shift-void,
+.plane-shift-reduced .plane-shift-edge {
+  display: none;
+}
+
+.plane-shift-reduced .plane-shift-plane--incoming {
+  inset: var(--space-1) 0 0;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+@media (max-width: 640px) {
+  .plane-shift-root {
+    height: 105vh;
+  }
+
+  .plane-shift-stage {
+    min-height: 520px;
+    perspective: 1100px;
+  }
+
+  .plane-shift-rail:nth-child(even) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plane-shift-root {
+    height: var(--space-8);
+    min-height: var(--space-8);
+  }
+
+  .plane-shift-stage {
+    height: var(--space-8);
+    min-height: var(--space-8);
+    perspective: none;
+  }
+
+  .plane-shift-plane--outgoing,
+  .plane-shift-void,
+  .plane-shift-edge {
+    display: none;
+  }
+
+  .plane-shift-plane--incoming {
+    inset: var(--space-1) 0 0;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}

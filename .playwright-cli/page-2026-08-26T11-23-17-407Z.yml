@@ -1,0 +1,214 @@
+- generic [active] [ref=f2e1]:
+  - main [ref=f2e3]:
+    - generic [ref=f2e5]:
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]: 00—01
+        - generic [ref=f2e303]:
+          - generic: DATUM 00 // GRID REGISTERED
+          - navigation [ref=f2e311]:
+            - generic [ref=f2e331]:
+              - link "01Studio" [ref=f2e332] [cursor=pointer]:
+                - /url: "#studio"
+              - link "02Who We Are" [ref=f2e333] [cursor=pointer]:
+                - /url: "#whoweare"
+              - link "03Process" [ref=f2e334] [cursor=pointer]:
+                - /url: "#process"
+              - link "04Recognition" [ref=f2e335] [cursor=pointer]:
+                - /url: "#recognition"
+              - button "Specimen" [ref=f2e336] [cursor=pointer]
+          - generic [ref=f2e337]:
+            - generic:
+              - generic:
+                - heading "DAOVOS" [level=1]
+            - generic [ref=f2e339] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: D
+                        - generic: I
+                        - generic: G
+                        - generic: I
+                        - generic: T
+                        - generic: A
+                        - generic: L
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: S
+                      - generic: "Y"
+                      - generic: S
+                      - generic: T
+                      - generic: E
+                      - generic: M
+                      - generic: S
+          - generic [ref=f2e341]:
+            - generic [ref=f2e343]:
+              - generic [ref=f2e344]: 01 // INTRO
+              - heading "ARCHITECTURAL DIGITAL SYSTEMS" [level=3] [ref=f2e347]
+              - paragraph [ref=f2e348]: DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.
+            - generic [ref=f2e350]:
+              - generic [ref=f2e351]:
+                - heading "ACCEPTING NEW COMMISSIONS" [level=4] [ref=f2e354]
+                - paragraph [ref=f2e355]: Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.
+              - generic [ref=f2e356] [cursor=pointer]: Start a project
+          - generic: SCROLL
+      - generic [ref=f2e381]:
+        - generic [ref=f2e383]:
+          - generic: STUDIO
+          - generic [ref=f2e384]:
+            - generic [ref=f2e385]: WHO WE ARE
+            - generic [ref=f2e388]:
+              - generic [ref=f2e389]: "01"
+              - generic [ref=f2e390]: / 04
+          - generic [ref=f2e392]:
+            - generic [ref=f2e393]: THE STUDIO
+            - heading "NOT AN AGENCY." [level=2] [ref=f2e394]:
+              - generic [ref=f2e396]:
+                - generic [ref=f2e397]: "N"
+                - generic [ref=f2e398]: O
+                - generic [ref=f2e399]: T
+                - generic [ref=f2e400]: A
+                - generic [ref=f2e401]: "N"
+                - generic [ref=f2e402]: A
+                - generic [ref=f2e403]: G
+                - generic [ref=f2e404]: E
+                - generic [ref=f2e405]: "N"
+                - generic [ref=f2e406]: C
+                - generic [ref=f2e407]: "Y"
+                - generic [ref=f2e408]: .
+            - heading "A DIGITAL STUDIO." [level=2] [ref=f2e409]:
+              - generic [ref=f2e411]:
+                - generic [ref=f2e412]: A
+                - generic [ref=f2e413]: D
+                - generic [ref=f2e414]: I
+                - generic [ref=f2e415]: G
+                - generic [ref=f2e416]: I
+                - generic [ref=f2e417]: T
+                - generic [ref=f2e418]: A
+                - generic [ref=f2e419]: L
+                - generic [ref=f2e420]: S
+                - generic [ref=f2e421]: T
+                - generic [ref=f2e422]: U
+                - generic [ref=f2e423]: D
+                - generic [ref=f2e424]: I
+                - generic [ref=f2e425]: O
+                - generic [ref=f2e426]: .
+        - generic [ref=f2e428]:
+          - generic [ref=f2e429]:
+            - generic [ref=f2e430]: 01 // WHO WE ARE
+            - generic [ref=f2e432]: "DAOVOS DIGITAL STUDIO — SECTOR: WEB"
+          - generic [ref=f2e433]:
+            - generic [ref=f2e434]:
+              - generic [ref=f2e436]: MIEKFCL
+              - paragraph [ref=f2e437]:
+                - generic [ref=f2e438]: Make high-quality digital experiences accessible — strong design, modern technology, a
+                - generic [ref=f2e439]: simple client experience.
+            - generic [ref=f2e440]:
+              - generic [ref=f2e442]: VIMFRT
+              - paragraph [ref=f2e443]:
+                - generic [ref=f2e444]: Grow from a web agency into a recognizable digital company providing everything a
+                - generic [ref=f2e445]: modern brand needs to build, launch, and grow online.
+            - generic [ref=f2e446]:
+              - generic [ref=f2e448]: PRKMRDS
+              - paragraph [ref=f2e449]:
+                - generic [ref=f2e450]: You bring the idea. Daovos turns it into a digital experience.
+          - generic [ref=f2e452]:
+            - generic [ref=f2e453]:
+              - generic [ref=f2e454]: WEB DESIGN
+              - generic [ref=f2e456]: DEVELOPMENT
+              - generic [ref=f2e458]: LANDING PAGES
+              - generic [ref=f2e460]: E-COMMERCE
+              - generic [ref=f2e462]: UI/UX
+              - generic [ref=f2e464]: REDESIGNS
+              - generic [ref=f2e466]: MAINTENANCE
+              - generic [ref=f2e468]: MOBILE OPTIMIZATION
+            - generic [ref=f2e470]:
+              - generic [ref=f2e471]: WEB DESIGN
+              - generic [ref=f2e473]: DEVELOPMENT
+              - generic [ref=f2e475]: LANDING PAGES
+              - generic [ref=f2e477]: E-COMMERCE
+              - generic [ref=f2e479]: UI/UX
+              - generic [ref=f2e481]: REDESIGNS
+              - generic [ref=f2e483]: MAINTENANCE
+              - generic [ref=f2e485]: MOBILE OPTIMIZATION
+          - generic [ref=f2e487]:
+            - generic [ref=f2e488]: STRUCTURE · PRECISION · MODULARITY · RELIABILITY · SCALE · PROGRESS
+            - generic [ref=f2e489]: EST. MMXXVI — SPEC-DAOVOS-001
+  - button [ref=f2e498] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [disabled]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"

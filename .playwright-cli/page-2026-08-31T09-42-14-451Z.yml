@@ -1,0 +1,167 @@
+- generic [active] [ref=f3e1]:
+  - main [ref=f3e3]:
+    - generic [ref=f3e5]:
+      - generic [ref=f3e8]:
+        - generic [ref=f3e9]:
+          - generic [ref=f3e10]: TRANSFER FIELD // HERO → WHO WE ARE
+          - generic [ref=f3e302]: PLANE 00 / PLANE 01 — SCROLL TO EXCHANGE
+          - generic [ref=f3e303]: 00—01
+        - generic [ref=f3e305]:
+          - generic: DATUM 00 // GRID REGISTERED
+          - navigation [ref=f3e313]:
+            - button "Specimen" [ref=f3e334] [cursor=pointer]
+          - generic [ref=f3e335]:
+            - generic:
+              - generic:
+                - heading "DAOVOS" [level=1]
+            - generic [ref=f3e337] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: D
+                        - generic: I
+                        - generic: G
+                        - generic: I
+                        - generic: T
+                        - generic: A
+                        - generic: L
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: S
+                      - generic: "Y"
+                      - generic: S
+                      - generic: T
+                      - generic: E
+                      - generic: M
+                      - generic: S
+          - generic [ref=f3e339]:
+            - generic [ref=f3e341]:
+              - generic [ref=f3e342]: 01 // INTRO
+              - heading "ARCHITECTURAL DIGITAL SYSTEMS" [level=3] [ref=f3e345]
+              - paragraph [ref=f3e346]: DAOVOS engineers modular visual operating systems — architectural precision, structural reliability, monumental scale.
+            - generic [ref=f3e348]:
+              - generic [ref=f3e349]:
+                - heading "ACCEPTING NEW COMMISSIONS" [level=4] [ref=f3e352]
+                - paragraph [ref=f3e353]: Two build slots remain for Q3 2026. Enterprise-scale systems, engineered end-to-end.
+              - generic [ref=f3e354] [cursor=pointer]: Start a project
+        - generic [ref=f3e379]:
+          - generic [ref=f3e380]: STUDIO
+          - generic [ref=f3e381]:
+            - generic [ref=f3e382]: THE STUDIO
+            - paragraph [ref=f3e383]: NOT AN AGENCY.
+            - paragraph [ref=f3e384]: A DIGITAL STUDIO.
+          - generic [ref=f3e385]: NEXT SECTION // 01
+      - region "What DAOVOS makes" [ref=f3e390]:
+        - generic [ref=f3e394]:
+          - generic [ref=f3e395]: DAOVOS
+          - article [ref=f3e396]:
+            - generic [ref=f3e397]: A complete digital home shaped around the brand, its audience, and the way it needs to grow.
+          - figure [ref=f3e398]:
+            - generic [ref=f3e399]:
+              - img "Monumental architectural facade organized by a strict structural grid" [ref=f3e401]
+              - generic [ref=f3e460]: STRUCTURE / IDENTITY / SCALE
+          - article [ref=f3e461]
+          - generic: "001"
+          - figure [ref=f3e462]:
+            - img "A single figure held inside a focused beam of light" [ref=f3e465]
+          - blockquote "“Every element keeps the eye moving toward one clear decision.”" [ref=f3e510]:
+            - generic [ref=f3e511]: “Every
+            - generic [ref=f3e512]: element
+            - generic [ref=f3e513]: keeps
+            - generic [ref=f3e514]: the
+            - generic [ref=f3e515]: toward
+            - generic [ref=f3e516]: one
+            - generic [ref=f3e517]: clear
+            - generic [ref=f3e518]: decision.”
+          - article [ref=f3e548]
+          - generic [ref=f3e549]: "002"
+          - figure [ref=f3e550]:
+            - img "A rigorously organized retail system displayed across modular shelves" [ref=f3e553]
+          - article [ref=f3e622]
+          - figure [ref=f3e623]:
+            - img "An abstract signal field reorganized into a responsive visual system" [ref=f3e626]
+          - generic [ref=f3e639]: "003"
+          - article [ref=f3e640]
+          - figure [ref=f3e641]:
+            - img "A dense technical infrastructure kept connected and operational" [ref=f3e644]
+          - article [ref=f3e668]
+        - region "Start a project with DAOVOS" [ref=f3e669]
+  - button [ref=f3e681] [cursor=pointer]:
+    - generic:
+      - generic:
+        - button
+      - generic:
+        - button
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button [disabled]
+      - generic:
+        - button
+      - generic:
+        - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+            - paragraph: v3.0.2
+            - button "Switch to light mode"
+          - generic:
+            - generic:
+              - generic: Output Detail
+              - button "Standard"
+            - generic:
+              - generic: React Components
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic: Hide Until Restart
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+              - generic: Clear on copy/send
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks"
+        - generic:
+          - button "Manage MCP & Webhooks"
+          - generic:
+            - generic: MCP Connection
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic: Webhooks
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"
